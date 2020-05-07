@@ -126,3 +126,16 @@ a {
     text-decoration-line: none;
     color: lightgray;
 }
+
+.card{
+    margin-top: 30px;
+    min-height: 350px;
+}
+
+.nav-item{
+    margin-left: 30px
+}
+
+/* body{
+    width: 1500px;
+} */
