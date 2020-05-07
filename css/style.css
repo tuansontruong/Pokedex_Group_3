@@ -205,33 +205,47 @@
     padding-top: 60px;
     padding-bottom: 40px;
 }
+.detail-body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
 
+}
 .detail-img-back {
-    position: fixed;
+    position: relative;
 }
 
-.detail-spacer {
-    height: 300px;
+.detail-spacer-1 {
+    height: 200px;
+}
+.detail-spacer-2 {
+    height: 100px;
 }
 
 .detail-gradient {
     background: rgb(2, 0, 36);
     background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(1, 0, 19, 1) 72%, rgba(0, 0, 0, 0) 100%);
 }
-
+.detail-header {
+    height: 150px;
+}
+.detail-pokedex{
+    width: 90%;
+}
 .detail-img-sm {
     width: 180px;
     height: auto;
     border-radius: 3px;
+    border: .5rem white solid;
 }
 
 .detail-title {
-    background-color: #dedede;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    background-color: #dc1715;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    padding-left: 2rem;
+    color: white;
 }
+
 
 .detail-font {
     font-family: Arial, Helvetica, sans-serif;
@@ -239,9 +253,71 @@
 }
 
 .detail-main {
-    padding: 15px;
+    padding: 2rem;
     background-color: white;
-    height: 1000px;
+    height: auto;
+    margin-bottom: 40px;
+
+}
+.detail-grey{
+    height: 400px;
+    background-color: #dedede;
+    text-align: center;
+    padding-top: 80px;
+}
+.detail-form{
+    background-color: #dc1715;
+    color: white;
+    padding: 1rem 3rem;
+    font-weight: bold; 
+    font-family: 'verdana', 'Lucida Sans typewriter', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.detail-form h2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.detail-form input{
+    max-width: 75%;
+    border-style: none;
+    background-color: rgb(85,164,99);
+    color: black;
+    padding: 15px;
+    border: solid rgb(0,0,0,0) 3px;
+    transition-duration: .3s;
+    font-weight: bold;
+}
+.detail-form input:focus{
+    max-width: 75%;
+    border-style: none;
+    background-color: rgb(115,204,129);
+    color: black;
+    padding: 15px;
+    border: solid rgb(115,204,129, 0.5) 3px;
+    transition-duration: .3s;
+    font-weight: bold;
+}
+.detail-form input:hover{
+    max-width: 75%;
+    border-style: none;
+    background-color: rgb(115,204,129);
+    color: black;
+    padding: 15px;
+    border: solid rgb(115,204,129, 0.5) 3px;
+    transition-duration: .3s;
+    font-weight: bold;
+}
+.detail-btn{
+    background-color: black;
+    color: white;
+    border: none;
+    font-weight: bold;
+
+}
+.detail-tight{
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
 }
 
 footer {
