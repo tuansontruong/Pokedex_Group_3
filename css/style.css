@@ -6,8 +6,9 @@
 }
 
 .pkm-card-text {
+    line-height: 1.7;
     font-family: 'Titillium Web', serif;
-    font-size: 16px;
+    font-size: 15px;
     height: 120px;
 }
 
@@ -15,6 +16,7 @@
     font-family: 'Titillium Web', serif;
     font-size: 22px;
     font-weight: 550;
+    margin-top: 10px;
 }
 
 .pkm-card {
@@ -22,42 +24,115 @@
     border-radius: 25px;
     border: 0;
     margin-bottom: 30px;
-    background: rgb(243, 241, 194);
-    background: linear-gradient(180deg, rgba(243, 241, 194, 1) 0%, rgba(71, 167, 123, 1) 100%);
+    background: rgb(243,241,194);
+    background: linear-gradient(180deg, rgba(243,241,194,1) 0%, rgba(71,167,123,1) 100%);
+    transition-duration: 0.7s;
+}
+
+.pkm-card:hover {
+    filter: drop-shadow(0px 0px 15px cyan);
+    transition-duration: 0.7s;
 }
 
 .pkm-img {
     height: 160px;
     width: auto;
-    background-image: url("../img/glow.png");
+    transition-duration: 0.7s;
+}
+
+.pkm-img:hover {
+    left: -202px;
+    height: 170px;
+    width: auto;
+    filter: drop-shadow(0px 0px 20px rgb(245, 47, 57));
+    transition-duration: 0.7s;
+}
+
+.pkm-img-container {
+    margin-left: 45px;
+    overflow: visible;
+    height: 160px;
+    width: 160px;
 }
 
 .bug-type {
-    background-color: #ab2;
+    background-color: #729f3f;
     color: white;
     padding-bottom: 5px;
     text-shadow: 1px 1px gray;
+    box-shadow: 1px 1px #848484;
+}
+
+.grass-type {
+    background-color: #9bcc50;
+    color: white;
+    padding-bottom: 5px;
+    text-shadow: 1px 1px gray;
+    box-shadow: 1px 1px #848484;
+}
+
+.poison-type {
+    background-color: #b97fc9;
+    color: white;
+    padding-bottom: 5px;
+    text-shadow: 1px 1px gray;
+    box-shadow: 1px 1px #848484;
+}
+
+.dragon-type {
+    background: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+    color: white;
+    padding-bottom: 5px;
+    text-shadow: 1px 1px gray;
+    box-shadow: 1px 1px #848484;
+}
+
+.flying-type {
+    background: linear-gradient(180deg, #3dc7ef 50%, #bdb9b8 50%);
+    color: white;
+    padding-bottom: 5px;
+    text-shadow: 1px 1px gray;
+    box-shadow: 1px 1px #848484;
+}
+
+.normal-type {
+    background-color: #a4acaf;
+    color: white;
+    padding-bottom: 5px;
+    text-shadow: 1px 1px gray;
+    box-shadow: 1px 1px #848484;
+}
+
+.ice-type {
+    background-color:#51c4e7;
+    color: white;
+    padding-bottom: 5px;
+    text-shadow: 1px 1px gray;
+    box-shadow: 1px 1px #848484;
 }
 
 .fire-type {
-    background-color: #f42;
+    background-color: #fd7d24;
     color: white;
     padding-bottom: 5px;
     text-shadow: 1px 1px gray;
+    box-shadow: 1px 1px #848484;
 }
 
 .water-type {
-    background-color: #39f;
+    background-color: #4592c4;
     color: white;
     padding-bottom: 5px;
     text-shadow: 1px 1px gray;
+    box-shadow: 1px 1px #848484;
 }
 
 .electric-type {
-    background-color: #fc3;
+    background-color: #eed535;
     color: white;
     padding-bottom: 5px;
     text-shadow: 1px 1px gray;
+    box-shadow: 1px 1px #848484;
 }
 
 .rounded-pkm-body {
@@ -68,21 +143,42 @@
 
 .check-pkm-button {
     border-radius: 80px;
-    margin: 15px 80px;
-    background: #00caff;
+    margin:15px 80px;
+    background: rgb(45, 197, 235);
     border: 0;
     transition-duration: .5s;
+    text-transform: uppercase;
+    /* text-shadow: 1px 1px rgb(99, 51, 7); */
+    font-weight: 700;
+    font-size: 14px;
+    box-shadow: 1px 1px rgba(25, 25, 25, 0.42);
+    color: white;
 }
 
 .check-pkm-button:hover {
-    background: rgb(244, 63, 222);
+    background: rgb(255, 107, 188);
+    color: white;
+    
 }
 
 .pkm-card-body {
     padding-bottom: 0px;
 }
 
+.pkm-card-header {
+    color: white;
+    /* margin-bottom: 20px; */
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Titillium Web', serif;
+    /* text-shadow: 2px 2px 0px red; */
+    text-shadow: -2px -2px 0 red, 2px -2px 0 red, -2px 2px 0 red, 2px 2px 0 red;
+    filter: drop-shadow(0px 0px 12px rgb(189, 68, 68));
+    letter-spacing: 3px;
+}
+
 .flex-pkm-card {
+    margin-top: 50px;
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
@@ -91,7 +187,6 @@
 .flex-pkm-card:after {
     content: '';
     width: 250px;
-    /* justify-content: space-around; */
 }
 
 .pkm-card-div {
@@ -103,6 +198,8 @@
 .pkm-card-section {
     background-image: url("/img/shattered-island.gif");
     background-repeat: repeat;
+    padding-top: 60px;
+    padding-bottom: 40px;
 }
 
 .detail-img-back {
@@ -134,6 +231,7 @@
 
 .detail-font {
     font-family: Arial, Helvetica, sans-serif;
+    font-family: ;
 }
 
 .detail-main {
