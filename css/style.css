@@ -1,6 +1,83 @@
+.pkm-name {
+    font-family: 'Titillium Web', serif;
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.pkm-card-text {
+    font-family: 'Titillium Web', serif;
+    font-size: 16px;
+}
+
+.pkm-type {
+    font-family: 'Titillium Web', serif;
+    font-size: 22px;
+    font-weight: 550;
+}
+
+.pkm-card {
+    width: 250px;
+    border-radius: 25px;
+    border: 0;
+    margin-bottom: 30px;
+    background: rgb(243,241,194);
+    background: linear-gradient(180deg, rgba(243,241,194,1) 0%, rgba(71,167,123,1) 100%);
+}
+
+.pkm-img {
+    height: 160px;
+    width: auto;
+}
+
+.bug-type {
+    background-color: #ab2;
+    color: white;
+}
+
+.rounded-pkm-body {
+    border-radius: 20px;
+    padding: 15px;
+    background-color: #f6ffa7;
+}
+
+.check-pkm-button {
+    border-radius: 80px;
+    margin:15px 80px;
+    background: #00caff;
+    border: 0;
+    transition-duration: .5s;
+
+}
+
+.check-pkm-button:hover {
+    background: rgb(244,63,222);
+    
+}
+
+.pkm-card-body {
+    padding-bottom: 0px;
+}
+
+.flex-pkm-card {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
+
+.pkm-card-div {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1200px;
+}
+
+.pkm-card-section {
+    background-image: url("/img/shattered-island.gif");
+  background-repeat: repeat;
+}
+
 .detail-img-back {
     position: fixed;
-
 }
 
 .detail-spacer {
@@ -28,7 +105,7 @@
 
 .detail-font {
     font-family: Arial, Helvetica, sans-serif;
-
+    font-family: ;
 }
 
 .detail-main {
@@ -36,17 +113,19 @@
     background-color: white;
     height: 1000px;
 }
+
 footer {
     background-color: black;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 a:hover {
     color: #dc1715;
     text-decoration-line: none;
 }
+
 a {
     text-decoration-line: none;
     color: lightgray;
-
 }
