@@ -20,6 +20,8 @@
 }
 
 .pkm-card {
+    margin-left: 10px;
+    margin-right: 10px;
     width: 250px;
     border-radius: 25px;
     border: 0;
@@ -178,6 +180,7 @@
 }
 
 .flex-pkm-card {
+    padding:5px;
     margin-top: 50px;
     display: flex;
     flex-flow: row wrap;
