@@ -126,3 +126,32 @@ a {
     text-decoration-line: none;
     color: lightgray;
 }
+
+
+/* NAV + BANNER */
+
+.navBanner {
+    background-image: url("https://wallpapertag.com/wallpaper/full/5/e/7/221344-gorgerous-background-gradient-1920x1200-for-android-40.jpg");
+}
+
+.banner-section {
+    font-family: 'Titillium Web', serif;
+}
+
+.carousel {
+    position: relative;
+}
+
+.carousel-caption {
+    position: absolute;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 15px 10px;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+
+/* DONE NAV + BANNER */
