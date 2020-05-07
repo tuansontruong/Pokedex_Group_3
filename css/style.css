@@ -1,6 +1,5 @@
 .detail-img-back {
     position: fixed;
-
 }
 
 .detail-spacer {
@@ -25,25 +24,26 @@
 
 .detail-font {
     font-family: ;
-
 }
 
 .detail-main {
     padding: 15px;
     background-color: white;
     height: 1000px;
+}
 
 footer {
     background-color: black;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
+
 a:hover {
     color: #dc1715;
     text-decoration-line: none;
 }
+
 a {
     text-decoration-line: none;
     color: lightgray;
-
 }
