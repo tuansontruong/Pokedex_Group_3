@@ -27,8 +27,8 @@
     filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.5));
     border: 0;
     margin-bottom: 30px;
-    background: rgb(243,241,194);
-    background: linear-gradient(180deg, rgba(243,241,194,1) 0%, rgba(71,167,123,1) 100%);
+    background: rgb(243, 241, 194);
+    background: linear-gradient(180deg, rgba(243, 241, 194, 1) 0%, rgba(71, 167, 123, 1) 100%);
     transition-duration: 0.7s;
 }
 
@@ -107,7 +107,7 @@
 }
 
 .ice-type {
-    background-color:#51c4e7;
+    background-color: #51c4e7;
     color: white;
     padding-bottom: 5px;
     text-shadow: 1px 1px gray;
@@ -146,7 +146,7 @@
 
 .check-pkm-button {
     border-radius: 80px;
-    margin:15px 80px;
+    margin: 15px 80px;
     background: rgb(45, 197, 235);
     border: 0;
     transition-duration: .5s;
@@ -161,7 +161,6 @@
 .check-pkm-button:hover {
     background: rgb(255, 107, 188);
     color: white;
-    
 }
 
 .pkm-card-body {
@@ -181,7 +180,7 @@
 }
 
 .flex-pkm-card {
-    padding:5px;
+    padding: 5px;
     margin-top: 50px;
     display: flex;
     flex-flow: row wrap;
