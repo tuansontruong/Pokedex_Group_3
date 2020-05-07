@@ -8,6 +8,7 @@
 .pkm-card-text {
     font-family: 'Titillium Web', serif;
     font-size: 16px;
+    height: 120px;
 }
 
 .pkm-type {
@@ -28,11 +29,35 @@
 .pkm-img {
     height: 160px;
     width: auto;
+    background-image: url("../img/glow.png");
 }
 
 .bug-type {
     background-color: #ab2;
     color: white;
+    padding-bottom: 5px;
+    text-shadow: 1px 1px gray;
+}
+
+.fire-type {
+    background-color: #f42;
+    color: white;
+    padding-bottom: 5px;
+    text-shadow: 1px 1px gray;
+}
+
+.water-type {
+    background-color: #39f;
+    color: white;
+    padding-bottom: 5px;
+    text-shadow: 1px 1px gray;
+}
+
+.electric-type {
+    background-color: #fc3;
+    color: white;
+    padding-bottom: 5px;
+    text-shadow: 1px 1px gray;
 }
 
 .rounded-pkm-body {
@@ -63,6 +88,12 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-around;
+}
+
+.flex-pkm-card:after {
+    content: '';
+    width: 250px;
+    /* justify-content: space-around; */
 }
 
 .pkm-card-div {
