@@ -81,7 +81,7 @@
 
 }
 .detail-img-back {
-    position: relative;
+    position: fixed;
 }
 
 .detail-spacer-1 {
@@ -102,12 +102,14 @@
     width: 90%;
 }
 .detail-img-sm {
-    width: 180px;
+    border-radius: 10%;
+    max-width: 250px;
+    width: 100%;
     height: auto;
-    border-radius: 3px;
-    border: .5rem white solid;
 }
-
+.border-me{
+    border: black solid 1px;
+}
 .detail-title {
     background-color: #dc1715;
     border-top-left-radius: 2rem;
@@ -127,7 +129,6 @@
     background-color: white;
     height: auto;
     margin-bottom: 40px;
-
 }
 .detail-grey{
     height: 400px;
@@ -184,7 +185,7 @@
 
 }
 .detail-tight{
-    max-width: 700px;
+    max-width: 880px;
     display: flex;
     align-items: center;
     margin: 0 auto;

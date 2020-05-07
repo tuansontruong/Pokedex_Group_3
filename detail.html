@@ -31,23 +31,24 @@
                     <div class="col-2 align-self-center">
                         <img src="detail-img/pokedex-ball.png" alt="..." class="detail-pokedex img-fluid">
                     </div>
-                    <div class="col-7 detail-font align-self-center">
+                    <div class="col-8 detail-font align-self-center">
                         <br>
-                        <h1><b>Pokemon Name</b></h1>
+                        <h1><b>Pikachu</b></h1>
                         <h3>Pokemon Type</h3>
                     </div>
-                    <div class="align-self-center col-3">
-                        <img class="detail-img-sm img-fluid" src="detail-img/pikachu-banner.jpg">
+
+                    <div class="col">
+
                     </div>
                 </div>
             </div>
         </section>
 
         <section class="container detail-main">
-            <div class="detail-font row justify-content-between no-gutters">
+            <div class="detail-font row justify-content-between">
                 <div class="col-8">
-                    <h2>Abilities</h2>
-                    <p>
+                    <h2 class="container">Abilities</h2>
+                    <p class="container">
                         Several Bootstrap components utilize z-index, the CSS property that helps control layout by
                         providing a
                         third
@@ -73,12 +74,27 @@
                         them all.
                     </p>
                     <hr>
-                    <h2>Photo Gallery</h2>
-                    <img src="..." class="rounded float-left" alt="...">
-                    <img src="..." class="rounded float-right" alt="...">
-                    <hr>
+                    <div class="container">
+                        <h2>Photo Gallery</h2>
+                        <img src="/detail-img/pikachu-sq.jpg" class="rounded float-left" alt="...">
+                        <img src="/detail-img/pikachu-sq.jpg" class="rounded float-right" alt="...">
+                    </div>
+
                 </div>
+                <hr>
                 <div class="col-4">
+                    <div class="d-flex justify-content-center">
+                        <div class="card" style="width: 18rem;">
+                            <img class="card-img-top" src="/detail-img/pikachu-sq.jpg" alt="Card image cap">
+                            <div class="card-body">
+                                <h5 class="card-title">Card title</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the
+                                    bulk of the card's content.</p>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    <br>
                     <h3>map</h3>
                     <p>blah</p>
                     <hr>
@@ -86,37 +102,64 @@
                     <p>text here</p>
                 </div>
             </div>
+
+            <h2 class="container">Abilities</h2>
+            <p class="container">
+                Several Bootstrap components utilize z-index, the CSS property that helps control layout by
+                providing a
+                third
+                axis to arrange content. We utilize a default z-index scale in Bootstrap that’s been designed to
+                properly
+                layer
+                navigation, tooltips and popovers, modals, and more.
+
+                These higher values start at an arbitrary number, high and specific enough to ideally avoid
+                conflicts.
+                We
+                need a
+                standard set of these across our layered components—tooltips, popovers, navbars, dropdowns,
+                modals—so we
+                can
+                be
+                reasonably consistent in the behaviors. There’s no reason we couldn’t have used 100+ or 500+.
+
+                We don’t encourage customization of these individual values; should you change one, you likely
+                need
+                to
+                change
+                them all.
+            </p>
+        </section>
+
+        <section class="detail-grey">
+            <h1>Some More Stuff</h1>
+            <p>blah blah</p>
+
+
         </section>
     </div>
-    <section class="detail-grey">
-        <h1>Some More Stuff</h1>
-        <p>blah blah</p>
+    <section class="detail-form">
+        <form class="row detail-tight justify-content-between">
 
+            <div class="col-8">
+                <h2>Get the latest updates!</h2>
+                <br>
+                <div class=>
+                    <div class="form-group detail-email-style">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                            style="background-image: url(/detail-img/line.png);" value="Email Address">
+                    </div>
+                    <button type="submit" class="btn btn-primary detail-btn">ENTER</button>
+                </div>
+            </div>
+
+            <div class="col-4 align-self-center">
+                <img src="detail-img/dpad.png" class="detail-dpad img-fluid">
+            </div>
+
+        </form>
 
     </section>
-
-<section class="detail-form">
-    <form class="row detail-tight justify-content-between">
-
-        <div class="col-8">
-            <h2>Get the latest updates!</h2>
-            <br>
-            <div class=>
-                <div class="form-group detail-email-style">
-                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="background-image: url(/detail-img/line.png);"
-                        value="Email Address">
-                </div>
-                <button type="submit" class="btn btn-primary detail-btn">ENTER</button>
-            </div>
-        </div>
-
-        <div class="col-4 align-self-center">
-            <img src="detail-img/dpad.png" class="detail-dpad img-fluid">
-        </div>
-
-    </form>
-
-</section>
 
 
 
