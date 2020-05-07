@@ -75,33 +75,47 @@
     background-image: url("/img/shattered-island.gif");
   background-repeat: repeat;
 }
+.detail-body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: black;
 
+}
 .detail-img-back {
-    position: fixed;
+    position: relative;
 }
 
-.detail-spacer {
-    height: 300px;
+.detail-spacer-1 {
+    height: 200px;
+}
+.detail-spacer-2 {
+    height: 100px;
 }
 
 .detail-gradient {
     background: rgb(2, 0, 36);
     background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(1, 0, 19, 1) 72%, rgba(0, 0, 0, 0) 100%);
 }
-
+.detail-header {
+    height: 150px;
+}
+.detail-pokedex{
+    width: 90%;
+}
 .detail-img-sm {
     width: 180px;
     height: auto;
     border-radius: 3px;
+    border: .5rem white solid;
 }
 
 .detail-title {
-    background-color: #dedede;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    background-color: #dc1715;
+    border-top-left-radius: 2rem;
+    border-top-right-radius: 2rem;
+    padding-left: 2rem;
+    color: white;
 }
+
 
 .detail-font {
     font-family: Arial, Helvetica, sans-serif;
@@ -109,9 +123,34 @@
 }
 
 .detail-main {
-    padding: 15px;
+    padding: 2rem;
     background-color: white;
-    height: 1000px;
+    height: auto;
+    margin-bottom: 80px;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+}
+.detail-grey{
+    height: 400px;
+    background-color: #dedede;
+    text-align: center;
+    padding-top: 80px;
+}
+.detail-form{
+    background-color: #dc1715;
+    color: white;
+    padding: .5rem 3rem;
+}
+.detail-form input{
+    max-width: 75%;
+    border-style: none;
+}
+.detail-btn{
+    background-color: black;
+    color: white;
+    border: none;
+    width: 70px;
+    height: 40px;
 }
 
 footer {
