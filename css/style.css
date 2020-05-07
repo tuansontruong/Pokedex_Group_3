@@ -75,3 +75,53 @@
     background-image: url("/img/shattered-island.gif");
   background-repeat: repeat;
 }
+
+.detail-img-back {
+    position: fixed;
+}
+
+.detail-spacer {
+    height: 300px;
+}
+
+.detail-gradient {
+    background: rgb(2, 0, 36);
+    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(1, 0, 19, 1) 72%, rgba(0, 0, 0, 0) 100%);
+}
+
+.detail-img-sm {
+    width: 180px;
+    height: auto;
+}
+
+.detail-title {
+    background-color: #dedede;
+    padding-top: 20px;
+    padding-bottom: 10px;
+}
+
+.detail-font {
+    font-family: ;
+}
+
+.detail-main {
+    padding: 15px;
+    background-color: white;
+    height: 1000px;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+a:hover {
+    color: #dc1715;
+    text-decoration-line: none;
+}
+
+a {
+    text-decoration-line: none;
+    color: lightgray;
+}
