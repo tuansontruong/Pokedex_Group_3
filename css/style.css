@@ -15,16 +15,19 @@
 .detail-img-sm {
     width: 180px;
     height: auto;
+    border-radius: 3px;
 }
 
 .detail-title {
     background-color: #dedede;
     padding-top: 20px;
     padding-bottom: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
 }
 
 .detail-font {
-    font-family: ;
+    font-family: Arial, Helvetica, sans-serif;
 
 }
 
@@ -32,7 +35,7 @@
     padding: 15px;
     background-color: white;
     height: 1000px;
-
+}
 footer {
     background-color: black;
     color: white;
