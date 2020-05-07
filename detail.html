@@ -25,17 +25,20 @@
     </section>
     <div class="detail-gradient">
         <div class="detail-spacer-2"></div>
-        <section class="container detail-title">
-            <div class="detail-header row justify-content-between no-gutters">
-                <div class="col-2 align-self-center">
-                    <img src="detail-img/pokedex-ball.png" alt="..." class="detail-pokedex img-fluid">
-                </div>
-                <div class="col-6 detail-font align-self-center">
-                    <h1><b>Pokemon Name</b></h1>
-                    <h3>Pokemon Type</h3>
-                </div>
-                <div class="align-self-center col-4">
-                    <img class="detail-img-sm" src="detail-img/pikachu-banner.jpg">
+        <section class="container">
+            <div class="container-fluid detail-title">
+                <div class="detail-header row justify-content-between no-gutters">
+                    <div class="col-2 align-self-center">
+                        <img src="detail-img/pokedex-ball.png" alt="..." class="detail-pokedex img-fluid">
+                    </div>
+                    <div class="col-7 detail-font align-self-center">
+                        <br>
+                        <h1><b>Pokemon Name</b></h1>
+                        <h3>Pokemon Type</h3>
+                    </div>
+                    <div class="align-self-center col-3">
+                        <img class="detail-img-sm img-fluid" src="detail-img/pikachu-banner.jpg">
+                    </div>
                 </div>
             </div>
         </section>
@@ -92,17 +95,29 @@
 
     </section>
 
+<section class="detail-form">
+    <form class="row detail-tight justify-content-between">
 
-        <form class="detail-form">
+        <div class="col-8">
             <h2>Get the latest updates!</h2>
             <br>
-            <div class="row">
-            <div class="align-self-center col-8 container form-group">
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" value="Email Address">
+            <div class=>
+                <div class="form-group detail-email-style">
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="background-image: url(/detail-img/line.png);"
+                        value="Email Address">
+                </div>
+                <button type="submit" class="btn btn-primary detail-btn">ENTER</button>
             </div>
-            <button type="submit" class="col btn btn-primary detail-btn">Submit</button>
-            </div>
-        </form>
+        </div>
+
+        <div class="col-4 align-self-center">
+            <img src="detail-img/dpad.png" class="detail-dpad img-fluid">
+        </div>
+
+    </form>
+
+</section>
+
 
 
 
