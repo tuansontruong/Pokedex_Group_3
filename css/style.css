@@ -27,8 +27,8 @@
     filter: drop-shadow(20px 20px 20px rgba(0, 0, 0, 0.5));
     border: 0;
     margin-bottom: 30px;
-    background: rgb(243,241,194);
-    background: linear-gradient(180deg, rgba(243,241,194,1) 0%, rgba(71,167,123,1) 100%);
+    background: rgb(243, 241, 194);
+    background: linear-gradient(180deg, rgba(243, 241, 194, 1) 0%, rgba(71, 167, 123, 1) 100%);
     transition-duration: 0.7s;
 }
 
@@ -107,7 +107,7 @@
 }
 
 .ice-type {
-    background-color:#51c4e7;
+    background-color: #51c4e7;
     color: white;
     padding-bottom: 5px;
     text-shadow: 1px 1px gray;
@@ -138,6 +138,22 @@
     box-shadow: 1px 1px #848484;
 }
 
+.water-type {
+    background-color: #4592c4;
+    color: white;
+    padding-bottom: 5px;
+    text-shadow: 1px 1px gray;
+    box-shadow: 1px 1px #848484;
+}
+
+.electric-type {
+    background-color: #eed535;
+    color: white;
+    padding-bottom: 5px;
+    text-shadow: 1px 1px gray;
+    box-shadow: 1px 1px #848484;
+}
+
 .rounded-pkm-body {
     border-radius: 20px;
     padding: 15px;
@@ -146,7 +162,7 @@
 
 .check-pkm-button {
     border-radius: 80px;
-    margin:15px 80px;
+    margin: 15px 80px;
     background: rgb(45, 197, 235);
     border: 0;
     transition-duration: .5s;
@@ -161,7 +177,6 @@
 .check-pkm-button:hover {
     background: rgb(255, 107, 188);
     color: white;
-    
 }
 
 .pkm-card-body {
@@ -181,7 +196,7 @@
 }
 
 .flex-pkm-card {
-    padding:5px;
+    padding: 5px;
     margin-top: 50px;
     display: flex;
     flex-flow: row wrap;
@@ -200,7 +215,7 @@
 }
 
 .pkm-card-section {
-    background-image: url("/img/shattered-island.gif");
+    background-image: url("../img/shattered-island.gif");
     background-repeat: repeat;
     padding-top: 60px;
     padding-bottom: 40px;
@@ -208,10 +223,11 @@
 .detail-body{
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
-
 }
+
 .detail-img-back {
-    position: relative;
+    position: absolute;
+    top:0;
 }
 
 .detail-spacer-1 {
@@ -232,20 +248,26 @@
     width: 90%;
 }
 .detail-img-sm {
-    width: 180px;
+    border-radius: 10%;
+    max-width: 250px;
+    width: 100%;
     height: auto;
-    border-radius: 3px;
-    border: .5rem white solid;
 }
-
+.border-me{
+    border: black solid 1px;
+}
 .detail-title {
     background-color: #dc1715;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
     padding-left: 2rem;
     color: white;
+    height: 180px;
+    font-family: 'Titillium Web', serif;
 }
-
+.detail-pokedex-font{
+    font-family: 'Titillium Web', serif;
+}
 
 .detail-font {
     font-family: Arial, Helvetica, sans-serif;
@@ -257,24 +279,25 @@
     background-color: white;
     height: auto;
     margin-bottom: 40px;
-
 }
-.detail-grey{
-    height: 400px;
-    background-color: #dedede;
+.detail-pkm-card-section {
+    background-image: url("/img/shattered-island.gif");
+    background-repeat: repeat;
+    padding-top: 60px;
+    padding-bottom: 40px;
     text-align: center;
-    padding-top: 80px;
+    color: white;
 }
 .detail-form{
     background-color: #dc1715;
     color: white;
     padding: 1rem 3rem;
     font-weight: bold; 
-    font-family: 'verdana', 'Lucida Sans typewriter', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family: 'Titillium Web', serif;
 }
 
 .detail-form h2{
-    font-family: Arial, Helvetica, sans-serif;
+    font-family:  'Titillium Web', serif;
 }
 .detail-form input{
     max-width: 75%;
@@ -314,7 +337,7 @@
 
 }
 .detail-tight{
-    max-width: 700px;
+    max-width: 880px;
     display: flex;
     align-items: center;
     margin: 0 auto;
