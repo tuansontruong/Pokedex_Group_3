@@ -1,3 +1,7 @@
+.container {
+    overflow: visible;
+}
+
 .pkm-name {
     font-family: 'Titillium Web', serif;
     font-size: 35px;
@@ -33,7 +37,7 @@
 }
 
 .pkm-card:hover {
-    filter: drop-shadow(0px 0px 15px cyan);
+    /* filter: drop-shadow(0px 0px 15px cyan); */
     transition-duration: 0.7s;
 }
 
@@ -342,6 +346,76 @@
     align-items: center;
     margin: 0 auto;
 }
+
+@keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-webkit-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-moz-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  @-o-keyframes load{
+    from {
+      width: 0%
+    }
+  }
+  /* POKEMON STAT BARS */
+  .bar{
+    background-color: #EEE;
+    padding: 2px;
+    border-radius: 15px;
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #FFF;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+  }
+  .bar::before{
+    content:  attr(data-skill);
+    background-color: #ff5f2b;
+    display: inline-block;
+    padding: 3px 0 3px 10px;
+    border-radius: inherit;
+    animation: load 2s 0s;
+    -webkit-animation: load 2s 0s;
+    -moz-animation: load 2s 0s;
+    -o-animation: load 2s 0s;
+  }
+  
+  .bar.yellow::before{
+    background-color: #ffc72c;
+  }
+  .bar.blue::before{
+    background-color: #38b7ff;
+  }
+  .bar.black::before{
+    background-color: rgb(66, 66, 66);
+  }
+  
+  .bar.learning::before{
+    width: calc(20% - 10px);
+  }
+  .bar.basic::before{
+    width: calc(40% - 10px);
+  }
+  .bar.intermediate::before{
+    width: calc(60% - 10px);
+  }
+  .bar.advanced::before{
+    width: calc(80% - 10px);
+  }
+  .bar.expert::before{
+    width: calc(100% - 10px);
+  }
+  
 
 footer {
     /* background-color: black; */
