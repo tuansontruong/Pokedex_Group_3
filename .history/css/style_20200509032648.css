@@ -659,7 +659,7 @@ a {
     border-radius: 19px;
     position: relative;
     text-align: center;
-    box-shadow: -1px 15px 30px -12px wheat;
+    box-shadow: -1px 15px 10px -12px wheat;
     z-index: 9999;
     font: 14px/20px 'Titillium Web', serif;
     color: #9E9E9E;

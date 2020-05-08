@@ -653,7 +653,7 @@ a {
 
 .pokemon-card {
     background: white;
-    width: 250px;
+    width: 300px;
     display: inline-block;
     margin: auto;
     border-radius: 19px;
@@ -661,7 +661,7 @@ a {
     text-align: center;
     box-shadow: -1px 15px 30px -12px wheat;
     z-index: 9999;
-    font: 14px/20px 'Titillium Web', serif;
+    font: 14px/20px "Lato", Arial, sans-serif;
     color: #9E9E9E;
 }
 
@@ -690,30 +690,30 @@ a {
 }
 
 .pokemon-card__image--pikachu img {
-    width: 250px;
+    width: 300px;
     position: absolute;
-    top: 0px;
+    top: -65px;
     left: 23px;
 }
 
 .pokemon-card__image--caterpie img {
-    width: 250px;
+    width: 300px;
     position: absolute;
-    top: 0px;
+    top: -65px;
     left: 23px;
 }
 
 .pokemon-card__image--squirtle img {
-    width: 250px;
+    width: 300px;
     position: absolute;
-    top: 0px;
+    top: -65px;
     left: 23px;
 }
 
 .pokemon-card__image--charmander img {
-    width: 250px;
+    width: 300px;
     position: absolute;
-    top: 0px;
+    top: -65px;
     left: 23px;
 }
 
@@ -733,11 +733,11 @@ a {
 }
 
 .pokemon-card__level--squirtle {
-    color: #659db0;
+    color: #8ec5d3;
 }
 
 .pokemon-card__level--charmander {
-    color: #e3723e;
+    color: #eaab7d;
 }
 
 .pokemon-card__unit-name {
@@ -761,11 +761,11 @@ a {
 }
 
 .pokemon-card__unit-stats--squirtle {
-    background: #659db0;
+    background: #8ec5d3;
 }
 
 .pokemon-card__unit-stats--charmander {
-    background: #e3723e;
+    background: #eaab7d;
 }
 
 

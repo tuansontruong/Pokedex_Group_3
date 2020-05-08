@@ -640,32 +640,19 @@ a {
 
 /* =======SEAN======= */
 
-.shrink {
-    transition: 1s ease;
-}
-
-.shrink:hover {
-    -webkit-transform: scale(0.8);
-    -ms-transform: scale(0.8);
-    transform: scale(0.8);
-    transition: 1s ease;
-}
-
-.pokemon-card {
+.clash-card {
     background: white;
-    width: 250px;
+    width: 300px;
     display: inline-block;
     margin: auto;
     border-radius: 19px;
     position: relative;
     text-align: center;
-    box-shadow: -1px 15px 30px -12px wheat;
+    box-shadow: -1px 15px 30px -12px black;
     z-index: 9999;
-    font: 14px/20px 'Titillium Web', serif;
-    color: #9E9E9E;
 }
 
-.pokemon-card__image {
+.clash-card__image {
     position: relative;
     height: 230px;
     margin-bottom: 35px;
@@ -673,139 +660,173 @@ a {
     border-top-right-radius: 14px;
 }
 
-.pokemon-card__image--pikachu {
-    background: url('../detail-img/slide_show/pikachu_bg.jpg');
+.clash-card__image--barbarian {
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/barbarian-bg.jpg');
 }
 
-.pokemon-card__image--caterpie {
-    background: url('../detail-img/slide_show/caterpie-bg.jpg');
-}
-
-.pokemon-card__image--squirtle {
-    background: url('../detail-img/slide_show/squirtle_bg.jpg');
-}
-
-.pokemon-card__image--charmander {
-    background: url('../detail-img/slide_show/charmander_bg.jpg');
-}
-
-.pokemon-card__image--pikachu img {
-    width: 250px;
+.clash-card__image--barbarian img {
+    width: 400px;
     position: absolute;
-    top: 0px;
-    left: 23px;
+    top: -65px;
+    left: -70px;
 }
 
-.pokemon-card__image--caterpie img {
-    width: 250px;
+.clash-card__image--archer {
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/archer-bg.jpg');
+}
+
+.clash-card__image--archer img {
+    width: 400px;
     position: absolute;
-    top: 0px;
-    left: 23px;
+    top: -34px;
+    left: -37px;
 }
 
-.pokemon-card__image--squirtle img {
-    width: 250px;
+.clash-card__image--giant {
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/giant-bg.jpg');
+}
+
+.clash-card__image--giant img {
+    width: 340px;
     position: absolute;
-    top: 0px;
-    left: 23px;
+    top: -30px;
+    left: -25px;
 }
 
-.pokemon-card__image--charmander img {
-    width: 250px;
+.clash-card__image--goblin {
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/goblin-bg.jpg');
+}
+
+.clash-card__image--goblin img {
+    width: 370px;
     position: absolute;
-    top: 0px;
-    left: 23px;
+    top: -21px;
+    left: -37px;
 }
 
-.pokemon-card__level {
+.clash-card__image--wizard {
+    background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/195612/wizard-bg.jpg');
+}
+
+.clash-card__image--wizard img {
+    width: 345px;
+    position: absolute;
+    top: -28px;
+    left: -10px;
+}
+
+.clash-card__level {
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 700;
     margin-bottom: 3px;
 }
 
-.pokemon-card__level--pikachu {
-    color: #facd37;
+.clash-card__level--barbarian {
+    color: #ec9b3b;
 }
 
-.pokemon-card__level--caterpie {
-    color: #87c876;
+.clash-card__level--archer {
+    color: #ee5487;
 }
 
-.pokemon-card__level--squirtle {
-    color: #659db0;
+.clash-card__level--giant {
+    color: #f6901a;
 }
 
-.pokemon-card__level--charmander {
-    color: #e3723e;
+.clash-card__level--goblin {
+    color: #82bb30;
 }
 
-.pokemon-card__unit-name {
+.clash-card__level--wizard {
+    color: #4facff;
+}
+
+.clash-card__unit-name {
     font-size: 26px;
     color: black;
     font-weight: 900;
     margin-bottom: 5px;
 }
 
-.pokemon-card__unit-description {
+.clash-card__unit-description {
     padding: 20px;
     margin-bottom: 10px;
 }
 
-.pokemon-card__unit-stats--pikachu {
-    background: #facd37;
+.clash-card__unit-stats--barbarian {
+    background: #ec9b3b;
 }
 
-.pokemon-card__unit-stats--caterpie {
-    background: #87c876;
+.clash-card__unit-stats--barbarian .one-third {
+    border-right: 1px solid #bd7c2f;
 }
 
-.pokemon-card__unit-stats--squirtle {
-    background: #659db0;
+.clash-card__unit-stats--archer {
+    background: #ee5487;
 }
 
-.pokemon-card__unit-stats--charmander {
-    background: #e3723e;
+.clash-card__unit-stats--archer .one-third {
+    border-right: 1px solid #d04976;
 }
 
+.clash-card__unit-stats--giant {
+    background: #f6901a;
+}
 
-/* .pokemon-card__unit-stats--caterpie .one-third {
-    border-right: 1px solid #87c876;
-} */
+.clash-card__unit-stats--giant .one-third {
+    border-right: 1px solid #de7b09;
+}
 
-.pokemon-card__unit-stats {
+.clash-card__unit-stats--goblin {
+    background: #82bb30;
+}
+
+.clash-card__unit-stats--goblin .one-third {
+    border-right: 1px solid #71a32a;
+}
+
+.clash-card__unit-stats--wizard {
+    background: #4facff;
+}
+
+.clash-card__unit-stats--wizard .one-third {
+    border-right: 1px solid #309eff;
+}
+
+.clash-card__unit-stats {
     color: white;
     font-weight: 700;
     border-bottom-left-radius: 14px;
     border-bottom-right-radius: 14px;
 }
 
-.pokemon-card__unit-stats .one-third {
+.clash-card__unit-stats .one-third {
     width: 33%;
     float: left;
     padding: 20px 15px;
 }
 
-.pokemon-card__unit-stats sup {
+.clash-card__unit-stats sup {
     position: absolute;
     bottom: 4px;
     font-size: 45%;
     margin-left: 2px;
 }
 
-.pokemon-card__unit-stats .stat {
+.clash-card__unit-stats .stat {
     position: relative;
     font-size: 24px;
     margin-bottom: 10px;
 }
 
-.pokemon-card__unit-stats .stat-value {
+.clash-card__unit-stats .stat-value {
     text-transform: uppercase;
     font-weight: 400;
     font-size: 12px;
 }
 
-.pokemon-card__unit-stats .no-border {
+.clash-card__unit-stats .no-border {
     border-right: none;
 }
 
@@ -816,6 +837,16 @@ a {
     content: " ";
     clear: both;
     height: 0;
+}
+
+.slick-prev {
+    left: 100px;
+    z-index: 999;
+}
+
+.slick-next {
+    right: 100px;
+    z-index: 999;
 }
 
 

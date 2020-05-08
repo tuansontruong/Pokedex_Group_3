@@ -129,9 +129,15 @@
             </section>
 
             <section class="detail-pkm-card-section">
-                <h1 style="font-family:'Titillium Web', serif;">More To Explore</h1>
                 <!--Carousel Wrapper-->
-                <div id="recommendations" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel">
+                <div id="multi-item-example" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel">
+
+                    <!--Controls-->
+                    <div class="controls-top">
+                        <a class="black-text" href="#multi-item-example" data-slide="prev"><i class="fas fa-angle-left fa-3x pr-3"></i></a>
+                        <a class="black-text" href="#multi-item-example" data-slide="next"><i class="fas fa-angle-right fa-3x pl-3"></i></a>
+                    </div>
+                    <!--/.Controls-->
 
                     <!--Slides-->
                     <div class="carousel-inner" role="listbox">
@@ -139,107 +145,17 @@
                         <!--First slide-->
                         <div class="carousel-item active">
 
-                            <div class="pokemon-card pikachu mx-3 my-3 shrink">
+                            <div class="pokemon-card pikachu mx-5 my-3 shrink">
                                 <div class="pokemon-card__image pokemon-card__image--pikachu">
                                     <img src="https://www.kindpng.com/picc/b/9/96543.png" alt="pikachu" />
                                 </div>
                                 <div class="pokemon-card__level pokemon-card__level--pikachu">Level 4</div>
-                                <div class="pokemon-card__unit-name">Pikachu</div>
+                                <div class="pokemon-card__unit-name">The pikachu</div>
                                 <div class="pokemon-card__unit-description">
                                     Its nature is to store up electricity. Forests where nests of Pikachu live are dangerous, since the trees are so often struck by lightning.
                                 </div>
 
                                 <div class="pokemon-card__unit-stats pokemon-card__unit-stats--pikachu clearfix">
-                                    <div class="one-third">
-                                        <div class="stat">1'04"</div>
-                                        <div class="stat-value">Height</div>
-                                    </div>
-
-                                    <div class="one-third">
-                                        <div class="stat">13.2</div>
-                                        <div class="stat-value">Weight(lbs)</div>
-                                    </div>
-
-                                    <div class="one-third no-border">
-                                        <div class="stat">♂</div>
-                                        <div class="stat-value">Gender</div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="pokemon-card caterpie mx-3 my-3 shrink">
-                                <div class="pokemon-card__image pokemon-card__image--caterpie">
-                                    <img src="img/caterpie.png" alt="caterpie" />
-                                </div>
-                                <div class="pokemon-card__level pokemon-card__level--caterpie">Level 4</div>
-                                <div class="pokemon-card__unit-name">Caterpie</div>
-                                <div class="pokemon-card__unit-description">
-                                    Its nature is to store up electricity. Forests where nests of caterpie live are dangerous, since the trees are so often struck by lightning.
-                                </div>
-
-                                <div class="pokemon-card__unit-stats pokemon-card__unit-stats--caterpie clearfix">
-                                    <div class="one-third">
-                                        <div class="stat">1'04"</div>
-                                        <div class="stat-value">Height</div>
-                                    </div>
-
-                                    <div class="one-third">
-                                        <div class="stat">13.2</div>
-                                        <div class="stat-value">Weight(lbs)</div>
-                                    </div>
-
-                                    <div class="one-third no-border">
-                                        <div class="stat">♂</div>
-                                        <div class="stat-value">Gender</div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="pokemon-card squirtle mx-3 my-3 shrink">
-                                <div class="pokemon-card__image pokemon-card__image--squirtle">
-                                    <img src="img/squirtle.png" alt="squirtle" />
-                                </div>
-                                <div class="pokemon-card__level pokemon-card__level--squirtle">Level 4</div>
-                                <div class="pokemon-card__unit-name">Squirtle</div>
-                                <div class="pokemon-card__unit-description">
-                                    Its nature is to store up electricity. Forests where nests of squirtle live are dangerous, since the trees are so often struck by lightning.
-                                </div>
-
-                                <div class="pokemon-card__unit-stats pokemon-card__unit-stats--squirtle clearfix">
-                                    <div class="one-third">
-                                        <div class="stat">1'04"</div>
-                                        <div class="stat-value">Height</div>
-                                    </div>
-
-                                    <div class="one-third">
-                                        <div class="stat">13.2</div>
-                                        <div class="stat-value">Weight(lbs)</div>
-                                    </div>
-
-                                    <div class="one-third no-border">
-                                        <div class="stat">♂</div>
-                                        <div class="stat-value">Gender</div>
-                                    </div>
-
-                                </div>
-
-                            </div>
-
-                            <div class="pokemon-card charmander mx-3 my-3 shrink">
-                                <div class="pokemon-card__image pokemon-card__image--charmander">
-                                    <img src="img/charmander.png" alt="charmander" />
-                                </div>
-                                <div class="pokemon-card__level pokemon-card__level--charmander">Level 4</div>
-                                <div class="pokemon-card__unit-name">Charmander</div>
-                                <div class="pokemon-card__unit-description">
-                                    Its nature is to store up electricity. Forests where nests of charmander live are dangerous, since the trees are so often struck by lightning.
-                                </div>
-
-                                <div class="pokemon-card__unit-stats pokemon-card__unit-stats--charmander clearfix">
                                     <div class="one-third">
                                         <div class="stat">1'04"</div>
                                         <div class="stat-value">Height</div>
@@ -265,129 +181,33 @@
                         <!--/.First slide-->
 
                         <!--Second slide-->
-                        <div class="carousel-item">
+                        <!-- <div class="carousel-item">
 
-                            <div class="pokemon-card pikachu mx-3 my-3 shrink">
-                                <div class="pokemon-card__image pokemon-card__image--pikachu">
-                                    <img src="https://www.kindpng.com/picc/b/9/96543.png" alt="pikachu" />
+                            <div class="col-md-3 mb-3">
+                                <div class="card">
+                                    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(53).jpg" alt="Card image cap">
                                 </div>
-                                <div class="pokemon-card__level pokemon-card__level--pikachu">Level 4</div>
-                                <div class="pokemon-card__unit-name">Pikachu</div>
-                                <div class="pokemon-card__unit-description">
-                                    Its nature is to store up electricity. Forests where nests of Pikachu live are dangerous, since the trees are so often struck by lightning.
-                                </div>
-
-                                <div class="pokemon-card__unit-stats pokemon-card__unit-stats--pikachu clearfix">
-                                    <div class="one-third">
-                                        <div class="stat">1'04"</div>
-                                        <div class="stat-value">Height</div>
-                                    </div>
-
-                                    <div class="one-third">
-                                        <div class="stat">13.2</div>
-                                        <div class="stat-value">Weight(lbs)</div>
-                                    </div>
-
-                                    <div class="one-third no-border">
-                                        <div class="stat">♂</div>
-                                        <div class="stat-value">Gender</div>
-                                    </div>
-
-                                </div>
-
                             </div>
 
-                            <div class="pokemon-card caterpie mx-3 my-3 shrink">
-                                <div class="pokemon-card__image pokemon-card__image--caterpie">
-                                    <img src="img/caterpie.png" alt="caterpie" />
+                            <div class="col-md-3 mb-3">
+                                <div class="card">
+                                    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(25).jpg" alt="Card image cap">
                                 </div>
-                                <div class="pokemon-card__level pokemon-card__level--caterpie">Level 4</div>
-                                <div class="pokemon-card__unit-name">Caterpie</div>
-                                <div class="pokemon-card__unit-description">
-                                    Its nature is to store up electricity. Forests where nests of caterpie live are dangerous, since the trees are so often struck by lightning.
-                                </div>
-
-                                <div class="pokemon-card__unit-stats pokemon-card__unit-stats--caterpie clearfix">
-                                    <div class="one-third">
-                                        <div class="stat">1'04"</div>
-                                        <div class="stat-value">Height</div>
-                                    </div>
-
-                                    <div class="one-third">
-                                        <div class="stat">13.2</div>
-                                        <div class="stat-value">Weight(lbs)</div>
-                                    </div>
-
-                                    <div class="one-third no-border">
-                                        <div class="stat">♂</div>
-                                        <div class="stat-value">Gender</div>
-                                    </div>
-
-                                </div>
-
                             </div>
 
-                            <div class="pokemon-card squirtle mx-3 my-3 shrink">
-                                <div class="pokemon-card__image pokemon-card__image--squirtle">
-                                    <img src="img/squirtle.png" alt="squirtle" />
+                            <div class="col-md-3 mb-3">
+                                <div class="card">
+                                    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(47).jpg" alt="Card image cap">
                                 </div>
-                                <div class="pokemon-card__level pokemon-card__level--squirtle">Level 4</div>
-                                <div class="pokemon-card__unit-name">Squirtle</div>
-                                <div class="pokemon-card__unit-description">
-                                    Its nature is to store up electricity. Forests where nests of squirtle live are dangerous, since the trees are so often struck by lightning.
-                                </div>
-
-                                <div class="pokemon-card__unit-stats pokemon-card__unit-stats--squirtle clearfix">
-                                    <div class="one-third">
-                                        <div class="stat">1'04"</div>
-                                        <div class="stat-value">Height</div>
-                                    </div>
-
-                                    <div class="one-third">
-                                        <div class="stat">13.2</div>
-                                        <div class="stat-value">Weight(lbs)</div>
-                                    </div>
-
-                                    <div class="one-third no-border">
-                                        <div class="stat">♂</div>
-                                        <div class="stat-value">Gender</div>
-                                    </div>
-
-                                </div>
-
                             </div>
 
-                            <div class="pokemon-card charmander mx-3 my-3 shrink">
-                                <div class="pokemon-card__image pokemon-card__image--charmander">
-                                    <img src="img/charmander.png" alt="charmander" />
+                            <div class="col-md-3 mb-3">
+                                <div class="card">
+                                    <img class="img-fluid" src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(26).jpg" alt="Card image cap">
                                 </div>
-                                <div class="pokemon-card__level pokemon-card__level--charmander">Level 4</div>
-                                <div class="pokemon-card__unit-name">Charmander</div>
-                                <div class="pokemon-card__unit-description">
-                                    Its nature is to store up electricity. Forests where nests of charmander live are dangerous, since the trees are so often struck by lightning.
-                                </div>
-
-                                <div class="pokemon-card__unit-stats pokemon-card__unit-stats--charmander clearfix">
-                                    <div class="one-third">
-                                        <div class="stat">1'04"</div>
-                                        <div class="stat-value">Height</div>
-                                    </div>
-
-                                    <div class="one-third">
-                                        <div class="stat">13.2</div>
-                                        <div class="stat-value">Weight(lbs)</div>
-                                    </div>
-
-                                    <div class="one-third no-border">
-                                        <div class="stat">♂</div>
-                                        <div class="stat-value">Gender</div>
-                                    </div>
-
-                                </div>
-
                             </div>
 
-                        </div>
+                        </div> -->
                         <!--/.Second slide-->
 
                         <!--Third slide-->
@@ -419,14 +239,7 @@
 
                         </div> -->
                         <!--/.Third slide-->
-                        <a href="#recommendations" class="carousel-control-prev" role="button" data-slide="prev">
-                            <span class="carousel-control-prev-icon"></span>
-                            <span class="sr-only">Previous</span>
-                        </a>
-                        <a href="#recommendations" class="carousel-control-next" role="button" data-slide="next">
-                            <span class="carousel-control-next-icon"></span>
-                            <span class="sr-only">Next</span>
-                        </a>
+
                     </div>
                     <!--/.Slides-->
 
