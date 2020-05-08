@@ -1,3 +1,7 @@
+.container {
+    overflow: visible;
+}
+
 .pkm-name {
     font-family: 'Titillium Web', serif;
     font-size: 35px;
@@ -33,7 +37,7 @@
 }
 
 .pkm-card:hover {
-    filter: drop-shadow(0px 0px 15px cyan);
+    /* filter: drop-shadow(0px 0px 15px cyan); */
     transition-duration: 0.7s;
 }
 
