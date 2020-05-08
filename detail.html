@@ -16,7 +16,7 @@
 </head>
 
 <body class="detail-body">
-    <div class="navBanner">
+    <div class="">
 
         <nav class="detail-nav navbar sticky-top navbar-expand-lg navbar-light" style="
     background-color: rgba(0, 0, 0, 0.6); width: 100%;">
@@ -60,8 +60,11 @@
                         </div>
                         <div class="col-6 align-self-center">
                             <br>
+                            <!--NAME-->
                             <h1 class="detail-pokedex-font">Pikachu</h1>
-                            <h3 class="detail-pokedex-font">Pokemon Type</h3>
+                            <!--TYPE-->
+                            <p class="pkm-type">Type: <span
+                                    class="electric-type badge badge-pill badge-secondary">Electric</span></p>
                         </div>
                         <div class="col-3 mx-auto">
                             <img class="mx-auto" src="img/pikachu.png" alt="Pikachu">
@@ -70,93 +73,84 @@
                     </div>
                 </div>
             </section>
-        
-        <section class="container detail-main">
-            <div class="detail-font row justify-content-between">
-                <div class="col-8">
-                    <h2 class="container">Abilities</h2>
-                    <p class="container">
-                        Several Bootstrap components utilize z-index, the CSS property that helps control layout by
-                        providing a
-                        third
-                        axis to arrange content. We utilize a default z-index scale in Bootstrap that’s been designed to
-                        properly
-                        layer
-                        navigation, tooltips and popovers, modals, and more.
 
-                        These higher values start at an arbitrary number, high and specific enough to ideally avoid
-                        conflicts.
-                        We
-                        need a
-                        standard set of these across our layered components—tooltips, popovers, navbars, dropdowns,
-                        modals—so we
-                        can
-                        be
-                        reasonably consistent in the behaviors. There’s no reason we couldn’t have used 100+ or 500+.
+            <section class="container detail-main">
+                <div class="detail-font row justify-content-between">
+                    <div class="col-8">
+                        <div class="container">
+                            <!--STATS-->
+                            <h1>Stats</h1>
+                            <div class="bar black learning" data-skill="HP"></div>
+                            <div class="bar basic" data-skill="Attack"></div>
+                            <div class="bar blue intermediate" data-skill="Defense"></div>
+                            <div class="bar advanced" data-skill="Sp Attack"></div>
+                            <div class="bar blue expert" data-skill="Sp Defense"></div>
+                            <div class="bar yellow expert" data-skill="Speed"></div>
+                            <div class="bar black basic" data-skill="Total"></div>
+                        </div>
+                        <br>
+                        <div class="container">
+                            <!--PROFILE-->
+                            <h1>Profile</h1>
+                            <section class="row">
+                                <div class="col-4"><b>Height:</b>
+                                    0.4 m</div>
+                                <div class="col-4"><b>Weight:</b>
+                                    6 kg
+                                </div>
+                                <div class="col-4"><b>Catch Rate:</b>
+                                    0%
+                                </div>
+                                <br>
+                                <div class="w-100"></div>
+                                <br>
+                                <div class="col-4"><b>Gender Ratio:</b>
+                                    50% ♂ 50% ♀
+                                </div>
+                                <div class="col-4"><b>Egg Groups:</b>
+                                    Field, Fairy
+                                </div>
+                                <div class="col-4"><b>Abilities:</b>
+                                    Static, Lightningrod
+                                </div>
 
-                        We don’t encourage customization of these individual values; should you change one, you likely
-                        need
-                        to
-                        change
-                        them all.
-                    </p>
-                    <hr>
-                    <div class="container">
-                        <h2>Photo Gallery</h2>
-                        <img src="/detail-img/pikachu-sq.jpg" class="rounded float-left" alt="...">
-                        <img src="/detail-img/pikachu-sq.jpg" class="rounded float-right" alt="...">
+                            </section>
+                        </div>
+                        <hr>
+                        <div class="container">
+                            <!--PHOTO GALLERY-->
+                            <h1>Photo Gallery</h1>
+                            <div class="row">
+                                <img src="/detail-img/pikachu-sq.jpg" class="rounded col-4 img-responsive" alt="...">
+                                <img src="/detail-img/pikachu-sq.jpg" class="rounded col-4 img-fluid" alt="...">
+                                <img src="/detail-img/pikachu-sq.jpg" class="rounded col-4" alt="...">
+                            </div>
+                        </div>
+
                     </div>
-
+                    <hr>
+                    <div class="col-4">
+                        <div class="d-flex justify-content-center">
+                            <h1>About</h1>
+                        </div>
+                        <p>text here</p>
+                    </div>
                 </div>
                 <hr>
-                <div class="col-4">
-                    <div class="d-flex justify-content-center">
-                        <h1>Stuff</h1>
-                    </div>
-                    <br>
-                    <h3>map</h3>
-                    <p>blah</p>
-                    <hr>
-                    <h3>more ideas</h3>
-                    <p>text here</p>
-                </div>
-            </div>
-            <hr>
-            <h2 class="container">Abilities</h2>
-            <p class="container">
-                Several Bootstrap components utilize z-index, the CSS property that helps control layout by
-                providing a
-                third
-                axis to arrange content. We utilize a default z-index scale in Bootstrap that’s been designed to
-                properly
-                layer
-                navigation, tooltips and popovers, modals, and more.
+                <!--EVOLUTIONS-->
+                <h1 class="container">Evolutions</h1>
+                <p class="container">
+                    Evolution Images Here
+                </p>
+            </section>
 
-                These higher values start at an arbitrary number, high and specific enough to ideally avoid
-                conflicts.
-                We
-                need a
-                standard set of these across our layered components—tooltips, popovers, navbars, dropdowns,
-                modals—so we
-                can
-                be
-                reasonably consistent in the behaviors. There’s no reason we couldn’t have used 100+ or 500+.
-
-                We don’t encourage customization of these individual values; should you change one, you likely
-                need
-                to
-                change
-                them all.
-            </p>
-        </section>
-
-        <section class="detail-pkm-card-section">
-            <h1>Some More Stuff</h1>
-            <p>blah blah</p>
+            <section class="detail-pkm-card-section">
+                <h1>Some More Stuff</h1>
+                <p>blah blah</p>
 
 
-        </section>
-    </div>
+            </section>
+        </div>
     </div>
     <section class="detail-form">
         <form class="row detail-tight justify-content-between">
