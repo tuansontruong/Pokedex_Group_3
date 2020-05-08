@@ -138,6 +138,22 @@
     box-shadow: 1px 1px #848484;
 }
 
+.water-type {
+    background-color: #4592c4;
+    color: white;
+    padding-bottom: 5px;
+    text-shadow: 1px 1px gray;
+    box-shadow: 1px 1px #848484;
+}
+
+.electric-type {
+    background-color: #eed535;
+    color: white;
+    padding-bottom: 5px;
+    text-shadow: 1px 1px gray;
+    box-shadow: 1px 1px #848484;
+}
+
 .rounded-pkm-body {
     border-radius: 20px;
     padding: 15px;
@@ -199,7 +215,7 @@
 }
 
 .pkm-card-section {
-    background-image: url("/img/shattered-island.gif");
+    background-image: url("../img/shattered-island.gif");
     background-repeat: repeat;
     padding-top: 60px;
     padding-bottom: 40px;
