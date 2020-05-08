@@ -400,19 +400,19 @@
     background-color: rgb(66, 66, 66);
   }
   
-  .bar.learning::before{
-    width: calc(20% - 10px);
+  .bar.lvl1::before{
+    width: calc(30% - 10px);
   }
-  .bar.basic::before{
+  .bar.lvl2::before{
     width: calc(40% - 10px);
   }
-  .bar.intermediate::before{
+  .bar.lvl3::before{
     width: calc(60% - 10px);
   }
-  .bar.advanced::before{
+  .bar.lvl4::before{
     width: calc(80% - 10px);
   }
-  .bar.expert::before{
+  .bar.lvl5::before{
     width: calc(100% - 10px);
   }
   
