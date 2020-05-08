@@ -36,7 +36,7 @@
     transition-duration: 0.7s;
 }
 
-.pkm-card:hover > .pkm-img-container > .pkm-img {
+.pkm-card:hover>.pkm-img-container>.pkm-img {
     left: -202px;
     height: 170px;
     width: auto;
@@ -49,6 +49,7 @@
     width: auto;
     transition-duration: 0.7s;
 }
+
 
 /* .pkm-img:hover {
     left: -202px;
@@ -222,24 +223,26 @@
 }
 
 .pkm-card-section {
-    /* background-image: url("../img/shattered-island.gif"); */
+    background-image: url("../img/shattered-island.gif");
     background-repeat: repeat;
     padding-top: 60px;
     padding-bottom: 40px;
 }
-.detail-body{
+
+.detail-body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
 }
 
 .detail-img-back {
     position: absolute;
-    top:0;
+    top: 0;
 }
 
 .detail-spacer-1 {
     height: 200px;
 }
+
 .detail-spacer-2 {
     height: 100px;
 }
@@ -248,21 +251,26 @@
     background: rgb(2, 0, 36);
     background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(1, 0, 19, 1) 72%, rgba(0, 0, 0, 0) 100%);
 }
+
 .detail-header {
     height: 150px;
 }
-.detail-pokedex{
+
+.detail-pokedex {
     width: 90%;
 }
+
 .detail-img-sm {
     border-radius: 10%;
     max-width: 250px;
     width: 100%;
     height: auto;
 }
-.border-me{
+
+.border-me {
     border: black solid 1px;
 }
+
 .detail-title {
     background-color: #dc1715;
     border-top-left-radius: 2rem;
@@ -272,7 +280,8 @@
     height: 180px;
     font-family: 'Titillium Web', serif;
 }
-.detail-pokedex-font{
+
+.detail-pokedex-font {
     font-family: 'Titillium Web', serif;
 }
 
@@ -287,6 +296,7 @@
     height: auto;
     margin-bottom: 40px;
 }
+
 .detail-pkm-card-section {
     background-image: url("/img/shattered-island.gif");
     background-repeat: repeat;
@@ -295,83 +305,94 @@
     text-align: center;
     color: white;
 }
-.detail-form{
+
+.detail-form {
     background-color: #dc1715;
     color: white;
     padding: 1rem 3rem;
-    font-weight: bold; 
+    font-weight: bold;
     font-family: 'Titillium Web', serif;
 }
 
-.detail-form h2{
-    font-family:  'Titillium Web', serif;
+.detail-form h2 {
+    font-family: 'Titillium Web', serif;
 }
-.detail-form input{
+
+.detail-form input {
     max-width: 75%;
     border-style: none;
-    background-color: rgb(85,164,99);
+    background-color: rgb(85, 164, 99);
     color: black;
     padding: 15px;
-    border: solid rgb(0,0,0,0) 3px;
+    border: solid rgb(0, 0, 0, 0) 3px;
     transition-duration: .3s;
     font-weight: bold;
 }
-.detail-form input:focus{
+
+.detail-form input:focus {
     max-width: 75%;
     border-style: none;
-    background-color: rgb(115,204,129);
+    background-color: rgb(115, 204, 129);
     color: black;
     padding: 15px;
-    border: solid rgb(115,204,129, 0.5) 3px;
+    border: solid rgb(115, 204, 129, 0.5) 3px;
     transition-duration: .3s;
     font-weight: bold;
 }
-.detail-form input:hover{
+
+.detail-form input:hover {
     max-width: 75%;
     border-style: none;
-    background-color: rgb(115,204,129);
+    background-color: rgb(115, 204, 129);
     color: black;
     padding: 15px;
-    border: solid rgb(115,204,129, 0.5) 3px;
+    border: solid rgb(115, 204, 129, 0.5) 3px;
     transition-duration: .3s;
     font-weight: bold;
 }
-.detail-btn{
+
+.detail-btn {
     background-color: black;
     color: white;
     border: none;
     font-weight: bold;
-
 }
-.detail-tight{
+
+.detail-tight {
     max-width: 880px;
     display: flex;
     align-items: center;
     margin: 0 auto;
 }
 
-@keyframes load{
+@keyframes load {
     from {
-      width: 0%
+        width: 0%
     }
-  }
-  @-webkit-keyframes load{
+}
+
+@-webkit-keyframes load {
     from {
-      width: 0%
+        width: 0%
     }
-  }
-  @-moz-keyframes load{
+}
+
+@-moz-keyframes load {
     from {
-      width: 0%
+        width: 0%
     }
-  }
-  @-o-keyframes load{
+}
+
+@-o-keyframes load {
     from {
-      width: 0%
+        width: 0%
     }
-  }
-  /* POKEMON STAT BARS */
-  .bar{
+}
+
+
+/* POKEMON STAT BARS */
+
+.bar {
     background-color: #EEE;
     padding: 2px;
     border-radius: 15px;
@@ -379,10 +400,11 @@
     font-size: 12px;
     color: #FFF;
     font-weight: bold;
-    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
-  }
-  .bar::before{
-    content:  attr(data-skill);
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.bar::before {
+    content: attr(data-skill);
     background-color: #ff5f2b;
     display: inline-block;
     padding: 3px 0 3px 10px;
@@ -391,34 +413,39 @@
     -webkit-animation: load 2s 0s;
     -moz-animation: load 2s 0s;
     -o-animation: load 2s 0s;
-  }
-  
-  .bar.yellow::before{
+}
+
+.bar.yellow::before {
     background-color: #ffc72c;
-  }
-  .bar.blue::before{
+}
+
+.bar.blue::before {
     background-color: #38b7ff;
-  }
-  .bar.black::before{
+}
+
+.bar.black::before {
     background-color: rgb(66, 66, 66);
-  }
-  
-  .bar.lvl1::before{
+}
+
+.bar.lvl1::before {
     width: calc(30% - 10px);
-  }
-  .bar.lvl2::before{
+}
+
+.bar.lvl2::before {
     width: calc(40% - 10px);
-  }
-  .bar.lvl3::before{
+}
+
+.bar.lvl3::before {
     width: calc(60% - 10px);
-  }
-  .bar.lvl4::before{
+}
+
+.bar.lvl4::before {
     width: calc(80% - 10px);
-  }
-  .bar.lvl5::before{
+}
+
+.bar.lvl5::before {
     width: calc(100% - 10px);
-  }
-  
+}
 
 footer {
     /* background-color: black; */
@@ -436,13 +463,27 @@ a {
     color: lightgray;
 }
 
+
 /* NAV + BANNER */
 
-.section-bubble, .section-bubble1, .section-bubble2, .section-bubble3, .section-bubble4, .section-bubble_type-a, .section-bubble_type-b {
+.section-bubble,
+.section-bubble1,
+.section-bubble2,
+.section-bubble3,
+.section-bubble4,
+.section-bubble_type-a,
+.section-bubble_type-b {
     margin-bottom: 20vw;
     position: relative;
-  }
-  .section-bubble:after, .section-bubble1:after, .section-bubble2:after, .section-bubble3:after, .section-bubble4:after, .section-bubble_type-a:after, .section-bubble_type-b:after {
+}
+
+.section-bubble:after,
+.section-bubble1:after,
+.section-bubble2:after,
+.section-bubble3:after,
+.section-bubble4:after,
+.section-bubble_type-a:after,
+.section-bubble_type-b:after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -451,58 +492,63 @@ a {
     background: url("") green;
     background-size: 100%;
     transform: translate(0, 100%);
-  }
-  
-  .section-bubble1 {
+}
+
+.section-bubble1 {
     background-color: #ffffff;
-  }
-  .section-bubble1:after {
+}
+
+.section-bubble1:after {
     background-color: #ffd2b0;
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='%23ffffff' viewBox='0 0 1185 248'><circle cx='76' cy='121.1' r='20' class='a'/><circle cx='870' cy='201.1' r='11' class='a'/><circle cx='814.5' cy='165.6' r='24.5' class='a'/><path d='M0 0v17.7c22.7 14.8 53 31.9 90.7 51.5 150.8 78 322 116.6 424.8 69.3 102.9-47.4 138-69.3 210.8-69.3s118.3 48.6 219.5 38.3 76.3-59.3 188.7-59.3c18.9 0 35.5 2.6 50.5 6.8V0H0z' class='a'/></svg>");
-  }
-  
-  .section-bubble2 {
+}
+
+.section-bubble2 {
     background-color: #ffd2b0;
-  }
-  .section-bubble2:after {
+}
+
+.section-bubble2:after {
     background-color: #384364;
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1185 248'><path d='M50.5 199.8c112.4 0 87.5-49 188.7-59.3s146.7 38.3 219.5 38.3 107.9-21.9 210.8-69.3c102.8-47.3 274-8.7 424.8 69.3 37.7 19.5 68 36.7 90.7 51.5V0H0v193C15 197.2 31.6 199.8 50.5 199.8zM1109 106.9c11 0 20 9 20 20 0 11-9 20-20 20s-20-9-20-20C1089 115.9 1098 106.9 1109 106.9zM370.5 57.9c13.5 0 24.5 11 24.5 24.5 0 13.5-11 24.5-24.5 24.5S346 95.9 346 82.4C346 68.9 357 57.9 370.5 57.9zM315 35.9c6.1 0 11 4.9 11 11s-4.9 11-11 11 -11-4.9-11-11S308.9 35.9 315 35.9z' fill='%23ffd2b0'/></svg>");
-  }
-  
-  .section-bubble3 {
+}
+
+.section-bubble3 {
     background-color: #384364;
-  }
-  .section-bubble3:after {
+}
+
+.section-bubble3:after {
     background-color: #cccccc;
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='%23384364' viewBox='0 0 1185 248'><circle cx='76' cy='121.1' r='20' class='a'/><circle cx='870' cy='201.1' r='11' class='a'/><circle cx='814.5' cy='165.6' r='24.5' class='a'/><path d='M0 0v17.7c22.7 14.8 53 31.9 90.7 51.5 150.8 78 322 116.6 424.8 69.3 102.9-47.4 138-69.3 210.8-69.3s118.3 48.6 219.5 38.3 76.3-59.3 188.7-59.3c18.9 0 35.5 2.6 50.5 6.8V0H0z' class='a'/></svg>");
-  }
-  .section-bubble3 h1 {
+}
+
+.section-bubble3 h1 {
     color: white;
-  }
-  .section-bubble3 p {
+}
+
+.section-bubble3 p {
     color: white;
     opacity: 0.8;
-  }
-  
-  .section-bubble4 {
+}
+
+.section-bubble4 {
     background-color: #cccccc;
-  }
-  .section-bubble4:after {
+}
+
+.section-bubble4:after {
     background-color: #333333;
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1185 248'><path d='M50.5 199.8c112.4 0 87.5-49 188.7-59.3s146.7 38.3 219.5 38.3 107.9-21.9 210.8-69.3c102.8-47.3 274-8.7 424.8 69.3 37.7 19.5 68 36.7 90.7 51.5V0H0v193C15 197.2 31.6 199.8 50.5 199.8zM1109 106.9c11 0 20 9 20 20 0 11-9 20-20 20s-20-9-20-20C1089 115.9 1098 106.9 1109 106.9zM370.5 57.9c13.5 0 24.5 11 24.5 24.5 0 13.5-11 24.5-24.5 24.5S346 95.9 346 82.4C346 68.9 357 57.9 370.5 57.9zM315 35.9c6.1 0 11 4.9 11 11s-4.9 11-11 11 -11-4.9-11-11S308.9 35.9 315 35.9z' fill='%23cccccc'/></svg>");
-  }
-  
-  .section-bubble5 {
+}
+
+.section-bubble5 {
     background: #333333;
     color: white;
     text-align: center;
-  }
-  
-  .section-bubble_type-a:after {
+}
+
+.section-bubble_type-a:after {
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 1185 248'><circle cx='76' cy='121.1' r='20' class='a'/><circle cx='870' cy='201.1' r='11' class='a'/><circle cx='814.5' cy='165.6' r='24.5' class='a'/><path d='M0 0v17.7c22.7 14.8 53 31.9 90.7 51.5 150.8 78 322 116.6 424.8 69.3 102.9-47.4 138-69.3 210.8-69.3s118.3 48.6 219.5 38.3 76.3-59.3 188.7-59.3c18.9 0 35.5 2.6 50.5 6.8V0H0z' class='a'/></svg>");
-  }
-  
-  .section-bubble_type-b:after {
+}
+
+.section-bubble_type-b:after {
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1185 248'><path d='M50.5 199.8c112.4 0 87.5-49 188.7-59.3s146.7 38.3 219.5 38.3 107.9-21.9 210.8-69.3c102.8-47.3 274-8.7 424.8 69.3 37.7 19.5 68 36.7 90.7 51.5V0H0v193C15 197.2 31.6 199.8 50.5 199.8zM1109 106.9c11 0 20 9 20 20 0 11-9 20-20 20s-20-9-20-20C1089 115.9 1098 106.9 1109 106.9zM370.5 57.9c13.5 0 24.5 11 24.5 24.5 0 13.5-11 24.5-24.5 24.5S346 95.9 346 82.4C346 68.9 357 57.9 370.5 57.9zM315 35.9c6.1 0 11 4.9 11 11s-4.9 11-11 11 -11-4.9-11-11S308.9 35.9 315 35.9z' fill='red'/></svg>");
-  }
- 
+}
