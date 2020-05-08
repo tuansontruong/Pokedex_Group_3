@@ -199,7 +199,7 @@
 }
 
 .pkm-card-section {
-    background-image: url("/img/shattered-island.gif");
+    background-image: url("img/shattered-island.gif");
     background-repeat: repeat;
     padding-top: 60px;
     padding-bottom: 40px;
