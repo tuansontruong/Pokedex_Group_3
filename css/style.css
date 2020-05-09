@@ -316,10 +316,73 @@
     }
 }
 
+.filler-wrapper-1 {
+    /* background-image: url('../img/battl4.png');
+    background-position: center;
+    background-repeat: no-repeat; */
+    min-height: 600px;
+}
+
+.top-stack {
+    pointer-events: none;
+    position: absolute;
+    z-index: 1;
+    margin: auto;
+    left: 0;
+    right: 0;
+}
+
+.pokemon-carousel-box {
+    height: 500px;
+}
+
+.bottom-stack {
+    position: absolute;
+}
+
 .filler-section-1 {
     background-color: #fee8b7;
     min-height: 600px;
 }
+
+.carousel-wrapper {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-wrapper-rel {
+    position: relative;
+}
+
+#home-carousel .carousel-item {
+    height: 500px;
+    background-color: #fee8b7;
+  }
+
+.bg-carousel {
+    background-color: #fee8b7;
+    min-height: 600px;
+}
+
+#home-carousel{
+    position: relative;
+    top: 0;
+}
+
+.battle-background {
+    /* background-position: center; */
+    background-position: top center;
+    background-size: cover;
+    position: absolute;
+    bottom:0;
+    top: 0;
+    left: 0;
+    right:0;
+    width: 100%;
+    height: auto;  
+}
+
 
 /* ======END-VINH==== */
 
