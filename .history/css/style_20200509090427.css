@@ -981,15 +981,29 @@ a {
 }
 
 
+/* Demo Styles */
+
+#content {
+    margin: 0 auto;
+    padding-bottom: 50px;
+    width: 80%;
+    max-width: 978px;
+}
+
+h1 {
+    font-size: 40px;
+}
+
+
 /* The Loader */
 
 #loader-wrapper {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 9999;
+    z-index: 10;
     overflow: hidden;
 }
 

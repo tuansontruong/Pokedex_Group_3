@@ -981,6 +981,9 @@ a {
 }
 
 
+/* Demo Styles */
+
+
 /* The Loader */
 
 #loader-wrapper {
@@ -989,8 +992,9 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 9999;
-    overflow: hidden;
+    z-index: 10;
+    overflow: overlay;
+    z-index: 99 !important;
 }
 
 .no-js #loader-wrapper {
