@@ -1,6 +1,6 @@
-.container {
+/* .container {
     overflow: visible;
-}
+} */
 
 
 /* =======VINH======= */
@@ -388,7 +388,7 @@
 }
 
 .carousel-wrapper {
-    margin-top: 200px;
+    margin-top: 20vh;
     max-width: 800px;
     /* height: 1000px; */
     margin-left: auto;
