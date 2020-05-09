@@ -12,11 +12,19 @@
     <link rel="icon" href="img/pikachu.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script>
-        function scrollDown() {
+        function scrollDownCardSection() {
             event.preventDefault();
 
             $('html, body').animate({
-                scrollTop: $("#temp").offset().top
+                scrollTop: $("#cardDex-jq").offset().top
+            }, 1000);
+        }
+
+        function scrollDownAboutUsSection() {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $("#aboutUs-jq").offset().top
             }, 1000);
         }
     </script>
@@ -52,10 +60,10 @@
                         <a class="nav-link text-white nav-items" style=" font-size:21px; margin: 0 20px; font-family: 'Titillium Web', serif;" href="#homePage">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white nav-items" style="font-size:21px;margin: 0 20px; font-family: 'Titillium Web', serif;" href="#" onClick="scrollDown()" id="pokemon">POKéMON</a>
+                        <a class="nav-link text-white nav-items" style="font-size:21px;margin: 0 20px; font-family: 'Titillium Web', serif;" href="#" onClick="scrollDownCardSection()" id="pokemon">POKéMON</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white nav-items" style=" font-size:21px;margin: 0 20px; font-family: 'Titillium Web', serif;" href="#aboutUs" data-id="aboutUs">ABOUT US</a>
+                        <a class="nav-link text-white nav-items" style=" font-size:21px;margin: 0 20px; font-family: 'Titillium Web', serif;" href="#" onClick="scrollDownAboutUsSection()" data-id="aboutUs">ABOUT US</a>
                     </li>
                 </ul>
             </div>
@@ -157,7 +165,7 @@
             </div>
         </div>
     </section>
-    <div id="temp"></div>
+    <div id="cardDex-jq"></div>
     <!-- <section class="filler-section-1">
     <div class="filler-wrapper-1 d-flex align-items-center justify-content-center">
         <img class="img-fluid  d-block" src="img/Bulbasaur.gif" width="150px">
@@ -276,6 +284,7 @@
     </section>
     <!--[ABOUT US]-->
     <!--CARD-->
+    <div id="aboutUs-jq"></div>
     <div class="container">
         <section class="row aboutus-section">
             <!--CARD 1-->
@@ -741,7 +750,7 @@
 
 
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
 </body>
