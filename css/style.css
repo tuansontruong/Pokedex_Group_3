@@ -627,6 +627,15 @@
     opacity: 0.9;
 }
 
+.navBanner{
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    position: fixed;
+}
+
 /* NAV + BANNER */
 
 /* .section-bubble3,
