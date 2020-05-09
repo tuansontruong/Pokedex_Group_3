@@ -1,6 +1,6 @@
-/* .container {
+.container {
     overflow: visible;
-} */
+}
 
 
 /* =======VINH======= */
@@ -194,6 +194,18 @@
     padding-bottom: 0px;
 }
 
+.pkm-carousel-header {
+    color: white;
+    /* margin-bottom: 20px; */
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Titillium Web', serif;
+    /* text-shadow: 2px 2px 0px red; */
+    text-shadow: -2px -2px 0 rgb(17, 238, 109), 2px -2px 0 rgb(238, 124, 17), -2px 2px 0 rgb(238, 17, 238), 2px 2px 0 rgb(238, 124, 17);
+    /* filter: drop-shadow(0px 0px 12px rgb(236, 238, 142)); */
+    letter-spacing: 3px;  
+}
+
 .pkm-card-header {
     color: white;
     /* margin-bottom: 20px; */
@@ -366,11 +378,12 @@
 .right-stack {
     pointer-events: none;
     position: absolute;
-    position: absolute;
-    z-index: 1;
-    left: 50%;
+    position:absolute;
+    z-index: 5;
+    bottom: 0;
+    left:40%;
     margin-left: 400px;
-    width: 200px;
+    /* width:200px; */
 }
 
 .pokemon-carousel-box {
@@ -381,17 +394,25 @@
     position: absolute;
 }
 
+.pretty-text-box {
+    padding: 5px;
+    border-radius: 25px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.74);
+}
+
 .filler-section-1 {
     background-color: #fee8b7;
     min-height: 600px;
 }
 
 .carousel-wrapper {
-    margin-top: 20vh;
+    margin-top: 10vh;
     max-width: 800px;
     /* height: 1000px; */
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 10vh;
 }
 
 .carousel-wrapper-rel {
@@ -404,9 +425,15 @@
 }
 
 .bg-carousel {
-    overflow-x: hidden;
-    background-color: #fee8b7;
-    min-height: 800px;
+    padding-top: 10vh;
+    /* padding-bottom: 10vh; */
+    overflow-x:hidden;
+    overflow-y:hidden;
+    /* background-color: #fee8b7; */
+    background-image: url('../img/Pokemon_03.svg');
+    background-repeat: repeat;
+    /* min-height: 1000px; */
+    background-attachment: fixed;
 }
 
 #home-carousel {
@@ -583,6 +610,24 @@
 
 
 /* ======ANH HUY===== */
+#first-carousel {
+    min-height: 100vh;
+}
+
+#carouselExampleIndicators > #first-carousel > .carousel-item {
+    min-height: 100vh;
+    width: 100vw;
+    /* align-items: flex-start; */
+    overflow: hidden;
+}
+
+.banner-pic {
+    min-height: 100vh;
+    min-width: 100vw;
+    position: absolute;
+    margin-left: 50%;
+    transform: translateX(-50%);
+}
 
 @keyframes load {
     from {
@@ -677,11 +722,11 @@
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 3;
+    z-index: 10;
 }
 
 .img-banner {
-    height: 730px;
+    height: auto;
 }
 
 
