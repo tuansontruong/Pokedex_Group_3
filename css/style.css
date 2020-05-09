@@ -616,7 +616,7 @@
 
 #carouselExampleIndicators > #first-carousel > .carousel-item {
     min-height: 100vh;
-    width: 100vw;
+    /* width: 100vw; */
     /* align-items: flex-start; */
     overflow: hidden;
 }
@@ -711,11 +711,42 @@
     width: calc(100% - 10px);
 }
 
-.carousel-caption {
-    background-color: rgb(136, 58, 58);
-    border-radius: 30px;
+.first-banner-caption-1 {
+    background-color: rgba(212, 70, 51, 0.88);
     opacity: 0.9;
+    right: 0;
+    left: 0;
 }
+
+.first-banner-caption-2 {
+    background-color: rgba(194, 197, 31, 0.781);
+    opacity: 0.9;
+    right: 0;
+    left: 0;
+}
+
+.first-banner-caption-3 {
+    background-color: rgba(0, 146, 204, 0.88);
+    opacity: 0.9;
+    right: 0;
+    left: 0;
+}
+
+.first-banner-caption-4 {
+    background-color: rgba(253, 149, 63, 0.88);
+    opacity: 0.9;
+    right: 0;
+    left: 0;
+}
+
+.first-banner-caption-5 {
+    background-color: rgba(233, 76, 173, 0.88);
+    opacity: 0.9;
+    right: 0;
+    left: 0;
+}
+
+
 
 .navBanner {
     overflow: hidden;
@@ -723,10 +754,6 @@
     top: 0;
     width: 100%;
     z-index: 10;
-}
-
-.img-banner {
-    height: auto;
 }
 
 
