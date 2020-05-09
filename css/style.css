@@ -444,6 +444,14 @@
     top: 0;
 }
 
+.detail-pokedex-img{
+    width: 240px;
+    height: auto;
+}
+.detail-pokedex-circle{
+    width: 140px;
+}
+
 .detail-spacer-1 {
     height: 200px;
 }
@@ -658,10 +666,15 @@
     width: calc(100% - 10px);
 }
 
+.carousel-caption{
+    background-color: rgb(136, 58, 58);
+    border-radius: 30px;
+    opacity: 0.9;
+}
 
 /* NAV + BANNER */
 
-.section-bubble3,
+/* .section-bubble3,
 .section-bubble4,
 .section-bubble_type-a,
 .section-bubble_type-b {
@@ -723,16 +736,220 @@ background: linear-gradient(180deg, rgba(126,200,255,1) 8%, rgba(230,142,173,1) 
 
 .section-bubble_type-b:after {
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1185 248'><path d='M50.5 199.8c112.4 0 87.5-49 188.7-59.3s146.7 38.3 219.5 38.3 107.9-21.9 210.8-69.3c102.8-47.3 274-8.7 424.8 69.3 37.7 19.5 68 36.7 90.7 51.5V0H0v193C15 197.2 31.6 199.8 50.5 199.8zM1109 106.9c11 0 20 9 20 20 0 11-9 20-20 20s-20-9-20-20C1089 115.9 1098 106.9 1109 106.9zM370.5 57.9c13.5 0 24.5 11 24.5 24.5 0 13.5-11 24.5-24.5 24.5S346 95.9 346 82.4C346 68.9 357 57.9 370.5 57.9zM315 35.9c6.1 0 11 4.9 11 11s-4.9 11-11 11 -11-4.9-11-11S308.9 35.9 315 35.9z' fill='red'/></svg>");
-}
+} */
 
 
 /* ======END-HUY===== */
 
 
-/* =====CHRISTINA==== */
+/* =====CHRISTINA--ABOUT US==== */
+
+@import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
+
+html, body {
+  background: white;
+}
+
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+}
+
+.aboutus-avatar {
+  border-radius: 50%;
+}
+
+.aboutus-card {
+  width: 450px;
+  height: 250px;
+  background-color: #fff;
+  background: linear-gradient(#f8f8f8, #fff);
+  box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
+  border-radius: 6px;
+  overflow: hidden;
+  position: relative;
+  margin: 1.5rem;
+  font-family: Abel, Arial, Verdana, sans-serif;
+}
+
+.aboutus-card h1 {
+  text-align: center;
+}
+
+.aboutus-card .additional {
+  position: absolute;
+  width: 150px;
+  height: 100%;
+  background: linear-gradient(#dE685E, #EE786E);
+  transition: width 0.4s;
+  overflow: hidden;
+  z-index: 2;
+}
+
+.aboutus-card.green .additional {
+  background: linear-gradient(#92bCa6, #A2CCB6);
+}
+
+
+.aboutus-card:hover .additional {
+  width: 100%;
+  border-radius: 0 5px 5px 0;
+}
+
+.aboutus-card .additional .user-card {
+  width: 150px;
+  height: 100%;
+  position: relative;
+  float: left;
+}
+
+.aboutus-card .additional .user-card::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 10%;
+  right: -2px;
+  height: 80%;
+  border-left: 2px solid rgba(0,0,0,0.025);*/
+}
+
+.aboutus-card .additional .user-card .level,
+.aboutus-card .additional .user-card .points {
+  top: 15%;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 0.50em;
+  font-weight: bold;
+  background: rgba(0,0,0,0.15);
+  padding: 0.125rem 0.75rem;
+  border-radius: 100px;
+  white-space: nowrap;
+  font-family: Abel, Arial, Verdana, sans-serif;
+}
+
+.aboutus-card .additional .user-card .points {
+  top: 85%;
+}
+
+.aboutus-card .additional .user-card svg {
+  top: 50%;
+}
+
+.aboutus-card .additional .more-info {
+  width: 300px;
+  float: left;
+  position: absolute;
+  left: 150px;
+  height: 100%;
+  padding-top: 1rem;
+}
+
+.aboutus-card .additional .more-info h1 {
+  color: #fff;
+  margin-bottom: 0;
+}
+
+.aboutus-card.green .additional .more-info h1 {
+  color: #224C36;
+}
+
+.aboutus-card .additional .coords {
+  margin: 0 1rem;
+  color: #fff;
+  font-size: .75rem;
+}
+
+.aboutus-card.green .additional .coords {
+  color: #325C46;
+}
+
+.aboutus-card .additional .coords span + span {
+  float: right;
+}
+
+.aboutus-card .additional .stats {
+  font-size: 1.25rem;
+  display: flex;
+  position: absolute;
+  bottom: 1rem;
+  left: 1rem;
+  right: 1rem;
+  top: auto;
+  color: #fff;
+}
+
+.aboutus-card.green .additional .stats {
+  color: #325C46;
+}
+
+.aboutus-card .additional .stats > div {
+  flex: 1;
+  text-align: center;
+}
+
+.aboutus-card .additional .stats i {
+  display: block;
+}
+
+.aboutus-card .additional .stats div.title {
+  font-size: 0.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.aboutus-card .additional .stats div.value {
+  font-size: 1.25rem;
+  font-weight: bold;
+  line-height: 1.5rem;
+}
+
+.aboutus-card .additional .stats div.value.infinity {
+  font-size: 2.25rem;
+}
+
+.aboutus-card .general {
+  width: 300px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 1;
+  box-sizing: border-box;
+  padding: 1rem;
+  padding-top: 1rem;
+}
+
+.aboutus-card .general .more {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  font-size: 0.9em;
+  padding-top: 1rem;
+}
+
+.aboutus-section {
+    padding-bottom: 4rem;
+}
+
+/* ===END-CHRISTINA--ABOUT US== */
+
+
+
+/* =====CHRISTINA--FOOTER==== */
 
 footer {
-    /* background-color: black; */
+    background-color: black;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -747,8 +964,7 @@ a {
     color: lightgray;
 }
 
-
-/* ===END-CHRISTINA== */
+/* ===END-CHRISTINA--FOOTER== */
 
 
 /* =======SEAN======= */
@@ -931,7 +1147,6 @@ a {
     height: 0;
 }
 
-
 /* DETAIL PAGE IMAGE GALLERY SECTION */
 
 .carousel-control-prev,
@@ -1074,6 +1289,23 @@ a {
 
 .flip-card-border-emerald {
     border-color: #009B77;
+}
+
+.flip-card-border-coral {
+    border-color: #FF6F61;
+}
+
+.flip-card-border-turquose {
+    border-color: #45B8AC;
+}
+
+
+/* Style the back side */
+
+.flip-card-back {
+    /* background-image: url("https://st2.depositphotos.com/3213441/12022/v/950/depositphotos_120226584-stock-illustration-pokemon-go-pokeball-seamless-texture.jpg"); */
+    color: white;
+    transform: rotateY(180deg);
 }
 
 .flip-card-border-coral {
