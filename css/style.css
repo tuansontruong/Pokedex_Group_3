@@ -1,6 +1,6 @@
-/* .container {
+.container {
     overflow: visible;
-} */
+}
 
 
 /* =======VINH======= */
@@ -611,6 +611,12 @@
 
 /* ======ANH HUY===== */
 
+#carouselExampleIndicators > #first-carousel > .carousel-item {
+    max-height: 100vh;
+    align-items: flex-start;
+    overflow: hidden;
+}
+
 @keyframes load {
     from {
         width: 0%
@@ -704,11 +710,11 @@
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 3;
+    z-index: 10;
 }
 
 .img-banner {
-    height: 730px;
+    height: auto;
 }
 
 
