@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Name</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="https://www.coderschool.vn/icons/icon-48x48.png?v=00d51f92a4c79a319bb2416e94445801">
+
+</head>
+
+<body class="detail-body">
+    <div class="">
+
+        <nav class="detail-nav navbar sticky-top navbar-expand-lg navbar-light" style="
+    background-color: rgba(0, 0, 0, 0.6); width: 100%;">
+            <a href="#"><img src="img/nps-logo-white-trimmed-2.png" alt="..." class="logo" style="width: 100px;height: 50px;"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white nav-items" style=" font-size:21px; margin: 0 20px; font-family: 'Titillium Web', serif;" href="#homePage">HOME</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white nav-items" style="font-size:21px;margin: 0 20px; font-family: 'Titillium Web', serif;" href="#" onClick="scrollDown()" id="pokemon">POKéMON</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white nav-items" style=" font-size:21px;margin: 0 20px; font-family: 'Titillium Web', serif;" href="#aboutUs" data-id="aboutUs">ABOUT US</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+
+
+
+        <div class="detail-gradient">
+            <div class="detail-spacer-2"></div>
+            <section class="container">
+                <div class="container-fluid detail-title">
+                    <div class="detail-header row justify-content-between no-gutters">
+                        <div class="col-2 align-self-center">
+                            <img src="detail-img/pokedex-ball.png" alt="..." class="detail-pokedex img-fluid">
+                        </div>
+                        <div class="col-6 align-self-center">
+                            <br>
+                            <!--NAME-->
+                            <h1 class="detail-pokedex-font">Pikachu</h1>
+                            <!--TYPE-->
+                            <p class="pkm-type">Type: <span class="electric-type badge badge-pill badge-secondary">Electric</span></p>
+                        </div>
+                        <div class="col-3 mx-auto">
+                            <img class="mx-auto" src="img/pikachu.png" alt="Pikachu">
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <section class="container detail-main">
+                <div class="detail-font row justify-content-between">
+                    <div class="col-8">
+                        <div class="container">
+                            <!--ABOUT-->
+                            <h1>About</h1>
+                            <p>text here</p>
+                        </div>
+                        <hr>
+                        <div class="container">
+                            <!--PROFILE-->
+                            <h1>Profile</h1>
+                            <section class="row">
+                                <div class="col-4"><b>Height:</b> 0.4 m</div>
+                                <div class="col-4"><b>Weight:</b> 6 kg
+                                </div>
+                                <div class="col-4"><b>Catch Rate:</b> 0%
+                                </div>
+                                <br>
+                                <div class="w-100"></div>
+                                <br>
+                                <div class="col-4"><b>Gender Ratio:</b> 50% ♂ 50% ♀
+                                </div>
+                                <div class="col-4"><b>Egg Groups:</b> Field, Fairy
+                                </div>
+                                <div class="col-4"><b>Abilities:</b> Static, Lightningrod
+                                </div>
+
+                            </section>
+                        </div>
+                        <hr>
+                        <div class="container">
+                            <!--PHOTO GALLERY-->
+                            <h1>Photo Gallery</h1>
+                            <div class="row">
+                                <img src="/detail-img/pikachu-sq.jpg" class="rounded col-4 img-responsive" alt="...">
+                                <img src="/detail-img/pikachu-sq.jpg" class="rounded col-4 img-fluid" alt="...">
+                                <img src="/detail-img/pikachu-sq.jpg" class="rounded col-4" alt="...">
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div class="col-4">
+                        <div class="container">
+                            <!--STATS-->
+                            <h1>Stats</h1>
+                            <div class="bar black learning" data-skill="HP"></div>
+                            <div class="bar basic" data-skill="Attack"></div>
+                            <div class="bar blue intermediate" data-skill="Defense"></div>
+                            <div class="bar advanced" data-skill="Sp Attack"></div>
+                            <div class="bar blue expert" data-skill="Sp Defense"></div>
+                            <div class="bar yellow expert" data-skill="Speed"></div>
+                            <div class="bar black basic" data-skill="Total"></div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <!--EVOLUTIONS-->
+                <h1 class="container">Evolutions</h1>
+                <p class="container">
+                    Evolution Images Here
+                </p>
+            </section>
+
+            <section class="detail-pkm-card-section">
+                <h1>Some More S/h1>
+                    <p>blah blah</p>
+
+
+            </section>
+        </div>
+    </div>
+    <section class="detail-form">
+        <form class="row detail-tight justify-content-between">
+
+            <div class="col-8">
+                <h2>Get the latest updates!</h2>
+                <br>
+                <div class=>
+                    <div class="form-group detail-email-style">
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" style="background-image: url(/detail-img/line.png);" value="Email Address">
+                    </div>
+                    <button type="submit" class="btn btn-primary detail-btn">ENTER</button>
+                </div>
+            </div>
+
+            <div class="col-4 align-self-center">
+                <img src="detail-img/dpad.png" class="detail-dpad img-fluid">
+            </div>
+
+        </form>
+
+    </section>
+
+
+
+
+    <footer class="page-footer font-small mdb-color pt-4">
+
+        <!-- Footer Links -->
+        <div class="container text-center text-md-left">
+
+            <!-- Footer links -->
+            <div class="row text-center text-md-left mt-3 pb-3">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <img src="img/nps-logo-white-trimmed-2.png" class="img-responsive" width="100%" />
+                    <p><br>The National Pokemon Society promotes the protection and well-being of Pokemon around the world.
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="w-100 clearfix d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">About Us</h6>
+                    <p>
+                        <a href="#!">Home</a>
+                    </p>
+                    <p>
+                        <a href="#!">About</a>
+                    </p>
+                    <p>
+                        <a href="#!">News</a>
+                    </p>
+                    <p>
+                        <a href="#!">Featured</a>
+                    </p>
+                </div>
+                <!-- Grid column -->
+
+                <hr class="w-100 clearfix d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Community</h6>
+                    <p>
+                        <a href="#!">Membership</a>
+                    </p>
+                    <p>
+                        <a href="#!">List of Pokemon</a>
+                    </p>
+                    <p>
+                        <a href="#!">Events</a>
+                    </p>
+                    <p>
+                        <a href="#!">Resources</a>
+                    </p>
+                </div>
+
+                <!-- Grid column -->
+                <hr class="w-100 clearfix d-md-none">
+
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h6 class="text-uppercase mb-4 font-weight-bold">Contact</h6>
+                    <p>
+                        <i class="fas fa-home mr-3"></i>1 Nguyen Hue, District 1, <br>Ho Chi Minh City, Vietnam</p>
+                    <p>
+                        <i class="fas fa-envelope mr-3"></i>info@nps.org</p>
+                    <p>
+                        <i class="fas fa-phone mr-3"></i>+84 28 000 0000</p>
+                    <!-- Social buttons -->
+                    <div class="text-center text-md-left">
+                        <ul class="list-unstyled list-inline">
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-md rgba-white-slight mx-1" href="#">
+                                    <i class="fab fa-facebook-f"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-md rgba-white-slight mx-2" href="#">
+                                    <i class="fab fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-md rgba-white-slight mx-2" href="#">
+                                    <i class="fab fa-tumblr"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a class="btn-floating btn-md rgba-white-slight mx-2" href="#">
+                                    <i class="fab fa-instagram"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Footer links -->
+
+            <hr>
+
+            <!-- Grid row -->
+            <div class="row d-flex align-items-center">
+
+                <!-- Grid column -->
+                <div class="col-md-12 col-lg-12">
+
+                    <!--Copyright-->
+                    <p class="text-center text-md-center"><small>National Pokemon Society © 2020 All Rights Reserved.
+                    </p></small>
+
+                </div>
+                <!-- Grid column -->
+
+            </div>
+            <!-- Grid row -->
+
+        </div>
+        <!-- Footer Links -->
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous ">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous ">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous ">
+    </script>
+
+
+
+</html>

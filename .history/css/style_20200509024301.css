@@ -546,15 +546,10 @@
     width: calc(100% - 10px);
 }
 
-.carousel-caption{
-    background-color: rgb(136, 58, 58);
-    border-radius: 30px;
-    opacity: 0.9;
-}
 
 /* NAV + BANNER */
 
-/* .section-bubble3,
+.section-bubble3,
 .section-bubble4,
 .section-bubble_type-a,
 .section-bubble_type-b {
@@ -615,7 +610,7 @@
 
 .section-bubble_type-b:after {
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1185 248'><path d='M50.5 199.8c112.4 0 87.5-49 188.7-59.3s146.7 38.3 219.5 38.3 107.9-21.9 210.8-69.3c102.8-47.3 274-8.7 424.8 69.3 37.7 19.5 68 36.7 90.7 51.5V0H0v193C15 197.2 31.6 199.8 50.5 199.8zM1109 106.9c11 0 20 9 20 20 0 11-9 20-20 20s-20-9-20-20C1089 115.9 1098 106.9 1109 106.9zM370.5 57.9c13.5 0 24.5 11 24.5 24.5 0 13.5-11 24.5-24.5 24.5S346 95.9 346 82.4C346 68.9 357 57.9 370.5 57.9zM315 35.9c6.1 0 11 4.9 11 11s-4.9 11-11 11 -11-4.9-11-11S308.9 35.9 315 35.9z' fill='red'/></svg>");
-} */
+}
 
 
 /* ======END-HUY===== */
@@ -624,7 +619,7 @@
 /* =====CHRISTINA==== */
 
 footer {
-    background-color: black;
+    /* background-color: black; */
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -638,6 +633,7 @@ a {
     text-decoration-line: none;
     color: lightgray;
 }
+
 
 /* ===END-CHRISTINA== */
 
@@ -663,9 +659,9 @@ a {
     border-radius: 19px;
     position: relative;
     text-align: center;
-    box-shadow: -1px 15px 30px -12px wheat;
+    box-shadow: -1px 15px 30px -12px black;
     z-index: 9999;
-    font: 14px/20px 'Titillium Web', serif;
+    font: 14px/20px "Lato", Arial, sans-serif;
     color: #9E9E9E;
 }
 
@@ -694,30 +690,30 @@ a {
 }
 
 .pokemon-card__image--pikachu img {
-    width: 250px;
+    width: 300px;
     position: absolute;
-    top: 0px;
+    top: -65px;
     left: 23px;
 }
 
 .pokemon-card__image--caterpie img {
-    width: 250px;
+    width: 300px;
     position: absolute;
-    top: 0px;
+    top: -65px;
     left: 23px;
 }
 
 .pokemon-card__image--squirtle img {
-    width: 250px;
+    width: 300px;
     position: absolute;
-    top: 0px;
+    top: -65px;
     left: 23px;
 }
 
 .pokemon-card__image--charmander img {
-    width: 250px;
+    width: 300px;
     position: absolute;
-    top: 0px;
+    top: -65px;
     left: 23px;
 }
 
@@ -737,11 +733,11 @@ a {
 }
 
 .pokemon-card__level--squirtle {
-    color: #659db0;
+    color: #8ec5d3;
 }
 
 .pokemon-card__level--charmander {
-    color: #e3723e;
+    color: #eaab7d;
 }
 
 .pokemon-card__unit-name {
@@ -765,11 +761,11 @@ a {
 }
 
 .pokemon-card__unit-stats--squirtle {
-    background: #659db0;
+    background: #8ec5d3;
 }
 
 .pokemon-card__unit-stats--charmander {
-    background: #e3723e;
+    background: #eaab7d;
 }
 
 
@@ -821,6 +817,7 @@ a {
     clear: both;
     height: 0;
 }
+
 
 /* DETAIL PAGE IMAGE GALLERY SECTION */
 
@@ -981,172 +978,6 @@ a {
     /* background-image: url("https://st2.depositphotos.com/3213441/12022/v/950/depositphotos_120226584-stock-illustration-pokemon-go-pokeball-seamless-texture.jpg"); */
     color: white;
     transform: rotateY(180deg);
-}
-
-.flip-card-border-coral {
-    border-color: #FF6F61;
-}
-
-.flip-card-border-turquose {
-    border-color: #45B8AC;
-}
-
-
-/* Style the back side */
-
-.flip-card-back {
-    /* background-image: url("https://st2.depositphotos.com/3213441/12022/v/950/depositphotos_120226584-stock-illustration-pokemon-go-pokeball-seamless-texture.jpg"); */
-    color: white;
-    transform: rotateY(180deg);
-}
-
-
-/* The Loader */
-
-#loader-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    overflow: hidden;
-}
-
-.no-js #loader-wrapper {
-    display: none;
-}
-
-#loader {
-    display: block;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    width: 150px;
-    height: 150px;
-    margin: -75px 0 0 -75px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #16a085;
-    -webkit-animation: spin 1.7s linear infinite;
-    animation: spin 1.7s linear infinite;
-    z-index: 11;
-}
-
-#loader:before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #e74c3c;
-    -webkit-animation: spin-reverse 0.6s linear infinite;
-    animation: spin-reverse 0.6s linear infinite;
-}
-
-#loader:after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #f9c922;
-    -webkit-animation: spin 1s linear infinite;
-    animation: spin 1s linear infinite;
-}
-
-@-webkit-keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
-
-@keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-
-@-webkit-keyframes spin-reverse {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(-360deg);
-    }
-}
-
-@keyframes spin-reverse {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(-360deg);
-        transform: rotate(-360deg);
-    }
-}
-
-#loader-wrapper .loader-section {
-    position: fixed;
-    top: 0;
-    width: 51%;
-    height: 100%;
-    background: #222;
-    z-index: 10;
-}
-
-#loader-wrapper .loader-section.section-left {
-    left: 0;
-}
-
-#loader-wrapper .loader-section.section-right {
-    right: 0;
-}
-
-
-/* Loaded styles */
-
-.loaded #loader-wrapper .loader-section.section-left {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.loaded #loader-wrapper .loader-section.section-right {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.loaded #loader {
-    opacity: 0;
-    -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-}
-
-.loaded #loader-wrapper {
-    visibility: hidden;
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
-    -webkit-transition: all 0.3s 1s ease-out;
-    transition: all 0.3s 1s ease-out;
 }
 
 

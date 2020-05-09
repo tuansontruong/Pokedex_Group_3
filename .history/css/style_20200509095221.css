@@ -546,15 +546,10 @@
     width: calc(100% - 10px);
 }
 
-.carousel-caption{
-    background-color: rgb(136, 58, 58);
-    border-radius: 30px;
-    opacity: 0.9;
-}
 
 /* NAV + BANNER */
 
-/* .section-bubble3,
+.section-bubble3,
 .section-bubble4,
 .section-bubble_type-a,
 .section-bubble_type-b {
@@ -615,7 +610,7 @@
 
 .section-bubble_type-b:after {
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1185 248'><path d='M50.5 199.8c112.4 0 87.5-49 188.7-59.3s146.7 38.3 219.5 38.3 107.9-21.9 210.8-69.3c102.8-47.3 274-8.7 424.8 69.3 37.7 19.5 68 36.7 90.7 51.5V0H0v193C15 197.2 31.6 199.8 50.5 199.8zM1109 106.9c11 0 20 9 20 20 0 11-9 20-20 20s-20-9-20-20C1089 115.9 1098 106.9 1109 106.9zM370.5 57.9c13.5 0 24.5 11 24.5 24.5 0 13.5-11 24.5-24.5 24.5S346 95.9 346 82.4C346 68.9 357 57.9 370.5 57.9zM315 35.9c6.1 0 11 4.9 11 11s-4.9 11-11 11 -11-4.9-11-11S308.9 35.9 315 35.9z' fill='red'/></svg>");
-} */
+}
 
 
 /* ======END-HUY===== */
@@ -624,7 +619,7 @@
 /* =====CHRISTINA==== */
 
 footer {
-    background-color: black;
+    /* background-color: black; */
     color: white;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -638,6 +633,7 @@ a {
     text-decoration-line: none;
     color: lightgray;
 }
+
 
 /* ===END-CHRISTINA== */
 
@@ -822,6 +818,7 @@ a {
     height: 0;
 }
 
+
 /* DETAIL PAGE IMAGE GALLERY SECTION */
 
 .carousel-control-prev,
@@ -983,22 +980,8 @@ a {
     transform: rotateY(180deg);
 }
 
-.flip-card-border-coral {
-    border-color: #FF6F61;
-}
 
-.flip-card-border-turquose {
-    border-color: #45B8AC;
-}
-
-
-/* Style the back side */
-
-.flip-card-back {
-    /* background-image: url("https://st2.depositphotos.com/3213441/12022/v/950/depositphotos_120226584-stock-illustration-pokemon-go-pokeball-seamless-texture.jpg"); */
-    color: white;
-    transform: rotateY(180deg);
-}
+/* Demo Styles */
 
 
 /* The Loader */
