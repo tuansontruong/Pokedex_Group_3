@@ -229,7 +229,7 @@
     background-image: url("../img/shattered-island.gif");
     background-repeat: repeat;
     padding-top: 60px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
 }
 
 
@@ -316,73 +316,6 @@
     }
 }
 
-.filler-wrapper-1 {
-    /* background-image: url('../img/battl4.png');
-    background-position: center;
-    background-repeat: no-repeat; */
-    min-height: 600px;
-}
-
-.top-stack {
-    pointer-events: none;
-    position: absolute;
-    z-index: 1;
-    margin: auto;
-    left: 0;
-    right: 0;
-}
-
-.pokemon-carousel-box {
-    height: 500px;
-}
-
-.bottom-stack {
-    position: absolute;
-}
-
-.filler-section-1 {
-    background-color: #fee8b7;
-    min-height: 600px;
-}
-
-.carousel-wrapper {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.carousel-wrapper-rel {
-    position: relative;
-}
-
-#home-carousel .carousel-item {
-    height: 500px;
-    background-color: #fee8b7;
-  }
-
-.bg-carousel {
-    background-color: #fee8b7;
-    min-height: 600px;
-}
-
-#home-carousel{
-    position: relative;
-    top: 0;
-}
-
-.battle-background {
-    /* background-position: center; */
-    background-position: top center;
-    background-size: cover;
-    position: absolute;
-    bottom:0;
-    top: 0;
-    left: 0;
-    right:0;
-    width: 100%;
-    height: auto;  
-}
-
 
 /* ======END-VINH==== */
 
@@ -447,7 +380,7 @@
 
 .detail-font {
     font-family: Arial, Helvetica, sans-serif;
-    /* font-family: ;    */
+    font-family: ;
 }
 
 .detail-main {
@@ -639,13 +572,12 @@
 }
 
 .section-bubble3 {
-    background: rgb(126,200,255);
-background: linear-gradient(180deg, rgba(126,200,255,1) 8%, rgba(230,142,173,1) 27%, rgba(152,126,130,1) 70%, rgba(20,52,35,1) 100%);
+    background-color: #384364;
 }
 
 .section-bubble3:after {
-    background-color: #fee8b7;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='%23143423' viewBox='0 0 1185 248'><circle cx='76' cy='121.1' r='20' class='a'/><circle cx='870' cy='201.1' r='11' class='a'/><circle cx='814.5' cy='165.6' r='24.5' class='a'/><path d='M0 0v17.7c22.7 14.8 53 31.9 90.7 51.5 150.8 78 322 116.6 424.8 69.3 102.9-47.4 138-69.3 210.8-69.3s118.3 48.6 219.5 38.3 76.3-59.3 188.7-59.3c18.9 0 35.5 2.6 50.5 6.8V0H0z' class='a'/></svg>");
+    background-color: #cccccc;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='%23384364' viewBox='0 0 1185 248'><circle cx='76' cy='121.1' r='20' class='a'/><circle cx='870' cy='201.1' r='11' class='a'/><circle cx='814.5' cy='165.6' r='24.5' class='a'/><path d='M0 0v17.7c22.7 14.8 53 31.9 90.7 51.5 150.8 78 322 116.6 424.8 69.3 102.9-47.4 138-69.3 210.8-69.3s118.3 48.6 219.5 38.3 76.3-59.3 188.7-59.3c18.9 0 35.5 2.6 50.5 6.8V0H0z' class='a'/></svg>");
 }
 
 .section-bubble3 h1 {
@@ -801,7 +733,7 @@ a {
 }
 
 .pokemon-card__level--squirtle {
-    color: #659db0;
+    color: #8ec5d3;
 }
 
 .pokemon-card__level--charmander {
@@ -829,7 +761,7 @@ a {
 }
 
 .pokemon-card__unit-stats--squirtle {
-    background: #659db0;
+    background: #8ec5d3;
 }
 
 .pokemon-card__unit-stats--charmander {
@@ -1046,155 +978,6 @@ a {
     /* background-image: url("https://st2.depositphotos.com/3213441/12022/v/950/depositphotos_120226584-stock-illustration-pokemon-go-pokeball-seamless-texture.jpg"); */
     color: white;
     transform: rotateY(180deg);
-}
-
-
-/* The Loader */
-
-#loader-wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 9999;
-    overflow: hidden;
-}
-
-.no-js #loader-wrapper {
-    display: none;
-}
-
-#loader {
-    display: block;
-    position: relative;
-    left: 50%;
-    top: 50%;
-    width: 150px;
-    height: 150px;
-    margin: -75px 0 0 -75px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #16a085;
-    -webkit-animation: spin 1.7s linear infinite;
-    animation: spin 1.7s linear infinite;
-    z-index: 11;
-}
-
-#loader:before {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 5px;
-    right: 5px;
-    bottom: 5px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #e74c3c;
-    -webkit-animation: spin-reverse 0.6s linear infinite;
-    animation: spin-reverse 0.6s linear infinite;
-}
-
-#loader:after {
-    content: "";
-    position: absolute;
-    top: 15px;
-    left: 15px;
-    right: 15px;
-    bottom: 15px;
-    border-radius: 50%;
-    border: 3px solid transparent;
-    border-top-color: #f9c922;
-    -webkit-animation: spin 1s linear infinite;
-    animation: spin 1s linear infinite;
-}
-
-@-webkit-keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-    }
-}
-
-@keyframes spin {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
-    }
-}
-
-@-webkit-keyframes spin-reverse {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(-360deg);
-    }
-}
-
-@keyframes spin-reverse {
-    0% {
-        -webkit-transform: rotate(0deg);
-        transform: rotate(0deg);
-    }
-    100% {
-        -webkit-transform: rotate(-360deg);
-        transform: rotate(-360deg);
-    }
-}
-
-#loader-wrapper .loader-section {
-    position: fixed;
-    top: 0;
-    width: 51%;
-    height: 100%;
-    background: #222;
-    z-index: 10;
-}
-
-#loader-wrapper .loader-section.section-left {
-    left: 0;
-}
-
-#loader-wrapper .loader-section.section-right {
-    right: 0;
-}
-
-
-/* Loaded styles */
-
-.loaded #loader-wrapper .loader-section.section-left {
-    -webkit-transform: translateX(-100%);
-    transform: translateX(-100%);
-    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.loaded #loader-wrapper .loader-section.section-right {
-    -webkit-transform: translateX(100%);
-    transform: translateX(100%);
-    -webkit-transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-    transition: all 0.7s 0.3s cubic-bezier(0.645, 0.045, 0.355, 1);
-}
-
-.loaded #loader {
-    opacity: 0;
-    -webkit-transition: all 0.3s ease-out;
-    transition: all 0.3s ease-out;
-}
-
-.loaded #loader-wrapper {
-    visibility: hidden;
-    -webkit-transform: translateY(-100%);
-    transform: translateY(-100%);
-    -webkit-transition: all 0.3s 1s ease-out;
-    transition: all 0.3s 1s ease-out;
 }
 
 

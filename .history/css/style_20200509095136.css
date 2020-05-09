@@ -229,7 +229,7 @@
     background-image: url("../img/shattered-island.gif");
     background-repeat: repeat;
     padding-top: 60px;
-    padding-bottom: 80px;
+    padding-bottom: 40px;
 }
 
 
@@ -316,73 +316,6 @@
     }
 }
 
-.filler-wrapper-1 {
-    /* background-image: url('../img/battl4.png');
-    background-position: center;
-    background-repeat: no-repeat; */
-    min-height: 600px;
-}
-
-.top-stack {
-    pointer-events: none;
-    position: absolute;
-    z-index: 1;
-    margin: auto;
-    left: 0;
-    right: 0;
-}
-
-.pokemon-carousel-box {
-    height: 500px;
-}
-
-.bottom-stack {
-    position: absolute;
-}
-
-.filler-section-1 {
-    background-color: #fee8b7;
-    min-height: 600px;
-}
-
-.carousel-wrapper {
-    max-width: 800px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.carousel-wrapper-rel {
-    position: relative;
-}
-
-#home-carousel .carousel-item {
-    height: 500px;
-    background-color: #fee8b7;
-  }
-
-.bg-carousel {
-    background-color: #fee8b7;
-    min-height: 600px;
-}
-
-#home-carousel{
-    position: relative;
-    top: 0;
-}
-
-.battle-background {
-    /* background-position: center; */
-    background-position: top center;
-    background-size: cover;
-    position: absolute;
-    bottom:0;
-    top: 0;
-    left: 0;
-    right:0;
-    width: 100%;
-    height: auto;  
-}
-
 
 /* ======END-VINH==== */
 
@@ -447,7 +380,7 @@
 
 .detail-font {
     font-family: Arial, Helvetica, sans-serif;
-    /* font-family: ;    */
+    font-family: ;
 }
 
 .detail-main {
@@ -639,13 +572,12 @@
 }
 
 .section-bubble3 {
-    background: rgb(126,200,255);
-background: linear-gradient(180deg, rgba(126,200,255,1) 8%, rgba(230,142,173,1) 27%, rgba(152,126,130,1) 70%, rgba(20,52,35,1) 100%);
+    background-color: #384364;
 }
 
 .section-bubble3:after {
-    background-color: #fee8b7;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='%23143423' viewBox='0 0 1185 248'><circle cx='76' cy='121.1' r='20' class='a'/><circle cx='870' cy='201.1' r='11' class='a'/><circle cx='814.5' cy='165.6' r='24.5' class='a'/><path d='M0 0v17.7c22.7 14.8 53 31.9 90.7 51.5 150.8 78 322 116.6 424.8 69.3 102.9-47.4 138-69.3 210.8-69.3s118.3 48.6 219.5 38.3 76.3-59.3 188.7-59.3c18.9 0 35.5 2.6 50.5 6.8V0H0z' class='a'/></svg>");
+    background-color: #cccccc;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='%23384364' viewBox='0 0 1185 248'><circle cx='76' cy='121.1' r='20' class='a'/><circle cx='870' cy='201.1' r='11' class='a'/><circle cx='814.5' cy='165.6' r='24.5' class='a'/><path d='M0 0v17.7c22.7 14.8 53 31.9 90.7 51.5 150.8 78 322 116.6 424.8 69.3 102.9-47.4 138-69.3 210.8-69.3s118.3 48.6 219.5 38.3 76.3-59.3 188.7-59.3c18.9 0 35.5 2.6 50.5 6.8V0H0z' class='a'/></svg>");
 }
 
 .section-bubble3 h1 {
@@ -1049,6 +981,9 @@ a {
 }
 
 
+/* Demo Styles */
+
+
 /* The Loader */
 
 #loader-wrapper {
@@ -1057,7 +992,7 @@ a {
     left: 0;
     width: 100%;
     height: 100%;
-    z-index: 9999;
+    z-index: 99;
     overflow: hidden;
 }
 
