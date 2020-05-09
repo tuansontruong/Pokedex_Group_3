@@ -672,10 +672,6 @@
     opacity: 0.9;
 }
 
-.img-banner{
-    height: 730px;
-}
-
 .navBanner{
     overflow: hidden;
     position: fixed;
@@ -683,6 +679,11 @@
     width: 100%;
     z-index: 3;
 }
+
+.img-banner{
+    height: 730px;
+}
+
 
 /* NAV + BANNER */
 
