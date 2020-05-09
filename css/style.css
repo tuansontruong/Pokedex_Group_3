@@ -399,6 +399,14 @@
     top: 0;
 }
 
+.detail-pokedex-img{
+    width: 240px;
+    height: auto;
+}
+.detail-pokedex-circle{
+    width: 140px;
+}
+
 .detail-spacer-1 {
     height: 200px;
 }
