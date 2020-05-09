@@ -194,6 +194,18 @@
     padding-bottom: 0px;
 }
 
+.pkm-carousel-header {
+    color: white;
+    /* margin-bottom: 20px; */
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Titillium Web', serif;
+    /* text-shadow: 2px 2px 0px red; */
+    text-shadow: -2px -2px 0 rgb(17, 238, 109), 2px -2px 0 rgb(238, 124, 17), -2px 2px 0 rgb(238, 17, 238), 2px 2px 0 rgb(238, 124, 17);
+    /* filter: drop-shadow(0px 0px 12px rgb(236, 238, 142)); */
+    letter-spacing: 3px;  
+}
+
 .pkm-card-header {
     color: white;
     /* margin-bottom: 20px; */
@@ -368,10 +380,11 @@
     pointer-events: none;
     position: absolute;
     position:absolute;
-    z-index: 1;
-    left:50%;
+    z-index: 5;
+    bottom: 0;
+    left:40%;
     margin-left: 400px;
-    width:200px;
+    /* width:200px; */
 }
 
 .pokemon-carousel-box {
@@ -382,17 +395,25 @@
     position: absolute;
 }
 
+.pretty-text-box {
+    padding: 5px;
+    border-radius: 25px;
+    display: inline-block;
+    background-color: rgba(255, 255, 255, 0.74);
+}
+
 .filler-section-1 {
     background-color: #fee8b7;
     min-height: 600px;
 }
 
 .carousel-wrapper {
-    margin-top: 20vh;
+    margin-top: 10vh;
     max-width: 800px;
     /* height: 1000px; */
     margin-left: auto;
     margin-right: auto;
+    padding-bottom: 10vh;
 }
 
 .carousel-wrapper-rel {
@@ -405,9 +426,15 @@
   }
 
 .bg-carousel {
+    padding-top: 10vh;
+    /* padding-bottom: 10vh; */
     overflow-x:hidden;
-    background-color: #fee8b7;
-    min-height: 800px;
+    overflow-y:hidden;
+    /* background-color: #fee8b7; */
+    background-image: url('../img/Pokemon_03.svg');
+    background-repeat: repeat;
+    /* min-height: 1000px; */
+    background-attachment: fixed;
 }
 
 #home-carousel{
@@ -830,7 +857,7 @@ html, body {
   top: 10%;
   right: -2px;
   height: 80%;
-  border-left: 2px solid rgba(0,0,0,0.025);*/
+  border-left: 2px solid rgba(0,0,0,0.025);
 }
 
 .aboutus-card .additional .user-card .level,
