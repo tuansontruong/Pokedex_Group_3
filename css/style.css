@@ -337,11 +337,11 @@
 
 #home-carousel .carousel-indicators li {
     width: 20px;
-   height: 20px;
-   border-radius: 100%;
-   margin-bottom: -50px;
-   margin-left: 20px;
- }
+    height: 20px;
+    border-radius: 100%;
+    margin-bottom: -50px;
+    margin-left: 20px;
+}
 
 .bg-carousel-arrow-left {
     margin-right: -120px;
@@ -367,14 +367,13 @@
 .frame-stack {
     pointer-events: none;
     position: absolute;
-    position:absolute;
+    position: absolute;
     z-index: 1;
-    left:50%;
+    left: 50%;
     margin-left: -470px;
     top: -50px;
     /* width:200px; */
 }
-
 
 .right-stack {
     pointer-events: none;
@@ -423,7 +422,7 @@
 #home-carousel .carousel-item {
     height: 500px;
     background-color: #fee8b7;
-  }
+}
 
 .bg-carousel {
     padding-top: 10vh;
@@ -437,7 +436,7 @@
     background-attachment: fixed;
 }
 
-#home-carousel{
+#home-carousel {
     position: relative;
     top: 0;
 }
@@ -447,12 +446,12 @@
     background-position: top center;
     background-size: cover;
     position: absolute;
-    bottom:0;
+    bottom: 0;
     top: 0;
     left: 0;
-    right:0;
+    right: 0;
     width: 100%;
-    height: auto;  
+    height: auto;
 }
 
 
@@ -471,11 +470,12 @@
     top: 0;
 }
 
-.detail-pokedex-img{
+.detail-pokedex-img {
     width: 240px;
     height: auto;
 }
-.detail-pokedex-circle{
+
+.detail-pokedex-circle {
     width: 140px;
 }
 
@@ -693,86 +693,23 @@
     width: calc(100% - 10px);
 }
 
-.carousel-caption{
+.carousel-caption {
     background-color: rgb(136, 58, 58);
     border-radius: 30px;
     opacity: 0.9;
 }
 
-.navBanner{
+.navBanner {
     overflow: hidden;
     position: fixed;
     top: 0;
     width: 100%;
-    z-index: 1;
-    position: fixed;
+    z-index: 3;
 }
 
-/* NAV + BANNER */
-
-/* .section-bubble3,
-.section-bubble4,
-.section-bubble_type-a,
-.section-bubble_type-b {
-    margin-bottom: 20vw;
-    position: relative;
+.img-banner {
+    height: 730px;
 }
-
-.section-bubble3:after,
-.section-bubble4:after,
-.section-bubble_type-a:after,
-.section-bubble_type-b:after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 20vw;
-    background: url("") green;
-    background-size: 100%;
-    transform: translate(0, 100%);
-}
-
-.section-bubble3 {
-    background: rgb(126,200,255);
-background: linear-gradient(180deg, rgba(126,200,255,1) 8%, rgba(230,142,173,1) 27%, rgba(152,126,130,1) 70%, rgba(20,52,35,1) 100%);
-}
-
-.section-bubble3:after {
-    background-color: #fee8b7;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='%23143423' viewBox='0 0 1185 248'><circle cx='76' cy='121.1' r='20' class='a'/><circle cx='870' cy='201.1' r='11' class='a'/><circle cx='814.5' cy='165.6' r='24.5' class='a'/><path d='M0 0v17.7c22.7 14.8 53 31.9 90.7 51.5 150.8 78 322 116.6 424.8 69.3 102.9-47.4 138-69.3 210.8-69.3s118.3 48.6 219.5 38.3 76.3-59.3 188.7-59.3c18.9 0 35.5 2.6 50.5 6.8V0H0z' class='a'/></svg>");
-}
-
-.section-bubble3 h1 {
-    color: white;
-}
-
-.section-bubble3 p {
-    color: white;
-    opacity: 0.8;
-}
-
-.section-bubble4 {
-    background-color: #cccccc;
-}
-
-.section-bubble4:after {
-    background-color: #333333;
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1185 248'><path d='M50.5 199.8c112.4 0 87.5-49 188.7-59.3s146.7 38.3 219.5 38.3 107.9-21.9 210.8-69.3c102.8-47.3 274-8.7 424.8 69.3 37.7 19.5 68 36.7 90.7 51.5V0H0v193C15 197.2 31.6 199.8 50.5 199.8zM1109 106.9c11 0 20 9 20 20 0 11-9 20-20 20s-20-9-20-20C1089 115.9 1098 106.9 1109 106.9zM370.5 57.9c13.5 0 24.5 11 24.5 24.5 0 13.5-11 24.5-24.5 24.5S346 95.9 346 82.4C346 68.9 357 57.9 370.5 57.9zM315 35.9c6.1 0 11 4.9 11 11s-4.9 11-11 11 -11-4.9-11-11S308.9 35.9 315 35.9z' fill='%23cccccc'/></svg>");
-}
-
-.section-bubble5 {
-    background: black;
-    color: white;
-    text-align: center;
-}
-
-.section-bubble_type-a:after {
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' fill='red' viewBox='0 0 1185 248'><circle cx='76' cy='121.1' r='20' class='a'/><circle cx='870' cy='201.1' r='11' class='a'/><circle cx='814.5' cy='165.6' r='24.5' class='a'/><path d='M0 0v17.7c22.7 14.8 53 31.9 90.7 51.5 150.8 78 322 116.6 424.8 69.3 102.9-47.4 138-69.3 210.8-69.3s118.3 48.6 219.5 38.3 76.3-59.3 188.7-59.3c18.9 0 35.5 2.6 50.5 6.8V0H0z' class='a'/></svg>");
-}
-
-.section-bubble_type-b:after {
-    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1185 248'><path d='M50.5 199.8c112.4 0 87.5-49 188.7-59.3s146.7 38.3 219.5 38.3 107.9-21.9 210.8-69.3c102.8-47.3 274-8.7 424.8 69.3 37.7 19.5 68 36.7 90.7 51.5V0H0v193C15 197.2 31.6 199.8 50.5 199.8zM1109 106.9c11 0 20 9 20 20 0 11-9 20-20 20s-20-9-20-20C1089 115.9 1098 106.9 1109 106.9zM370.5 57.9c13.5 0 24.5 11 24.5 24.5 0 13.5-11 24.5-24.5 24.5S346 95.9 346 82.4C346 68.9 357 57.9 370.5 57.9zM315 35.9c6.1 0 11 4.9 11 11s-4.9 11-11 11 -11-4.9-11-11S308.9 35.9 315 35.9z' fill='red'/></svg>");
-} */
 
 
 /* ======END-HUY===== */
@@ -781,16 +718,16 @@ background: linear-gradient(180deg, rgba(126,200,255,1) 8%, rgba(230,142,173,1) 
 /* =====CHRISTINA--ABOUT US==== */
 
 @import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
-
-html, body {
-  background: white;
+html,
+body {
+    background: white;
 }
 
 .center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -803,183 +740,183 @@ html, body {
 }
 
 .aboutus-avatar {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
 .aboutus-card {
-  width: 450px;
-  height: 250px;
-  background-color: #fff;
-  background: linear-gradient(#f8f8f8, #fff);
-  box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
-  border-radius: 6px;
-  overflow: hidden;
-  position: relative;
-  margin: 1.5rem;
-  font-family: Abel, Arial, Verdana, sans-serif;
+    width: 450px;
+    height: 250px;
+    background-color: #fff;
+    background: linear-gradient(#f8f8f8, #fff);
+    box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    margin: 1.5rem;
+    font-family: Abel, Arial, Verdana, sans-serif;
 }
 
 .aboutus-card h1 {
-  text-align: center;
+    text-align: center;
 }
 
 .aboutus-card .additional {
-  position: absolute;
-  width: 150px;
-  height: 100%;
-  background: linear-gradient(#dE685E, #EE786E);
-  transition: width 0.4s;
-  overflow: hidden;
-  z-index: 2;
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background: linear-gradient(#dE685E, #EE786E);
+    transition: width 0.4s;
+    overflow: hidden;
+    z-index: 2;
 }
 
 .aboutus-card.green .additional {
-  background: linear-gradient(#92bCa6, #A2CCB6);
+    background: linear-gradient(#92bCa6, #A2CCB6);
 }
 
-
 .aboutus-card:hover .additional {
-  width: 100%;
-  border-radius: 0 5px 5px 0;
+    width: 100%;
+    border-radius: 0 5px 5px 0;
 }
 
 .aboutus-card .additional .user-card {
-  width: 150px;
-  height: 100%;
-  position: relative;
-  float: left;
+    width: 150px;
+    height: 100%;
+    position: relative;
+    float: left;
 }
 
 .aboutus-card .additional .user-card::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 10%;
-  right: -2px;
-  height: 80%;
-  border-left: 2px solid rgba(0,0,0,0.025);
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10%;
+    right: -2px;
+    height: 80%;
+    border-left: 2px solid rgba(0, 0, 0, 0.025);
+    */
 }
 
 .aboutus-card .additional .user-card .level,
 .aboutus-card .additional .user-card .points {
-  top: 15%;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 0.50em;
-  font-weight: bold;
-  background: rgba(0,0,0,0.15);
-  padding: 0.125rem 0.75rem;
-  border-radius: 100px;
-  white-space: nowrap;
-  font-family: Abel, Arial, Verdana, sans-serif;
+    top: 15%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.50em;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0.125rem 0.75rem;
+    border-radius: 100px;
+    white-space: nowrap;
+    font-family: Abel, Arial, Verdana, sans-serif;
 }
 
 .aboutus-card .additional .user-card .points {
-  top: 85%;
+    top: 85%;
 }
 
 .aboutus-card .additional .user-card svg {
-  top: 50%;
+    top: 50%;
 }
 
 .aboutus-card .additional .more-info {
-  width: 300px;
-  float: left;
-  position: absolute;
-  left: 150px;
-  height: 100%;
-  padding-top: 1rem;
+    width: 300px;
+    float: left;
+    position: absolute;
+    left: 150px;
+    height: 100%;
+    padding-top: 1rem;
 }
 
 .aboutus-card .additional .more-info h1 {
-  color: #fff;
-  margin-bottom: 0;
+    color: #fff;
+    margin-bottom: 0;
 }
 
 .aboutus-card.green .additional .more-info h1 {
-  color: #224C36;
+    color: #224C36;
 }
 
 .aboutus-card .additional .coords {
-  margin: 0 1rem;
-  color: #fff;
-  font-size: .75rem;
+    margin: 0 1rem;
+    color: #fff;
+    font-size: .75rem;
 }
 
 .aboutus-card.green .additional .coords {
-  color: #325C46;
+    color: #325C46;
 }
 
-.aboutus-card .additional .coords span + span {
-  float: right;
+.aboutus-card .additional .coords span+span {
+    float: right;
 }
 
 .aboutus-card .additional .stats {
-  font-size: 1.25rem;
-  display: flex;
-  position: absolute;
-  bottom: 1rem;
-  left: 1rem;
-  right: 1rem;
-  top: auto;
-  color: #fff;
+    font-size: 1.25rem;
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    top: auto;
+    color: #fff;
 }
 
 .aboutus-card.green .additional .stats {
-  color: #325C46;
+    color: #325C46;
 }
 
-.aboutus-card .additional .stats > div {
-  flex: 1;
-  text-align: center;
+.aboutus-card .additional .stats>div {
+    flex: 1;
+    text-align: center;
 }
 
 .aboutus-card .additional .stats i {
-  display: block;
+    display: block;
 }
 
 .aboutus-card .additional .stats div.title {
-  font-size: 0.5rem;
-  font-weight: bold;
-  text-transform: uppercase;
+    font-size: 0.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .aboutus-card .additional .stats div.value {
-  font-size: 1.25rem;
-  font-weight: bold;
-  line-height: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.5rem;
 }
 
 .aboutus-card .additional .stats div.value.infinity {
-  font-size: 2.25rem;
+    font-size: 2.25rem;
 }
 
 .aboutus-card .general {
-  width: 300px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-  box-sizing: border-box;
-  padding: 1rem;
-  padding-top: 1rem;
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 1rem;
+    padding-top: 1rem;
 }
 
 .aboutus-card .general .more {
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-  font-size: 0.9em;
-  padding-top: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.9em;
+    padding-top: 1rem;
 }
 
 .aboutus-section {
     padding-bottom: 4rem;
 }
 
-/* ===END-CHRISTINA--ABOUT US== */
 
+/* ===END-CHRISTINA--ABOUT US== */
 
 
 /* =====CHRISTINA--FOOTER==== */
@@ -999,6 +936,7 @@ a {
     text-decoration-line: none;
     color: lightgray;
 }
+
 
 /* ===END-CHRISTINA--FOOTER== */
 
@@ -1182,6 +1120,7 @@ a {
     clear: both;
     height: 0;
 }
+
 
 /* DETAIL PAGE IMAGE GALLERY SECTION */
 
