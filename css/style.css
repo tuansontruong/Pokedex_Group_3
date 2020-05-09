@@ -2,6 +2,9 @@
     overflow: visible;
 }
 
+
+/* =======VINH======= */
+
 .pkm-name {
     font-family: 'Titillium Web', serif;
     font-size: 35px;
@@ -229,6 +232,96 @@
     padding-bottom: 40px;
 }
 
+
+/* Wave Divider */
+
+.editorial {
+    display: block;
+    width: 100%;
+    height: 60px;
+    max-height: 60px;
+    margin: 0;
+    z-index: 5;
+    bottom: 0;
+    position: absolute;
+    left: 0px;
+    float: left;
+}
+
+.parallax1>use {
+    animation: move-forever1 10s linear infinite;
+}
+
+.parallax1>use:nth-child(1) {
+    animation-delay: -2s;
+}
+
+.parallax2>use {
+    animation: move-forever2 8s linear infinite;
+}
+
+.parallax2>use:nth-child(1) {
+    animation-delay: -2s;
+}
+
+.parallax3>use {
+    animation: move-forever3 6s linear infinite;
+}
+
+.parallax3>use:nth-child(1) {
+    animation-delay: -2s;
+}
+
+.parallax4>use {
+    animation: move-forever4 4s linear infinite;
+}
+
+.parallax4>use:nth-child(1) {
+    animation-delay: -2s;
+}
+
+@keyframes move-forever1 {
+    0% {
+        transform: translate(85px, 0%);
+    }
+    100% {
+        transform: translate(-90px, 0%);
+    }
+}
+
+@keyframes move-forever2 {
+    0% {
+        transform: translate(-90px, 0%);
+    }
+    100% {
+        transform: translate(85px, 0%);
+    }
+}
+
+@keyframes move-forever3 {
+    0% {
+        transform: translate(85px, 0%);
+    }
+    100% {
+        transform: translate(-90px, 0%);
+    }
+}
+
+@keyframes move-forever4 {
+    0% {
+        transform: translate(-90px, 0%);
+    }
+    100% {
+        transform: translate(85px, 0%);
+    }
+}
+
+
+/* ======END-VINH==== */
+
+
+/* =======DEREK====== */
+
 .detail-body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: black;
@@ -365,6 +458,12 @@
     margin: 0 auto;
 }
 
+
+/* ====END-DEREK===== */
+
+
+/* ======ANH HUY===== */
+
 @keyframes load {
     from {
         width: 0%
@@ -447,33 +546,21 @@
     width: calc(100% - 10px);
 }
 
-footer {
-    /* background-color: black; */
-    color: white;
-    font-family: Arial, Helvetica, sans-serif;
+.carousel-caption{
+    background-color: rgb(136, 58, 58);
+    border-radius: 30px;
+    opacity: 0.9;
 }
-
-a:hover {
-    color: #dc1715;
-    text-decoration-line: none;
-}
-
-a {
-    text-decoration-line: none;
-    color: lightgray;
-}
-
 
 /* NAV + BANNER */
 
-.section-bubble3,
+/* .section-bubble3,
 .section-bubble4,
 .section-bubble_type-a,
 .section-bubble_type-b {
     margin-bottom: 20vw;
     position: relative;
 }
-
 
 .section-bubble3:after,
 .section-bubble4:after,
@@ -528,75 +615,197 @@ a {
 
 .section-bubble_type-b:after {
     background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1185 248'><path d='M50.5 199.8c112.4 0 87.5-49 188.7-59.3s146.7 38.3 219.5 38.3 107.9-21.9 210.8-69.3c102.8-47.3 274-8.7 424.8 69.3 37.7 19.5 68 36.7 90.7 51.5V0H0v193C15 197.2 31.6 199.8 50.5 199.8zM1109 106.9c11 0 20 9 20 20 0 11-9 20-20 20s-20-9-20-20C1089 115.9 1098 106.9 1109 106.9zM370.5 57.9c13.5 0 24.5 11 24.5 24.5 0 13.5-11 24.5-24.5 24.5S346 95.9 346 82.4C346 68.9 357 57.9 370.5 57.9zM315 35.9c6.1 0 11 4.9 11 11s-4.9 11-11 11 -11-4.9-11-11S308.9 35.9 315 35.9z' fill='red'/></svg>");
+} */
+
+
+/* ======END-HUY===== */
+
+
+/* =====CHRISTINA==== */
+
+footer {
+    background-color: black;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-/* Wave Divider */
+a:hover {
+    color: #dc1715;
+    text-decoration-line: none;
+}
 
-.editorial {
-    display: block;
-    width: 100%;
-    height: 60px;
-    max-height: 60px;
-    margin: 0;
-    z-index: 5;
+a {
+    text-decoration-line: none;
+    color: lightgray;
+}
+
+
+/* ===END-CHRISTINA== */
+
+
+/* =======SEAN======= */
+
+
+/* DETAIL PAGE IMAGE GALLERY SECTION */
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%;
+}
+
+@media (min-width: 768px) {
+    .carousel-multi-item-2 .col-md-3 {
+        float: left;
+        width: 25%;
+        max-width: 100%;
+    }
+}
+
+.carousel-multi-item-2 .card img {
+    border-radius: 2px;
+}
+
+.detail-carousel-indicators {
+    bottom: -50px;
+}
+
+.detail-carousel-inner {
+    margin-bottom: 50px;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 270px;
+    perspective: 1000px;
+    border-style: none;
+    font-family: 'Titillium Web', serif;
+}
+
+.flip-card .title {
+    /* background-color: white; */
+    border-radius: 0px 0px 75px 0px;
+    text-align: left;
+    width: 120px;
+}
+
+.flip-card-bg-white {
+    background-color: white;
+}
+
+.flip-card-bg-orchid {
+    background-color: #B565A7;
+}
+
+.flip-card-bg-emerald {
+    background-color: #009B77;
+}
+
+.flip-card-bg-coral {
+    background-color: #FF6F61;
+}
+
+.flip-card-bg-turquose {
+    background-color: #45B8AC;
+}
+
+.flip-card .pokemon-type {
     bottom: 0;
+    right: 0%;
+    /* font-size: 1.2em; */
     position: absolute;
-    left: 0px;
-    float: left;
+    /* background-color: white; */
+    border-radius: 44px 0px 0px 0px;
+    text-align: left;
+    width: 71px;
 }
-.parallax1 > use {
-    animation: move-forever1 10s linear infinite;
+
+.flip-card .pokemon-type img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
-.parallax1 > use:nth-child(1) {
-    animation-delay: -2s;
+
+
+/* This container is needed to position the front and back side */
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
 }
-.parallax2 > use {
-    animation: move-forever2 8s linear infinite;
+
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+    transition: 1%;
 }
-.parallax2 > use:nth-child(1) {
-    animation-delay: -2s;
+
+
+/* Position the front and back side */
+
+.flip-card-front,
+.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+    border-style: solid;
+    border-width: thick;
 }
-.parallax3 > use {
-    animation: move-forever3 6s linear infinite;
+
+
+/* Style the front side (fallback if image is missing) */
+
+.flip-card-front {
+    /* background: rgb(131, 58, 180);
+    background: linear-gradient(90deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%); */
+    /* background-image: url("https://st2.depositphotos.com/3213441/12022/v/950/depositphotos_120226584-stock-illustration-pokemon-go-pokeball-seamless-texture.jpg"); */
+    color: black;
+    border-style: solid;
+    border-width: thick;
 }
-.parallax3 > use:nth-child(1) {
-    animation-delay: -2s;
+
+.flip-card-front img {
+    max-width: 150px;
+    max-height: 150px;
 }
-.parallax4 > use {
-    animation: move-forever4 4s linear infinite;
+
+.flip-card-border-white {
+    border-color: white;
 }
-.parallax4 > use:nth-child(1) {
-    animation-delay: -2s;
+
+.flip-card-border-orchid {
+    border-color: #B565A7;
 }
-@keyframes move-forever1 {
-    0% {
-        transform: translate(85px, 0%);
-   }
-    100% {
-        transform: translate(-90px, 0%);
-   }
+
+.flip-card-border-emerald {
+    border-color: #009B77;
 }
-@keyframes move-forever2 {
-    0% {
-        transform: translate(-90px, 0%);
-   }
-    100% {
-        transform: translate(85px, 0%);
-   }
+
+.flip-card-border-coral {
+    border-color: #FF6F61;
 }
-@keyframes move-forever3 {
-    0% {
-        transform: translate(85px, 0%);
-   }
-    100% {
-        transform: translate(-90px, 0%);
-   }
+
+.flip-card-border-turquose {
+    border-color: #45B8AC;
 }
-@keyframes move-forever4 {
-    0% {
-        transform: translate(-90px, 0%);
-   }
-    100% {
-        transform: translate(85px, 0%);
-   }
-} 
+
+
+/* Style the back side */
+
+.flip-card-back {
+    /* background-image: url("https://st2.depositphotos.com/3213441/12022/v/950/depositphotos_120226584-stock-illustration-pokemon-go-pokeball-seamless-texture.jpg"); */
+    color: white;
+    transform: rotateY(180deg);
+}
+
+
+/* =====END-SEAN===== */
