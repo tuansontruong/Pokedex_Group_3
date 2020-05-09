@@ -323,6 +323,26 @@
     min-height: 600px;
 }
 
+#home-carousel .carousel-indicators li {
+    width: 20px;
+   height: 20px;
+   border-radius: 100%;
+   margin-bottom: -50px;
+   margin-left: 20px;
+ }
+
+.bg-carousel-arrow-left {
+    margin-right: -120px;
+    width: 100px;
+    height: 100px;
+}
+
+.bg-carousel-arrow-right {
+    margin-left: -140px;
+    width: 100px;
+    height: 100px;
+}
+
 .top-stack {
     pointer-events: none;
     position: absolute;
@@ -330,6 +350,28 @@
     margin: auto;
     left: 0;
     right: 0;
+}
+
+.frame-stack {
+    pointer-events: none;
+    position: absolute;
+    position:absolute;
+    z-index: 1;
+    left:50%;
+    margin-left: -470px;
+    top: -50px;
+    /* width:200px; */
+}
+
+
+.right-stack {
+    pointer-events: none;
+    position: absolute;
+    position:absolute;
+    z-index: 1;
+    left:50%;
+    margin-left: 400px;
+    width:200px;
 }
 
 .pokemon-carousel-box {
@@ -346,7 +388,9 @@
 }
 
 .carousel-wrapper {
+    margin-top: 200px;
     max-width: 800px;
+    /* height: 1000px; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -361,8 +405,9 @@
   }
 
 .bg-carousel {
+    overflow-x:hidden;
     background-color: #fee8b7;
-    min-height: 600px;
+    min-height: 800px;
 }
 
 #home-carousel{
