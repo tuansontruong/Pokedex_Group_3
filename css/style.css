@@ -325,11 +325,11 @@
 
 #home-carousel .carousel-indicators li {
     width: 20px;
-   height: 20px;
-   border-radius: 100%;
-   margin-bottom: -50px;
-   margin-left: 20px;
- }
+    height: 20px;
+    border-radius: 100%;
+    margin-bottom: -50px;
+    margin-left: 20px;
+}
 
 .bg-carousel-arrow-left {
     margin-right: -120px;
@@ -355,23 +355,22 @@
 .frame-stack {
     pointer-events: none;
     position: absolute;
-    position:absolute;
+    position: absolute;
     z-index: 1;
-    left:50%;
+    left: 50%;
     margin-left: -470px;
     top: -50px;
     /* width:200px; */
 }
 
-
 .right-stack {
     pointer-events: none;
     position: absolute;
-    position:absolute;
+    position: absolute;
     z-index: 1;
-    left:50%;
+    left: 50%;
     margin-left: 400px;
-    width:200px;
+    width: 200px;
 }
 
 .pokemon-carousel-box {
@@ -402,15 +401,15 @@
 #home-carousel .carousel-item {
     height: 500px;
     background-color: #fee8b7;
-  }
+}
 
 .bg-carousel {
-    overflow-x:hidden;
+    overflow-x: hidden;
     background-color: #fee8b7;
     min-height: 800px;
 }
 
-#home-carousel{
+#home-carousel {
     position: relative;
     top: 0;
 }
@@ -420,12 +419,12 @@
     background-position: top center;
     background-size: cover;
     position: absolute;
-    bottom:0;
+    bottom: 0;
     top: 0;
     left: 0;
-    right:0;
+    right: 0;
     width: 100%;
-    height: auto;  
+    height: auto;
 }
 
 
@@ -444,11 +443,12 @@
     top: 0;
 }
 
-.detail-pokedex-img{
+.detail-pokedex-img {
     width: 240px;
     height: auto;
 }
-.detail-pokedex-circle{
+
+.detail-pokedex-circle {
     width: 140px;
 }
 
@@ -666,13 +666,13 @@
     width: calc(100% - 10px);
 }
 
-.carousel-caption{
+.carousel-caption {
     background-color: rgb(136, 58, 58);
     border-radius: 30px;
     opacity: 0.9;
 }
 
-.navBanner{
+.navBanner {
     overflow: hidden;
     position: fixed;
     top: 0;
@@ -681,7 +681,9 @@
     position: fixed;
 }
 
+
 /* NAV + BANNER */
+
 
 /* .section-bubble3,
 .section-bubble4,
@@ -754,16 +756,16 @@ background: linear-gradient(180deg, rgba(126,200,255,1) 8%, rgba(230,142,173,1) 
 /* =====CHRISTINA--ABOUT US==== */
 
 @import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
-
-html, body {
-  background: white;
+html,
+body {
+    background: white;
 }
 
 .center {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -webkit-transform: translate(-50%, -50%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
     display: -webkit-box;
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -776,183 +778,183 @@ html, body {
 }
 
 .aboutus-avatar {
-  border-radius: 50%;
+    border-radius: 50%;
 }
 
 .aboutus-card {
-  width: 450px;
-  height: 250px;
-  background-color: #fff;
-  background: linear-gradient(#f8f8f8, #fff);
-  box-shadow: 0 8px 16px -8px rgba(0,0,0,0.4);
-  border-radius: 6px;
-  overflow: hidden;
-  position: relative;
-  margin: 1.5rem;
-  font-family: Abel, Arial, Verdana, sans-serif;
+    width: 450px;
+    height: 250px;
+    background-color: #fff;
+    background: linear-gradient(#f8f8f8, #fff);
+    box-shadow: 0 8px 16px -8px rgba(0, 0, 0, 0.4);
+    border-radius: 6px;
+    overflow: hidden;
+    position: relative;
+    margin: 1.5rem;
+    font-family: Abel, Arial, Verdana, sans-serif;
 }
 
 .aboutus-card h1 {
-  text-align: center;
+    text-align: center;
 }
 
 .aboutus-card .additional {
-  position: absolute;
-  width: 150px;
-  height: 100%;
-  background: linear-gradient(#dE685E, #EE786E);
-  transition: width 0.4s;
-  overflow: hidden;
-  z-index: 2;
+    position: absolute;
+    width: 150px;
+    height: 100%;
+    background: linear-gradient(#dE685E, #EE786E);
+    transition: width 0.4s;
+    overflow: hidden;
+    z-index: 2;
 }
 
 .aboutus-card.green .additional {
-  background: linear-gradient(#92bCa6, #A2CCB6);
+    background: linear-gradient(#92bCa6, #A2CCB6);
 }
 
-
 .aboutus-card:hover .additional {
-  width: 100%;
-  border-radius: 0 5px 5px 0;
+    width: 100%;
+    border-radius: 0 5px 5px 0;
 }
 
 .aboutus-card .additional .user-card {
-  width: 150px;
-  height: 100%;
-  position: relative;
-  float: left;
+    width: 150px;
+    height: 100%;
+    position: relative;
+    float: left;
 }
 
 .aboutus-card .additional .user-card::after {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 10%;
-  right: -2px;
-  height: 80%;
-  border-left: 2px solid rgba(0,0,0,0.025);*/
+    content: "";
+    display: block;
+    position: absolute;
+    top: 10%;
+    right: -2px;
+    height: 80%;
+    border-left: 2px solid rgba(0, 0, 0, 0.025);
+    */
 }
 
 .aboutus-card .additional .user-card .level,
 .aboutus-card .additional .user-card .points {
-  top: 15%;
-  color: #fff;
-  text-transform: uppercase;
-  font-size: 0.50em;
-  font-weight: bold;
-  background: rgba(0,0,0,0.15);
-  padding: 0.125rem 0.75rem;
-  border-radius: 100px;
-  white-space: nowrap;
-  font-family: Abel, Arial, Verdana, sans-serif;
+    top: 15%;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 0.50em;
+    font-weight: bold;
+    background: rgba(0, 0, 0, 0.15);
+    padding: 0.125rem 0.75rem;
+    border-radius: 100px;
+    white-space: nowrap;
+    font-family: Abel, Arial, Verdana, sans-serif;
 }
 
 .aboutus-card .additional .user-card .points {
-  top: 85%;
+    top: 85%;
 }
 
 .aboutus-card .additional .user-card svg {
-  top: 50%;
+    top: 50%;
 }
 
 .aboutus-card .additional .more-info {
-  width: 300px;
-  float: left;
-  position: absolute;
-  left: 150px;
-  height: 100%;
-  padding-top: 1rem;
+    width: 300px;
+    float: left;
+    position: absolute;
+    left: 150px;
+    height: 100%;
+    padding-top: 1rem;
 }
 
 .aboutus-card .additional .more-info h1 {
-  color: #fff;
-  margin-bottom: 0;
+    color: #fff;
+    margin-bottom: 0;
 }
 
 .aboutus-card.green .additional .more-info h1 {
-  color: #224C36;
+    color: #224C36;
 }
 
 .aboutus-card .additional .coords {
-  margin: 0 1rem;
-  color: #fff;
-  font-size: .75rem;
+    margin: 0 1rem;
+    color: #fff;
+    font-size: .75rem;
 }
 
 .aboutus-card.green .additional .coords {
-  color: #325C46;
+    color: #325C46;
 }
 
-.aboutus-card .additional .coords span + span {
-  float: right;
+.aboutus-card .additional .coords span+span {
+    float: right;
 }
 
 .aboutus-card .additional .stats {
-  font-size: 1.25rem;
-  display: flex;
-  position: absolute;
-  bottom: 1rem;
-  left: 1rem;
-  right: 1rem;
-  top: auto;
-  color: #fff;
+    font-size: 1.25rem;
+    display: flex;
+    position: absolute;
+    bottom: 1rem;
+    left: 1rem;
+    right: 1rem;
+    top: auto;
+    color: #fff;
 }
 
 .aboutus-card.green .additional .stats {
-  color: #325C46;
+    color: #325C46;
 }
 
-.aboutus-card .additional .stats > div {
-  flex: 1;
-  text-align: center;
+.aboutus-card .additional .stats>div {
+    flex: 1;
+    text-align: center;
 }
 
 .aboutus-card .additional .stats i {
-  display: block;
+    display: block;
 }
 
 .aboutus-card .additional .stats div.title {
-  font-size: 0.5rem;
-  font-weight: bold;
-  text-transform: uppercase;
+    font-size: 0.5rem;
+    font-weight: bold;
+    text-transform: uppercase;
 }
 
 .aboutus-card .additional .stats div.value {
-  font-size: 1.25rem;
-  font-weight: bold;
-  line-height: 1.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    line-height: 1.5rem;
 }
 
 .aboutus-card .additional .stats div.value.infinity {
-  font-size: 2.25rem;
+    font-size: 2.25rem;
 }
 
 .aboutus-card .general {
-  width: 300px;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: 0;
-  z-index: 1;
-  box-sizing: border-box;
-  padding: 1rem;
-  padding-top: 1rem;
+    width: 300px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    box-sizing: border-box;
+    padding: 1rem;
+    padding-top: 1rem;
 }
 
 .aboutus-card .general .more {
-  position: absolute;
-  bottom: 1rem;
-  right: 1rem;
-  font-size: 0.9em;
-  padding-top: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    right: 1rem;
+    font-size: 0.9em;
+    padding-top: 1rem;
 }
 
 .aboutus-section {
     padding-bottom: 4rem;
 }
 
-/* ===END-CHRISTINA--ABOUT US== */
 
+/* ===END-CHRISTINA--ABOUT US== */
 
 
 /* =====CHRISTINA--FOOTER==== */
@@ -972,6 +974,7 @@ a {
     text-decoration-line: none;
     color: lightgray;
 }
+
 
 /* ===END-CHRISTINA--FOOTER== */
 
@@ -1116,6 +1119,8 @@ a {
     font-weight: 700;
     border-bottom-left-radius: 14px;
     border-bottom-right-radius: 14px;
+    justify-content: center;
+    display: flex;
 }
 
 .pokemon-card__unit-stats .one-third {
@@ -1155,6 +1160,7 @@ a {
     clear: both;
     height: 0;
 }
+
 
 /* DETAIL PAGE IMAGE GALLERY SECTION */
 
