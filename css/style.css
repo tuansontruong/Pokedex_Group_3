@@ -5,6 +5,28 @@
 
 /* =======VINH======= */
 
+/* spike divider */
+.spikes {
+    position: relative;
+    background: #2c3e50;
+    height: 0vh;
+  }
+  
+  .spikes::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    left: -0%;
+    top: 100%;
+    z-index: 10;
+    display: block;
+    height: 50px;
+    background-size: 50px 100%;
+    background-image: linear-gradient(135deg, #2c3e50 25%, transparent 25%), linear-gradient(225deg, #2c3e50 25%, transparent 25%);
+    background-position: 0 0;
+  }
+  /* spike divider end */
+
 .pkm-name {
     font-family: 'Titillium Web', serif;
     font-size: 35px;
@@ -48,7 +70,7 @@
 }
 
 .pkm-card:hover {
-    animation: wiggle 1s linear infinite;
+    animation: wiggle 1s linear 1;
 }
 
 .pkm-img {
@@ -242,8 +264,10 @@
 }
 
 .pkm-card-section {
-    background-image: url("../img/shattered-island.gif");
-    background-repeat: repeat;
+    /* background-image: url("../img/shattered-island.gif");
+    background-repeat: repeat; */
+    background: rgb(4,59,47);
+background: linear-gradient(180deg, rgba(4,59,47,1) 0%, rgba(44,62,80,1) 100%);
     padding-top: 60px;
     padding-bottom: 80px;
 }
@@ -371,7 +395,6 @@
 .frame-stack {
     pointer-events: none;
     position: absolute;
-    position: absolute;
     z-index: 1;
     left: 50%;
     margin-left: -470px;
@@ -382,7 +405,6 @@
 .right-stack {
     pointer-events: none;
     position: absolute;
-    position: absolute;
     z-index: 5;
     bottom: 0;
     left: 40%;
@@ -392,7 +414,14 @@
     /* width:200px; */
 }
 
-
+.grass-stack {
+    /* pointer-events: none; */
+    position: absolute;
+    width: 100vw;
+    z-index: 6;
+    left: 0;
+    bottom: 0;
+}
 /* 
 .come-from-right {
     animation-duration: 3s;
@@ -495,22 +524,12 @@
     animation: wiggle 1s linear infinite;
 }
 
-@-webkit-keyframes wiggle {
-    0% {
-        -webkit-transform: rotate(0deg);
-    }
-    25% {
-        -webkit-transform: rotate(3deg);
-    }
-    50% {
-        -webkit-transform: rotate(0deg);
-    }
-    75% {
-        -webkit-transform: rotate(-3deg);
-    }
-    100% {
-        -webkit-transform: rotate(0deg);
-    }
+@keyframes wiggle {
+    0% { -webkit-transform: rotate(0deg);} 
+    25% { -webkit-transform: rotate(3deg);} 
+    50% { -webkit-transform: rotate(0deg);}
+    75% { -webkit-transform: rotate(-3deg);}
+    100% { -webkit-transform: rotate(0deg);}
     /* to { -webkit-transform: rotate(0deg) }  */
 }
 
