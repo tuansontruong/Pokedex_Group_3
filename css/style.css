@@ -808,8 +808,15 @@ body {
     overflow: hidden;
     position: relative;
     margin: 1.5rem;
-    font-family: Abel, Arial, Verdana, sans-serif;
+    font-family: 'Titillium Web', serif;
 }
+
+@media only screen and (max-width: 450px) {
+    .aboutus-card{
+      width: 100vw;
+      height: 200px;
+    }
+  }
 
 .aboutus-card h1 {
     text-align: center;
@@ -824,6 +831,14 @@ body {
     overflow: hidden;
     z-index: 2;
 }
+
+@media only screen and (max-width: 450px) {
+    .aboutus-card .additional{
+      width: 34vw;
+      height: 200px;
+      position: absolute;
+    }
+  }
 
 .aboutus-card.green .additional {
     background: linear-gradient(#92bCa6, #A2CCB6);
@@ -841,6 +856,15 @@ body {
     float: left;
 }
 
+@media only screen and (max-width: 450px) {
+    .aboutus-card .additional .user-card {
+      width: 34vw;
+      height: 200px;
+      position: relative;
+      float: left;
+    }
+  }
+
 .aboutus-card .additional .user-card::after {
     content: "";
     display: block;
@@ -850,6 +874,14 @@ body {
     height: 80%;
     border-left: 2px solid rgba(0, 0, 0, 0.025);
 }
+
+@media only screen and (max-width: 450px) {
+    .aboutus-card .additional .user-card::after {
+      width: 34vw;
+      height: 200px;
+      position: absolute;
+    }
+  }
 
 .aboutus-card .additional .user-card .level,
 .aboutus-card .additional .user-card .points {
@@ -873,6 +905,20 @@ body {
     top: 50%;
 }
 
+.member-name {
+    font-size: 35px;
+}
+
+@media only screen and (max-width: 450px) {
+    .member-name {
+      font-size: 25px;
+    }
+  }
+
+.quote {
+    font-size: 15px;
+}
+
 .aboutus-card .additional .more-info {
     width: 300px;
     float: left;
@@ -881,6 +927,17 @@ body {
     height: 100%;
     padding-top: 1rem;
 }
+
+@media only screen and (max-width: 450px) {
+    .aboutus-card .additional .more-info {
+      width: 66vw;
+      height: 200px;
+      position: absolute;
+      float: left;
+      left: 34vw;
+      padding-top: 1rem;
+    }
+  }
 
 .aboutus-card .additional .more-info h1 {
     color: #fff;
@@ -956,6 +1013,19 @@ body {
     padding: 1rem;
     padding-top: 1rem;
 }
+
+@media only screen and (max-width: 450px) {
+    .aboutus-card .general {
+      width: 66vw;
+      height: 200px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      box-sizing: border-box;
+    }
+  }
+
 
 .aboutus-card .general .more {
     position: absolute;
