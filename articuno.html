@@ -10,7 +10,56 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="https://www.coderschool.vn/icons/icon-48x48.png?v=00d51f92a4c79a319bb2416e94445801">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        function scrollDownCardSection() {
+            event.preventDefault();
 
+            $('html, body').animate({
+                scrollTop: $("#cardDex-jq").offset().top
+            }, 1000);
+        }
+
+        function scrollDownMoreToExplore() {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $("#moreToExplore-jq").offset().top
+            }, 1000);
+        }
+
+        function redirectPikachuPage() {
+            location.href = "pikachu.html"
+        }
+
+        function redirectCaterpiePage() {
+            location.href = "caterpie.html"
+        }
+
+        function redirectSquirtlePage() {
+            location.href = "squirtle.html"
+        }
+
+        function redirectCharmanderPage() {
+            location.href = "charmander.html"
+        }
+
+        function redirectDratiniPage() {
+            location.href = "dratini.html"
+        }
+
+        function redirectSnorlaxPage() {
+            location.href = "snorlax.html"
+        }
+
+        function redirectArticunoPage() {
+            location.href = "articuno.html"
+        }
+
+        function redirectBulbasaurPage() {
+            location.href = "bulbasaur.html"
+        }
+    </script>
 </head>
 
 <body class="detail-body">
@@ -25,19 +74,21 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link text-white nav-items" style=" font-size:21px; margin: 0 20px; font-family: 'Titillium Web', serif;" href="#homePage">HOME</a>
+                        <a class="nav-link text-white nav-items" style=" font-size:21px; margin: 0 20px; font-family: 'Titillium Web', serif;" href="index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white nav-items" style="font-size:21px;margin: 0 20px; font-family: 'Titillium Web', serif;" href="#" onClick="scrollDown()" id="pokemon">POKéMON</a>
+                        <a class="nav-link text-white nav-items" style="font-size:21px;margin: 0 20px; font-family: 'Titillium Web', serif;" href="#" onClick="scrollDownCardSection()" id="pokemon">POKéMON</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white nav-items" style=" font-size:21px;margin: 0 20px; font-family: 'Titillium Web', serif;" href="#aboutUs" data-id="aboutUs">ABOUT US</a>
+                        <a class="nav-link text-white nav-items" style=" font-size:21px;margin: 0 20px; font-family: 'Titillium Web', serif;" href="#" onClick="scrollDownMoreToExplore()" data-id="aboutUs">SEE MORE</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
 
+
+        <div id="cardDex-jq"></div>
 
 
         <div class="detail-gradient">
@@ -54,10 +105,9 @@
                             <h1 class="detail-pokedex-font">Articuno</h1>
                             <!--TYPE-->
                             <p class="pkm-type">Type: <span class="ice-type badge badge-pill badge-secondary">Ice</span> <span class="flying-type badge badge-pill badge-secondary">Flying</span></p>
-
                         </div>
                         <div class="col-4">
-                            <img class="d-flex detail-pokedex-img" src="img/articuno.png" alt="Articuno">
+                            <img class="d-flex detail-pokedex-img img-fluid" src="img/articuno.png" alt="Articuno">
                         </div>
 
                     </div>
@@ -65,72 +115,323 @@
             </section>
 
             <section class="container detail-main">
-                <div class="detail-font row justify-content-between">
+                <div class="detail-font">
                     <div class="col-sm">
                         <div class="container">
-                            <!--ABOUT-->
-                            <h1>About</h1>
-                            <p>Articuno (Japanese: フリーザー Furiizaa) is an Ice/Flying-type Legendary Pokémon introduced in Generation I. It is part of the Kanto Legendary Birds, along with Zapdos and Moltres.</p>
-                        </div>
-                        <hr>
-                        <div class="container">
-                            <!--PROFILE-->
-                            <!-- <h1>Articuno</h1> -->
-                            <section class="row">
-                                <div class="col-4"><b>Height:</b> 1.7 m</div>
-                                <div class="col-4"><b>Weight:</b> 55.4 kg
-                                </div>
-                                <div class="col-4"><b>Catch Rate:</b> 0%
-                                </div>
-                                <br>
-                                <div class="w-100"></div>
-                                <br>
-                                <div class="col-4"><b>Gender Ratio:</b> N/A
-                                </div>
-                                <div class="col-4"><b>Egg Groups:</b> No Eggs
-                                </div>
-                                <div class="col-4"><b>Abilities:</b> Pressure, Snow-cloak
-                                </div>
-
-                            </section>
-                        </div>
-                        <hr>
-                        <div class="container">
-                            <!--PHOTO GALLERY-->
-                            <h1>Photo Gallery</h1>
                             <div class="row">
-                                <img src="https://www.pinclipart.com/picdir/big/78-783742_freeuse-stock-articuno-drawing-pokemon-pictures-of-articuno.png" class="rounded col-4 img-responsive" alt="...">
-                                <img src="https://static.pokemonpets.com/images/monsters-images-300-300/2144-Shiny-Articuno.png" class="rounded col-4 img-fluid" alt="...">
-                                <img src="https://i.pinimg.com/originals/32/ee/8d/32ee8d264f05d74b55ff47c23163f348.jpg" class="rounded col-4" alt="...">
+                                <div class="col-md-8">
+                                    <!--ABOUT-->
+                                    <h1>About</h1>
+                                    <p>Articuno (Japanese: フリーザー Furiizaa) is an Ice/Flying-type Legendary Pokémon introduced in Generation I. It is part of the Kanto Legendary Birds, along with Zapdos and Moltres.</p>
+                                    <hr>
+                                    <section class="row">
+                                        <div class="col-4"><b>Height:</b> 1.7 m</div>
+                                        <div class="col-4"><b>Weight:</b> 55.4 kg
+                                        </div>
+                                        <div class="col-4"><b>Catch Rate:</b> 0%
+                                        </div>
+                                        <br>
+                                        <div class="w-100"></div>
+                                        <br>
+                                        <div class="col-4"><b>Gender Ratio:</b> N/A
+                                        </div>
+                                        <div class="col-4"><b>Egg Groups:</b> No Eggs
+                                        </div>
+                                        <div class="col-4"><b>Abilities:</b> Pressure, Snow-cloak
+                                        </div>
+
+                                    </section>
+                                </div>
+                                <div class="col-md-4">
+                                    <div class="container">
+                                        <!--STATS-->
+                                        <h1>Stats</h1>
+                                        <div class="bar black lvl2" data-skill="HP"></div>
+                                        <div class="bar lvl1" data-skill="Attack"></div>
+                                        <div class="bar blue lvl1" data-skill="Defense"></div>
+                                        <div class="bar violet lvl4" data-skill="Sp Attack"></div>
+                                        <div class="bar green lvl5" data-skill="Sp Defense"></div>
+                                        <div class="bar yellow lvl3" data-skill="Speed"></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="container">
+                                    <h1>Articuno Sightings</h1>
+                                    <img id="mapImg" src="/img/map1.png" class="img-fluid" width="500" height="300">
+
+                                    <div id="myModal" class="modal">
+                                        <img class="modal-content" id="img01">
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <h1 class="container">Evolutions</h1>
+                                <p class="container d-flex">
+                                    <div class="evo-box">
+                                        <img class="img-fluid first-form" src="img/articuno.png">
+                                    </div>
+                                </p>
                             </div>
                         </div>
 
-                    </div>
-                    <hr>
-                    <div class="col-lg-5">
-                        <div class="container">
-                            <!--STATS-->
-                            <h1>Stats</h1>
-                            <div class="bar black lvl3" data-skill="HP" style="margin-top: 50px;"></div>
-                            <div class="bar lvl3" data-skill="Attack" style="margin-top: 50px;"></div>
-                            <div class="bar blue lvl4" data-skill="Defense" style="margin-top: 50px;"></div>
-                            <div class="bar lvl4" data-skill="Sp Attack" style="margin-top: 50px;"></div>
-                            <div class="bar blue lvl5" data-skill="Sp Defense" style="margin-top: 50px;"></div>
-                            <div class="bar yellow lvl5" data-skill="Speed" style="margin-top: 50px;"></div>
-                        </div>
+                        <!-- <div class="container" -->
+                        <!--PROFILE-->
+                        <!-- <h1>Bulbasaur</h1> -->
+
+                        <!-- </div> -->
+
+
+
                     </div>
                 </div>
-                <hr>
                 <!--EVOLUTIONS-->
-                <h1 class="container">Evolutions</h1>
-                <p class="container">
-                    <img src="https://i.pinimg.com/originals/bf/db/c6/bfdbc62c455d6e4b5456aae89ab64493.jpg" alt="evolution-img" style="width: 100%; height: 350px" />
-                </p>
+
             </section>
 
+            <div id="moreToExplore-jq"></div>
             <section class="detail-pkm-card-section">
-                <h1>Some More Stuff</h1>
-                <p>blah blah</p>
+                <h1 style="font-family:'Titillium Web', serif;">More To Explore</h1>
+                <!--Carousel Wrapper-->
+                <div id="recommendations" class="carousel slide carousel-multi-item carousel-multi-item-2" data-ride="carousel">
+
+                    <!--Slides-->
+                    <div class="carousel-inner" style="overflow: inherit;" role="listbox">
+
+                        <!--First slide-->
+                        <div class="carousel-item active">
+
+                            <div class="pokemon-card pikachu mx-3 my-3 shrink" onclick="redirectPikachuPage()">
+                                <div class="pokemon-card__image pokemon-card__image--pikachu">
+                                    <img src="https://www.kindpng.com/picc/b/9/96543.png" alt="pikachu" />
+                                </div>
+                                <div class="pokemon-card__level pokemon-card__level--pikachu">Mouse</div>
+                                <div class="pokemon-card__unit-name">Pikachu</div>
+                                <div class="pokemon-card__unit-description">
+                                    Its nature is to store up electricity. Forests where nests of Pikachu live are dangerous, since the trees are so often struck by lightning.
+                                </div>
+
+                                <div class="pokemon-card__unit-stats pokemon-card__unit-stats--pikachu clearfix">
+                                    <div class="one-third">
+                                        <div class="stat">1'04"</div>
+                                        <div class="stat-value">Height</div>
+                                    </div>
+
+                                    <div class="one-third">
+                                        <div class="stat">13.2</div>
+                                        <div class="stat-value">Weight(lbs)</div>
+                                    </div>
+
+                                    <!-- <div class="one-third no-border">
+                                        <div class="stat">♂</div>
+                                        <div class="stat-value">Gender</div>
+                                    </div> -->
+
+                                </div>
+
+                            </div>
+
+                            <div class="pokemon-card caterpie mx-3 my-3 shrink" onclick="redirectCaterpiePage()">
+                                <div class="pokemon-card__image pokemon-card__image--caterpie">
+                                    <img src="img/caterpie.png" alt="caterpie" />
+                                </div>
+                                <div class="pokemon-card__level pokemon-card__level--caterpie">Worm</div>
+                                <div class="pokemon-card__unit-name">Caterpie</div>
+                                <div class="pokemon-card__unit-description">
+                                    Perhaps because it would like to grow up quickly, it has a voracious appetite, eating a hundred leaves a day.
+                                </div>
+
+                                <div class="pokemon-card__unit-stats pokemon-card__unit-stats--caterpie clearfix">
+                                    <div class="one-third">
+                                        <div class="stat">1'00"</div>
+                                        <div class="stat-value">Height</div>
+                                    </div>
+
+                                    <div class="one-third">
+                                        <div class="stat">6.4</div>
+                                        <div class="stat-value">Weight(lbs)</div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="pokemon-card squirtle mx-3 my-3 shrink" onclick="redirectSquirtlePage()">
+                                <div class="pokemon-card__image pokemon-card__image--squirtle">
+                                    <img src="img/squirtle.png" alt="squirtle" />
+                                </div>
+                                <div class="pokemon-card__level pokemon-card__level--squirtle">Tiny Turtle</div>
+                                <div class="pokemon-card__unit-name">Squirtle</div>
+                                <div class="pokemon-card__unit-description">
+                                    Squirtle's shell is not merely used for protection. The grooves on its surface help minimize resistance in water.
+                                </div>
+
+                                <div class="pokemon-card__unit-stats pokemon-card__unit-stats--squirtle clearfix">
+                                    <div class="one-third">
+                                        <div class="stat">1'08"</div>
+                                        <div class="stat-value">Height</div>
+                                    </div>
+
+                                    <div class="one-third">
+                                        <div class="stat">19.8</div>
+                                        <div class="stat-value">Weight(lbs)</div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="pokemon-card charmander mx-3 my-3 shrink" onclick="redirectCharmanderPage()">
+                                <div class="pokemon-card__image pokemon-card__image--charmander">
+                                    <img src="img/charmander.png" alt="charmander" />
+                                </div>
+                                <div class="pokemon-card__level pokemon-card__level--charmander">Lizard</div>
+                                <div class="pokemon-card__unit-name">Charmander</div>
+                                <div class="pokemon-card__unit-description">
+                                    The flame that burns at the tip of its tail is an indication of its emotions. The flame wavers when Charmander is enjoying itself.</div>
+
+                                <div class="pokemon-card__unit-stats pokemon-card__unit-stats--charmander clearfix">
+                                    <div class="one-third">
+                                        <div class="stat">2'00"</div>
+                                        <div class="stat-value">Height</div>
+                                    </div>
+
+                                    <div class="one-third">
+                                        <div class="stat">18.7</div>
+                                        <div class="stat-value">Weight(lbs)</div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!--/.First slide-->
+
+                        <!--Second slide-->
+                        <div class="carousel-item">
+
+                            <div class="pokemon-card dratini mx-3 my-3 shrink" onclick="redirectDratiniPage()">
+                                <div class="pokemon-card__image pokemon-card__image--dratini">
+                                    <img src="/img/dratini.png" alt="pikachu" />
+                                </div>
+                                <div class="pokemon-card__level pokemon-card__level--pikachu">Dragon</div>
+                                <div class="pokemon-card__unit-name">Dratini</div>
+                                <div class="pokemon-card__unit-description">
+                                    It's still weak, so it lurks on the floor of bodies of water, eating whatever food sinks down and living a quiet life.
+                                </div>
+
+                                <div class="pokemon-card__unit-stats pokemon-card__unit-stats--pikachu clearfix">
+                                    <div class="one-third">
+                                        <div class="stat">5'11"</div>
+                                        <div class="stat-value">Height</div>
+                                    </div>
+
+                                    <div class="one-third">
+                                        <div class="stat">7.3</div>
+                                        <div class="stat-value">Weight(lbs)</div>
+                                    </div>
+
+                                    <!-- <div class="one-third no-border">
+                                        <div class="stat">♂</div>
+                                        <div class="stat-value">Gender</div>
+                                    </div> -->
+
+                                </div>
+
+                            </div>
+
+                            <div class="pokemon-card caterpie mx-3 my-3 shrink" onclick="redirectSnorlaxPage()">
+                                <div class="pokemon-card__image pokemon-card__image--snorlax">
+                                    <img src="img/snorlax.png" alt="caterpie" />
+                                </div>
+                                <div class="pokemon-card__level pokemon-card__level--caterpie">Sleeping</div>
+                                <div class="pokemon-card__unit-name">Snorlax</div>
+                                <div class="pokemon-card__unit-description">
+                                    It doesn't do anything other than eat and sleep. When prompted to make a serious effort, it apparently displays awesome power. </div>
+
+                                <div class="pokemon-card__unit-stats pokemon-card__unit-stats--caterpie clearfix">
+                                    <div class="one-third">
+                                        <div class="stat">6'11"</div>
+                                        <div class="stat-value">Height</div>
+                                    </div>
+
+                                    <div class="one-third">
+                                        <div class="stat">6.4</div>
+                                        <div class="stat-value">Weight(lbs)</div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="pokemon-card squirtle mx-3 my-3 shrink" onclick="redirectArticunoPage()">
+                                <div class="pokemon-card__image pokemon-card__image--squirtle">
+                                    <img src="img/articuno.png" alt="squirtle" />
+                                </div>
+                                <div class="pokemon-card__level pokemon-card__level--squirtle">Freeze</div>
+                                <div class="pokemon-card__unit-name">Articuno</div>
+                                <div class="pokemon-card__unit-description">
+                                    Articuno is a legendary bird Pokémon that can control ice. The flapping of its wings chills the air. Snow will fall. </div>
+
+                                <div class="pokemon-card__unit-stats pokemon-card__unit-stats--squirtle clearfix">
+                                    <div class="one-third">
+                                        <div class="stat">5'07"</div>
+                                        <div class="stat-value">Height</div>
+                                    </div>
+
+                                    <div class="one-third">
+                                        <div class="stat">122.1</div>
+                                        <div class="stat-value">Weight(lbs)</div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="pokemon-card charmander mx-3 my-3 shrink" onclick="redirectBulbasaurPage()">
+                                <div class="pokemon-card__image pokemon-card__image--bulbasaur">
+                                    <img src="img/bulbasaur.png" alt="charmander" />
+                                </div>
+                                <div class="pokemon-card__level pokemon-card__level--charmander">Seed</div>
+                                <div class="pokemon-card__unit-name">Bulbasaur</div>
+                                <div class="pokemon-card__unit-description">
+                                    Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. The seed grows progressively larger.
+                                </div>
+                                <div class="pokemon-card__unit-stats pokemon-card__unit-stats--charmander clearfix">
+                                    <div class="one-third">
+                                        <div class="stat">2'04"</div>
+                                        <div class="stat-value">Height</div>
+                                    </div>
+
+                                    <div class="one-third">
+                                        <div class="stat">15.2</div>
+                                        <div class="stat-value">Weight(lbs)</div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+                        <!--/.Second slide-->
+
+                        <a href="#recommendations" class="carousel-control-prev" role="button" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a href="#recommendations" class="carousel-control-next" role="button" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    </div>
+                    <!--/.Slides-->
+
+                </div>
+                <!--/.Carousel Wrapper-->
 
 
             </section>
@@ -282,13 +583,37 @@
 
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous ">
-    </script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "> -->
+    <!-- </script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous ">
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous ">
     </script>
 
+    <script>
+        // Get the modal
+        var modal = document.getElementById('myModal');
 
+        // Get the image and insert it inside the modal - use its "alt" text as a caption
+        var img = document.getElementById('mapImg');
+        var modalImg = document.getElementById("img01");
+        var captionText = document.getElementById("caption");
+        img.onclick = function() {
+            modal.style.display = "block";
+            modalImg.src = this.src;
+            modalImg.alt = this.alt;
+        }
+
+
+        // When the user clicks on <span> (x), close the modal
+        modal.onclick = function() {
+            img01.className += " out";
+            setTimeout(function() {
+                modal.style.display = "none";
+                img01.className = "modal-content";
+            }, 400);
+
+        }
+    </script>
 
 </html>

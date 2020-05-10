@@ -391,6 +391,8 @@
     animation-name: slidefromright; */
     /* width:200px; */
 }
+
+
 /* 
 .come-from-right {
     animation-duration: 3s;
@@ -494,14 +496,23 @@
 }
 
 @-webkit-keyframes wiggle {
-    0% { -webkit-transform: rotate(0deg);} 
-    25% { -webkit-transform: rotate(3deg);} 
-    50% { -webkit-transform: rotate(0deg);}
-    75% { -webkit-transform: rotate(-3deg);}
-    100% { -webkit-transform: rotate(0deg);}
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(3deg);
+    }
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    75% {
+        -webkit-transform: rotate(-3deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
     /* to { -webkit-transform: rotate(0deg) }  */
 }
-
 
 .detail-pokedex-circle {
     width: 140px;
@@ -652,11 +663,21 @@
 }
 
 @keyframes first-evo {
-    0%   { opacity: 0; }
-    20%   { opacity: 1; }
-    40% { opacity: 1; }
-    90% { opacity: 1; }
-    100% { opacity: 0; }
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 .second-form {
@@ -664,11 +685,21 @@
 }
 
 @keyframes second-evo {
-    0%   { opacity: 0; }
-    20%   { opacity: 0; }
-    40% { opacity: 1; }
-    90% { opacity: 1; }
-    100% { opacity: 0; }
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 .third-form {
@@ -676,12 +707,23 @@
 }
 
 @keyframes third-evo {
-    0%   { opacity: 0; }
-    40%   { opacity: 0; }
-    60% { opacity: 1; }
-    90% { opacity: 1; }
-    100% { opacity: 0; }
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
+
 
 /* ====END-DEREK===== */
 
@@ -841,12 +883,12 @@
     z-index: 10;
 }
 
-.carousel-control-prev-icon{
+.carousel-control-prev-icon {
     height: 50px;
     width: 50px;
 }
 
-.carousel-control-next-icon{
+.carousel-control-next-icon {
     height: 50px;
     width: 50px;
 }
@@ -903,7 +945,7 @@ body {
       margin-left: 0px;
         margin-right: 0px;
     }
-  }
+}
 
 .aboutus-card h1 {
     text-align: center;
@@ -920,12 +962,12 @@ body {
 }
 
 @media only screen and (max-width: 450px) {
-    .aboutus-card .additional{
-      width: 34vw;
-      height: 200px;
-      position: absolute;
+    .aboutus-card .additional {
+        width: 34vw;
+        height: 200px;
+        position: absolute;
     }
-  }
+}
 
 .aboutus-card.green .additional {
     background: linear-gradient(#92bCa6, #A2CCB6);
@@ -945,12 +987,12 @@ body {
 
 @media only screen and (max-width: 450px) {
     .aboutus-card .additional .user-card {
-      width: 34vw;
-      height: 200px;
-      position: relative;
-      float: left;
+        width: 34vw;
+        height: 200px;
+        position: relative;
+        float: left;
     }
-  }
+}
 
 .aboutus-card .additional .user-card::after {
     content: "";
@@ -964,11 +1006,11 @@ body {
 
 @media only screen and (max-width: 450px) {
     .aboutus-card .additional .user-card::after {
-      width: 34vw;
-      height: 200px;
-      position: absolute;
+        width: 34vw;
+        height: 200px;
+        position: absolute;
     }
-  }
+}
 
 .aboutus-card .additional .user-card .level,
 .aboutus-card .additional .user-card .points {
@@ -998,9 +1040,9 @@ body {
 
 @media only screen and (max-width: 450px) {
     .member-name {
-      font-size: 25px;
+        font-size: 25px;
     }
-  }
+}
 
 .quote {
     font-size: 15px;
@@ -1017,14 +1059,14 @@ body {
 
 @media only screen and (max-width: 450px) {
     .aboutus-card .additional .more-info {
-      width: 66vw;
-      height: 200px;
-      position: absolute;
-      float: left;
-      left: 34vw;
-      padding-top: 1rem;
+        width: 66vw;
+        height: 200px;
+        position: absolute;
+        float: left;
+        left: 34vw;
+        padding-top: 1rem;
     }
-  }
+}
 
 .aboutus-card .additional .more-info h1 {
     color: #fff;
@@ -1111,8 +1153,7 @@ body {
       z-index: 1;
       box-sizing: border-box;
     }
-  }
-
+}
 
 .aboutus-card .general .more {
     position: absolute;
@@ -1183,6 +1224,7 @@ a {
     z-index: 9999;
     font: 14px/20px 'Titillium Web', serif;
     color: #9E9E9E;
+    cursor: pointer;
 }
 
 .pokemon-card__image {
@@ -1725,6 +1767,7 @@ a {
 #mapImg:hover {
     opacity: 0.7;
 }
+
 
 /* The Modal (background) */
 
