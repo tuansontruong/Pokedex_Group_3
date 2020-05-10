@@ -47,6 +47,10 @@
     transition-duration: 0.7s;
 }
 
+.pkm-card:hover {
+    animation: wiggle 1s linear infinite;
+}
+
 .pkm-img {
     height: 160px;
     width: auto;
@@ -437,6 +441,7 @@
 }
 
 .bg-carousel {
+    /* border-top: 5px solid darkslategrey; */
     padding-top: 10vh;
     /* padding-bottom: 10vh; */
     overflow-x: hidden;
@@ -493,7 +498,7 @@
     25% { -webkit-transform: rotate(3deg);} 
     50% { -webkit-transform: rotate(0deg);}
     75% { -webkit-transform: rotate(-3deg);}
-    100% {{ -webkit-transform: rotate(0deg);}}
+    100% { -webkit-transform: rotate(0deg);}
     /* to { -webkit-transform: rotate(0deg) }  */
 }
 
@@ -646,7 +651,7 @@
     animation: first-evo 7s linear infinite;
 }
 
-@-webkit-keyframes first-evo {
+@keyframes first-evo {
     0%   { opacity: 0; }
     20%   { opacity: 1; }
     40% { opacity: 1; }
@@ -658,7 +663,7 @@
     animation: second-evo 7s linear infinite;
 }
 
-@-webkit-keyframes second-evo {
+@keyframes second-evo {
     0%   { opacity: 0; }
     20%   { opacity: 0; }
     40% { opacity: 1; }
@@ -670,7 +675,7 @@
     animation: third-evo 7s linear infinite;
 }
 
-@-webkit-keyframes third-evo {
+@keyframes third-evo {
     0%   { opacity: 0; }
     40%   { opacity: 0; }
     60% { opacity: 1; }
