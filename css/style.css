@@ -203,7 +203,7 @@
     /* text-shadow: 2px 2px 0px red; */
     text-shadow: -2px -2px 0 rgb(17, 238, 109), 2px -2px 0 rgb(238, 124, 17), -2px 2px 0 rgb(238, 17, 238), 2px 2px 0 rgb(238, 124, 17);
     /* filter: drop-shadow(0px 0px 12px rgb(236, 238, 142)); */
-    letter-spacing: 3px;  
+    letter-spacing: 3px;
 }
 
 .pkm-card-header {
@@ -378,10 +378,10 @@
 .right-stack {
     pointer-events: none;
     position: absolute;
-    position:absolute;
+    position: absolute;
     z-index: 5;
     bottom: 0;
-    left:40%;
+    left: 40%;
     margin-left: 400px;
     /* width:200px; */
 }
@@ -427,8 +427,8 @@
 .bg-carousel {
     padding-top: 10vh;
     /* padding-bottom: 10vh; */
-    overflow-x:hidden;
-    overflow-y:hidden;
+    overflow-x: hidden;
+    overflow-y: hidden;
     /* background-color: #fee8b7; */
     background-image: url('../img/Pokemon_03.svg');
     background-repeat: repeat;
@@ -489,7 +489,8 @@
 
 .detail-gradient {
     background: rgb(2, 0, 36);
-    background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(1, 0, 19, 1) 72%, rgba(0, 0, 0, 0) 100%);
+    /* background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(1, 0, 19, 1) 72%, rgba(0, 0, 0, 0) 100%); */
+    background-image: url('/detail-img/lightning_bg.jpg');
 }
 
 .detail-header {
@@ -532,15 +533,16 @@
 
 .detail-main {
     padding: 2rem;
-    background-color: white;
+    /* background-color: white; */
+    background: #fff url('/detail-img/container_bg.png');
     height: auto;
     margin-bottom: 40px;
 }
 
 .detail-pkm-card-section {
-    background-image: url("/img/shattered-island.gif");
+    /* background-image: url("/img/shattered-island.gif"); */
     background-repeat: repeat;
-    padding-top: 60px;
+    /* padding-top: 60px; */
     padding-bottom: 40px;
     text-align: center;
     color: white;
@@ -610,11 +612,12 @@
 
 
 /* ======ANH HUY===== */
+
 #first-carousel {
     min-height: 100vh;
 }
 
-#carouselExampleIndicators > #first-carousel > .carousel-item {
+#carouselExampleIndicators>#first-carousel>.carousel-item {
     min-height: 100vh;
     /* width: 100vw; */
     /* align-items: flex-start; */
@@ -677,6 +680,7 @@
     -webkit-animation: load 2s 0s;
     -moz-animation: load 2s 0s;
     -o-animation: load 2s 0s;
+    white-space: nowrap;
 }
 
 .bar.yellow::before {
@@ -689,6 +693,14 @@
 
 .bar.black::before {
     background-color: rgb(66, 66, 66);
+}
+
+.bar.violet::before {
+    background-color: #6B5B95;
+}
+
+.bar.green::before {
+    background-color: #88B04B;
 }
 
 .bar.lvl1::before {
@@ -745,8 +757,6 @@
     right: 0;
     left: 0;
 }
-
-
 
 .navBanner {
     overflow: hidden;
@@ -1498,7 +1508,7 @@ a {
 
 /* IMAGE MODAL */
 
-#myImg {
+#mapImg {
     border-radius: 5px;
     cursor: pointer;
     transition: 0.3s;
@@ -1507,7 +1517,7 @@ a {
     margin-right: auto
 }
 
-#myImg:hover {
+#mapImg:hover {
     opacity: 0.7;
 }
 
@@ -1544,7 +1554,6 @@ a {
     margin: auto;
     display: block;
     width: 75%;
-    //max-width: 75%;
 }
 
 
