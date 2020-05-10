@@ -10,7 +10,56 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="https://www.coderschool.vn/icons/icon-48x48.png?v=00d51f92a4c79a319bb2416e94445801">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script>
+        function scrollDownCardSection() {
+            event.preventDefault();
 
+            $('html, body').animate({
+                scrollTop: $("#cardDex-jq").offset().top
+            }, 1000);
+        }
+
+        function scrollDownMoreToExplore() {
+            event.preventDefault();
+
+            $('html, body').animate({
+                scrollTop: $("#moreToExplore-jq").offset().top
+            }, 1000);
+        }
+
+        function redirectPikachuPage() {
+            location.href = "pikachu.html"
+        }
+
+        function redirectCaterpiePage() {
+            location.href = "caterpie.html"
+        }
+
+        function redirectSquirtlePage() {
+            location.href = "squirtle.html"
+        }
+
+        function redirectCharmanderPage() {
+            location.href = "charmander.html"
+        }
+
+        function redirectDratiniPage() {
+            location.href = "dratini.html"
+        }
+
+        function redirectSnorlaxPage() {
+            location.href = "snorlax.html"
+        }
+
+        function redirectArticunoPage() {
+            location.href = "articuno.html"
+        }
+
+        function redirectBulbasaurPage() {
+            location.href = "bulbasaur.html"
+        }
+    </script>
 </head>
 
 <body class="detail-body">
@@ -25,19 +74,21 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        <a class="nav-link text-white nav-items" style=" font-size:21px; margin: 0 20px; font-family: 'Titillium Web', serif;" href="#homePage">HOME</a>
+                        <a class="nav-link text-white nav-items" style=" font-size:21px; margin: 0 20px; font-family: 'Titillium Web', serif;" href="index.html">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white nav-items" style="font-size:21px;margin: 0 20px; font-family: 'Titillium Web', serif;" href="#" onClick="scrollDown()" id="pokemon">POKéMON</a>
+                        <a class="nav-link text-white nav-items" style="font-size:21px;margin: 0 20px; font-family: 'Titillium Web', serif;" href="#" onClick="scrollDownCardSection()" id="pokemon">POKéMON</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white nav-items" style=" font-size:21px;margin: 0 20px; font-family: 'Titillium Web', serif;" href="#aboutUs" data-id="aboutUs">ABOUT US</a>
+                        <a class="nav-link text-white nav-items" style=" font-size:21px;margin: 0 20px; font-family: 'Titillium Web', serif;" href="#" onClick="scrollDownMoreToExplore()" data-id="aboutUs">SEE MORE</a>
                     </li>
                 </ul>
             </div>
         </nav>
 
 
+
+        <div id="cardDex-jq"></div>
 
 
         <div class="detail-gradient">
@@ -129,13 +180,13 @@
                                     <div class="evo-box">
                                         <img class="img-fluid third-form" src="img/venusaur.png">
                                     </div>
-            
+
                                 </p>
                             </div>
                         </div>
 
                         <!-- <div class="container" -->
-                            <!--PROFILE-->
+                        <!--PROFILE-->
                         <!-- <h1>Bulbasaur</h1> -->
 
                         <!-- </div> -->
@@ -148,6 +199,7 @@
 
             </section>
 
+            <div id="moreToExplore-jq"></div>
             <section class="detail-pkm-card-section">
                 <h1 style="font-family:'Titillium Web', serif;">More To Explore</h1>
                 <!--Carousel Wrapper-->
@@ -159,7 +211,7 @@
                         <!--First slide-->
                         <div class="carousel-item active">
 
-                            <div class="pokemon-card pikachu mx-3 my-3 shrink">
+                            <div class="pokemon-card pikachu mx-3 my-3 shrink" onclick="redirectPikachuPage()">
                                 <div class="pokemon-card__image pokemon-card__image--pikachu">
                                     <img src="https://www.kindpng.com/picc/b/9/96543.png" alt="pikachu" />
                                 </div>
@@ -189,7 +241,7 @@
 
                             </div>
 
-                            <div class="pokemon-card caterpie mx-3 my-3 shrink">
+                            <div class="pokemon-card caterpie mx-3 my-3 shrink" onclick="redirectCaterpiePage()">
                                 <div class="pokemon-card__image pokemon-card__image--caterpie">
                                     <img src="img/caterpie.png" alt="caterpie" />
                                 </div>
@@ -214,7 +266,7 @@
 
                             </div>
 
-                            <div class="pokemon-card squirtle mx-3 my-3 shrink">
+                            <div class="pokemon-card squirtle mx-3 my-3 shrink" onclick="redirectSquirtlePage()">
                                 <div class="pokemon-card__image pokemon-card__image--squirtle">
                                     <img src="img/squirtle.png" alt="squirtle" />
                                 </div>
@@ -239,7 +291,7 @@
 
                             </div>
 
-                            <div class="pokemon-card charmander mx-3 my-3 shrink">
+                            <div class="pokemon-card charmander mx-3 my-3 shrink" onclick="redirectCharmanderPage()">
                                 <div class="pokemon-card__image pokemon-card__image--charmander">
                                     <img src="img/charmander.png" alt="charmander" />
                                 </div>
@@ -263,15 +315,13 @@
 
                             </div>
 
-
-
                         </div>
                         <!--/.First slide-->
 
                         <!--Second slide-->
                         <div class="carousel-item">
 
-                            <div class="pokemon-card dratini mx-3 my-3 shrink">
+                            <div class="pokemon-card dratini mx-3 my-3 shrink" onclick="redirectDratiniPage()">
                                 <div class="pokemon-card__image pokemon-card__image--dratini">
                                     <img src="/img/dratini.png" alt="pikachu" />
                                 </div>
@@ -301,7 +351,7 @@
 
                             </div>
 
-                            <div class="pokemon-card caterpie mx-3 my-3 shrink">
+                            <div class="pokemon-card caterpie mx-3 my-3 shrink" onclick="redirectSnorlaxPage()">
                                 <div class="pokemon-card__image pokemon-card__image--snorlax">
                                     <img src="img/snorlax.png" alt="caterpie" />
                                 </div>
@@ -325,7 +375,7 @@
 
                             </div>
 
-                            <div class="pokemon-card squirtle mx-3 my-3 shrink">
+                            <div class="pokemon-card squirtle mx-3 my-3 shrink" onclick="redirectArticunoPage()">
                                 <div class="pokemon-card__image pokemon-card__image--squirtle">
                                     <img src="img/articuno.png" alt="squirtle" />
                                 </div>
@@ -349,7 +399,7 @@
 
                             </div>
 
-                            <div class="pokemon-card charmander mx-3 my-3 shrink">
+                            <div class="pokemon-card charmander mx-3 my-3 shrink" onclick="redirectBulbasaurPage()">
                                 <div class="pokemon-card__image pokemon-card__image--bulbasaur">
                                     <img src="img/bulbasaur.png" alt="charmander" />
                                 </div>
@@ -540,8 +590,8 @@
 
     </footer>
 
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous ">
-    </script>
+    <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "> -->
+    <!-- </script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous ">
     </script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous ">
