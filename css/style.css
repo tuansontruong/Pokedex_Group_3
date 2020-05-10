@@ -778,6 +778,16 @@
     z-index: 10;
 }
 
+.carousel-control-prev-icon{
+    height: 50px;
+    width: 50px;
+}
+
+.carousel-control-next-icon{
+    height: 50px;
+    width: 50px;
+}
+
 
 /* ======END-HUY===== */
 
