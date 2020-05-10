@@ -485,10 +485,22 @@
 .detail-pokedex-img {
     width: 240px;
     height: auto;
+    animation: wiggle 1s linear infinite;
 }
+
+@-webkit-keyframes wiggle {
+    0% { -webkit-transform: rotate(0deg);} 
+    25% { -webkit-transform: rotate(3deg);} 
+    50% { -webkit-transform: rotate(0deg);}
+    75% { -webkit-transform: rotate(-3deg);}
+    100% {{ -webkit-transform: rotate(0deg);}}
+    /* to { -webkit-transform: rotate(0deg) }  */
+}
+
 
 .detail-pokedex-circle {
     width: 140px;
+    margin-bottom: 5vh;
 }
 
 .detail-spacer-1 {
@@ -502,7 +514,8 @@
 .detail-gradient {
     background: rgb(2, 0, 36);
     /* background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(1, 0, 19, 1) 72%, rgba(0, 0, 0, 0) 100%); */
-    background-image: url('/detail-img/lightning_bg.jpg');
+    background-image: url('/detail-img/fancy-pants.jpg');
+    background-repeat: repeat;
 }
 
 .detail-header {
@@ -525,7 +538,7 @@
 }
 
 .detail-title {
-    background-color: #dc1715;
+    background-color: #E3350D;
     border-top-left-radius: 2rem;
     border-top-right-radius: 2rem;
     padding-left: 2rem;
@@ -536,6 +549,7 @@
 
 .detail-pokedex-font {
     font-family: 'Titillium Web', serif;
+    /* font-size: 4vw; */
 }
 
 .detail-font {
@@ -549,6 +563,8 @@
     background: #fff url('/detail-img/container_bg.png');
     height: auto;
     margin-bottom: 40px;
+    border-bottom-left-radius: 2rem;
+    border-bottom-right-radius: 2rem;
 }
 
 .detail-pkm-card-section {
@@ -561,7 +577,7 @@
 }
 
 .detail-form {
-    background-color: #dc1715;
+    background-color: #E3350D;
     color: white;
     padding: 1rem 3rem;
     font-weight: bold;
@@ -619,6 +635,48 @@
     margin: 0 auto;
 }
 
+.evo-box {
+    max-width: 200px;
+    max-height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.first-form {
+    animation: first-evo 7s linear infinite;
+}
+
+@-webkit-keyframes first-evo {
+    0%   { opacity: 0; }
+    20%   { opacity: 1; }
+    40% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.second-form {
+    animation: second-evo 7s linear infinite;
+}
+
+@-webkit-keyframes second-evo {
+    0%   { opacity: 0; }
+    20%   { opacity: 0; }
+    40% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.third-form {
+    animation: third-evo 7s linear infinite;
+}
+
+@-webkit-keyframes third-evo {
+    0%   { opacity: 0; }
+    40%   { opacity: 0; }
+    60% { opacity: 1; }
+    90% { opacity: 1; }
+    100% { opacity: 0; }
+}
 
 /* ====END-DEREK===== */
 
@@ -1562,7 +1620,8 @@ a {
 /* IMAGE MODAL */
 
 #mapImg {
-    border-radius: 5px;
+    border: 5px solid gray;
+    border-radius: 15px;
     cursor: pointer;
     transition: 0.3s;
     display: block;
@@ -1573,7 +1632,6 @@ a {
 #mapImg:hover {
     opacity: 0.7;
 }
-
 
 /* The Modal (background) */
 
