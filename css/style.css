@@ -5,14 +5,16 @@
 
 /* =======VINH======= */
 
+
 /* spike divider */
+
 .spikes {
     position: relative;
     background: #2c3e50;
     height: 0vh;
-  }
-  
-  .spikes::after {
+}
+
+.spikes::after {
     content: '';
     position: absolute;
     right: 0;
@@ -24,8 +26,10 @@
     background-size: 50px 100%;
     background-image: linear-gradient(135deg, #2c3e50 25%, transparent 25%), linear-gradient(225deg, #2c3e50 25%, transparent 25%);
     background-position: 0 0;
-  }
-  /* spike divider end */
+}
+
+
+/* spike divider end */
 
 .pkm-name {
     font-family: 'Titillium Web', serif;
@@ -266,8 +270,8 @@
 .pkm-card-section {
     /* background-image: url("../img/shattered-island.gif");
     background-repeat: repeat; */
-    background: rgb(4,59,47);
-background: linear-gradient(180deg, rgba(4,59,47,1) 0%, rgba(44,62,80,1) 100%);
+    background: rgb(4, 59, 47);
+    background: linear-gradient(180deg, rgba(4, 59, 47, 1) 0%, rgba(44, 62, 80, 1) 100%);
     padding-top: 60px;
     padding-bottom: 80px;
 }
@@ -422,6 +426,8 @@ background: linear-gradient(180deg, rgba(4,59,47,1) 0%, rgba(44,62,80,1) 100%);
     left: 0;
     bottom: 0;
 }
+
+
 /* 
 .come-from-right {
     animation-duration: 3s;
@@ -525,11 +531,21 @@ background: linear-gradient(180deg, rgba(4,59,47,1) 0%, rgba(44,62,80,1) 100%);
 }
 
 @keyframes wiggle {
-    0% { -webkit-transform: rotate(0deg);} 
-    25% { -webkit-transform: rotate(3deg);} 
-    50% { -webkit-transform: rotate(0deg);}
-    75% { -webkit-transform: rotate(-3deg);}
-    100% { -webkit-transform: rotate(0deg);}
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    25% {
+        -webkit-transform: rotate(3deg);
+    }
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+    75% {
+        -webkit-transform: rotate(-3deg);
+    }
+    100% {
+        -webkit-transform: rotate(0deg);
+    }
     /* to { -webkit-transform: rotate(0deg) }  */
 }
 
@@ -549,7 +565,7 @@ background: linear-gradient(180deg, rgba(4,59,47,1) 0%, rgba(44,62,80,1) 100%);
 .detail-gradient {
     background: rgb(2, 0, 36);
     /* background: linear-gradient(0deg, rgba(2, 0, 36, 1) 0%, rgba(1, 0, 19, 1) 72%, rgba(0, 0, 0, 0) 100%); */
-    background-image: url('/detail-img/fancy-pants.jpg');
+    background-image: url('../detail-img/fancy-pants.jpg');
     background-repeat: repeat;
 }
 
@@ -595,7 +611,7 @@ background: linear-gradient(180deg, rgba(4,59,47,1) 0%, rgba(44,62,80,1) 100%);
 .detail-main {
     padding: 2rem;
     /* background-color: white; */
-    background: #fff url('/detail-img/container_bg.png');
+    background: #fff url('../detail-img/container_bg.png');
     height: auto;
     margin-bottom: 40px;
     border-bottom-left-radius: 2rem;
@@ -958,10 +974,10 @@ body {
 }
 
 @media only screen and (max-width: 450px) {
-    .aboutus-card{
-      width: 90vw;
-      height: 200px;
-      margin-left: 0px;
+    .aboutus-card {
+        width: 90vw;
+        height: 200px;
+        margin-left: 0px;
         margin-right: 0px;
     }
 }
@@ -1164,13 +1180,13 @@ body {
 
 @media only screen and (max-width: 450px) {
     .aboutus-card .general {
-      width: 58vw;
-      height: 300px;
-      position: absolute;
-      top: 0;
-      right: 0;
-      z-index: 1;
-      box-sizing: border-box;
+        width: 58vw;
+        height: 300px;
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+        box-sizing: border-box;
     }
 }
 
