@@ -939,9 +939,11 @@ body {
 }
 
 @media only screen and (max-width: 450px) {
-    .aboutus-card {
-        width: 100vw;
-        height: 200px;
+    .aboutus-card{
+      width: 90vw;
+      height: 200px;
+      margin-left: 0px;
+        margin-right: 0px;
     }
 }
 
@@ -1143,13 +1145,13 @@ body {
 
 @media only screen and (max-width: 450px) {
     .aboutus-card .general {
-        width: 66vw;
-        height: 200px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        z-index: 1;
-        box-sizing: border-box;
+      width: 58vw;
+      height: 300px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1;
+      box-sizing: border-box;
     }
 }
 
@@ -1163,6 +1165,12 @@ body {
 
 .aboutus-section {
     padding-bottom: 4rem;
+}
+
+.about-us-bg {
+    background-image: linear-gradient(135deg, #fdfcfb 0%, #e2d1c3 100%);
+    padding-top: 60px;
+    padding-bottom: 80px;
 }
 
 
