@@ -56,7 +56,7 @@
                             <p class="pkm-type">Type: <span class="grass-type badge badge-pill badge-secondary">Grass</span> <span class="poison-type badge badge-pill badge-secondary">Poison</span></p>
                         </div>
                         <div class="col-4">
-                            <img class="d-flex detail-pokedex-img" src="img/bulbasaur.png" alt="Bulbasaur">
+                            <img class="d-flex detail-pokedex-img img-fluid" src="img/bulbasaur.png" alt="Bulbasaur">
                         </div>
 
                     </div>
@@ -64,69 +64,79 @@
             </section>
 
             <section class="container detail-main">
-                <div class="detail-font row justify-content-between">
+                <div class="detail-font">
                     <div class="col-sm">
                         <div class="container">
-                            <!--ABOUT-->
-                            <h1>About</h1>
-                            <p>Bulbasaur (フシギダネ Fushigidane) is a Grass/Poison-type Pokémon introduced in Generation I. It evolves into Ivysaur starting at level 16. It is one of the three Starter Pokémon that can be chosen in the Kanto region.</p>
-                        </div>
-                        <hr>
-                        <div class="container">
-                            <!--PROFILE-->
-                            <!-- <h1>Bulbasaur</h1> -->
-                            <section class="row">
-                                <div class="col-4"><b>Height:</b> 0.7 m</div>
-                                <div class="col-4"><b>Weight:</b> 6.9 kg
-                                </div>
-                                <div class="col-4"><b>Catch Rate:</b> 0%
-                                </div>
-                                <br>
-                                <div class="w-100"></div>
-                                <br>
-                                <div class="col-4"><b>Gender Ratio:</b> 87.5% ♂ 12.5% ♀
-                                </div>
-                                <div class="col-4"><b>Egg Groups:</b> Monster, Grass
-                                </div>
-                                <div class="col-4"><b>Abilities:</b> Chlorophyll, Overgrow
-                                </div>
-
-                            </section>
-                        </div>
-                        <hr>
-                        <div class="container">
-                            <h1>Bulbasaur 's World Map</h1>
                             <div class="row">
-                                <img id="mapImg" src="/img/map1.png" width="500" height="300">
-                                <!-- The Modal -->
-                                <div id="myModal" class="modal">
-                                    <img class="modal-content" id="img01">
+                                <div class="col-md-8">
+                                    <!--ABOUT-->
+                                    <h1>About</h1>
+                                    <p>Bulbasaur (フシギダネ Fushigidane) is a Grass/Poison-type Pokémon introduced in Generation I. It evolves into Ivysaur starting at level 16. It is one of the three Starter Pokémon that can be chosen in the Kanto region.</p>
+                                    <hr>
+                                    <section class="row">
+                                        <div class="col-4"><b>Height:</b> 0.7 m</div>
+                                        <div class="col-4"><b>Weight:</b> 6.9 kg
+                                        </div>
+                                        <div class="col-4"><b>Catch Rate:</b> 0%
+                                        </div>
+                                        <br>
+                                        <div class="w-100"></div>
+                                        <br>
+                                        <div class="col-4"><b>Gender Ratio:</b> 87.5% ♂ 12.5% ♀
+                                        </div>
+                                        <div class="col-4"><b>Egg Groups:</b> Monster, Grass
+                                        </div>
+                                        <div class="col-4"><b>Abilities:</b> Chlorophyll, Overgrow
+                                        </div>
+
+                                    </section>
                                 </div>
+                                <div class="col-md-4">
+                                    <div class="container">
+                                        <!--STATS-->
+                                        <h1>Stats</h1>
+                                        <div class="bar black lvl2" data-skill="HP"></div>
+                                        <div class="bar lvl1" data-skill="Attack"></div>
+                                        <div class="bar blue lvl1" data-skill="Defense"></div>
+                                        <div class="bar violet lvl4" data-skill="Sp Attack"></div>
+                                        <div class="bar green lvl5" data-skill="Sp Defense"></div>
+                                        <div class="bar yellow lvl3" data-skill="Speed"></div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="container">
+                                    <h1>Bulbasaur 's World Map</h1>
+                                    <img id="mapImg" src="/img/map1.png" class="img-fluid" width="500" height="300">
+
+                                    <div id="myModal" class="modal">
+                                        <img class="modal-content" id="img01">
+                                    </div>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <h1 class="container">Evolutions</h1>
+                                <p class="container">
+                                    <img src="https://kenh14cdn.com/2016/po1-1468574284841.jpg" alt="evolution-img" style="width: 100%;" />
+                                </p>
                             </div>
                         </div>
 
-                    </div>
-                    <hr>
-                    <div class="col-lg-5">
-                        <div class="container">
-                            <!--STATS-->
-                            <h1>Stats</h1>
-                            <div class="bar black lvl2" data-skill="HP" style="margin-top: 50px;"></div>
-                            <div class="bar lvl1" data-skill="Attack" style="margin-top: 50px;"></div>
-                            <div class="bar blue lvl1" data-skill="Defense" style="margin-top: 50px;"></div>
-                            <div class="bar advanced" data-skill="Sp Attack" style="margin-top: 50px;"></div>
-                            <div class="bar blue expert" data-skill="Sp Defense" style="margin-top: 50px;"></div>
-                            <div class="bar yellow expert" data-skill="Speed" style="margin-top: 50px;"></div>
+                        <!-- <div class="container">
+                            <!--PROFILE-->
+                        <!-- <h1>Bulbasaur</h1> -->
 
-                        </div>
+                        <!-- </div> -->
+
+
+
                     </div>
                 </div>
-                <hr>
                 <!--EVOLUTIONS-->
-                <h1 class="container">Evolutions</h1>
-                <p class="container">
-                    <img src="https://kenh14cdn.com/2016/po1-1468574284841.jpg" alt="evolution-img" style="width: 100%;" />
-                </p>
+
             </section>
 
             <section class="detail-pkm-card-section">
@@ -252,24 +262,24 @@
                         <!--Second slide-->
                         <div class="carousel-item">
 
-                            <div class="pokemon-card pikachu mx-3 my-3 shrink">
-                                <div class="pokemon-card__image pokemon-card__image--pikachu">
-                                    <img src="https://www.kindpng.com/picc/b/9/96543.png" alt="pikachu" />
+                            <div class="pokemon-card dratini mx-3 my-3 shrink">
+                                <div class="pokemon-card__image pokemon-card__image--dratini">
+                                    <img src="/img/dratini.png" alt="pikachu" />
                                 </div>
-                                <div class="pokemon-card__level pokemon-card__level--pikachu">Mouse</div>
-                                <div class="pokemon-card__unit-name">Pikachu</div>
+                                <div class="pokemon-card__level pokemon-card__level--pikachu">Dragon</div>
+                                <div class="pokemon-card__unit-name">Dratini</div>
                                 <div class="pokemon-card__unit-description">
-                                    Its nature is to store up electricity. Forests where nests of Pikachu live are dangerous, since the trees are so often struck by lightning.
+                                    It's still weak, so it lurks on the floor of bodies of water, eating whatever food sinks down and living a quiet life.
                                 </div>
 
                                 <div class="pokemon-card__unit-stats pokemon-card__unit-stats--pikachu clearfix">
                                     <div class="one-third">
-                                        <div class="stat">1'04"</div>
+                                        <div class="stat">5'11"</div>
                                         <div class="stat-value">Height</div>
                                     </div>
 
                                     <div class="one-third">
-                                        <div class="stat">13.2</div>
+                                        <div class="stat">7.3</div>
                                         <div class="stat-value">Weight(lbs)</div>
                                     </div>
 
@@ -283,18 +293,17 @@
                             </div>
 
                             <div class="pokemon-card caterpie mx-3 my-3 shrink">
-                                <div class="pokemon-card__image pokemon-card__image--caterpie">
-                                    <img src="img/caterpie.png" alt="caterpie" />
+                                <div class="pokemon-card__image pokemon-card__image--snorlax">
+                                    <img src="img/snorlax.png" alt="caterpie" />
                                 </div>
-                                <div class="pokemon-card__level pokemon-card__level--caterpie">Worm</div>
-                                <div class="pokemon-card__unit-name">Caterpie</div>
+                                <div class="pokemon-card__level pokemon-card__level--caterpie">Sleeping</div>
+                                <div class="pokemon-card__unit-name">Snorlax</div>
                                 <div class="pokemon-card__unit-description">
-                                    Perhaps because it would like to grow up quickly, it has a voracious appetite, eating a hundred leaves a day.
-                                </div>
+                                    It doesn't do anything other than eat and sleep. When prompted to make a serious effort, it apparently displays awesome power. </div>
 
                                 <div class="pokemon-card__unit-stats pokemon-card__unit-stats--caterpie clearfix">
                                     <div class="one-third">
-                                        <div class="stat">1'00"</div>
+                                        <div class="stat">6'11"</div>
                                         <div class="stat-value">Height</div>
                                     </div>
 
@@ -309,22 +318,21 @@
 
                             <div class="pokemon-card squirtle mx-3 my-3 shrink">
                                 <div class="pokemon-card__image pokemon-card__image--squirtle">
-                                    <img src="img/squirtle.png" alt="squirtle" />
+                                    <img src="img/articuno.png" alt="squirtle" />
                                 </div>
-                                <div class="pokemon-card__level pokemon-card__level--squirtle">Tiny Turtle</div>
-                                <div class="pokemon-card__unit-name">Squirtle</div>
+                                <div class="pokemon-card__level pokemon-card__level--squirtle">Freeze</div>
+                                <div class="pokemon-card__unit-name">Articuno</div>
                                 <div class="pokemon-card__unit-description">
-                                    Squirtle's shell is not merely used for protection. The grooves on its surface help minimize resistance in water.
-                                </div>
+                                    Articuno is a legendary bird Pokémon that can control ice. The flapping of its wings chills the air. Snow will fall. </div>
 
                                 <div class="pokemon-card__unit-stats pokemon-card__unit-stats--squirtle clearfix">
                                     <div class="one-third">
-                                        <div class="stat">1'08"</div>
+                                        <div class="stat">5'07"</div>
                                         <div class="stat-value">Height</div>
                                     </div>
 
                                     <div class="one-third">
-                                        <div class="stat">19.8</div>
+                                        <div class="stat">122.1</div>
                                         <div class="stat-value">Weight(lbs)</div>
                                     </div>
 
@@ -333,22 +341,22 @@
                             </div>
 
                             <div class="pokemon-card charmander mx-3 my-3 shrink">
-                                <div class="pokemon-card__image pokemon-card__image--charmander">
-                                    <img src="img/charmander.png" alt="charmander" />
+                                <div class="pokemon-card__image pokemon-card__image--bulbasaur">
+                                    <img src="img/bulbasaur.png" alt="charmander" />
                                 </div>
-                                <div class="pokemon-card__level pokemon-card__level--charmander">Lizard</div>
-                                <div class="pokemon-card__unit-name">Charmander</div>
+                                <div class="pokemon-card__level pokemon-card__level--charmander">Seed</div>
+                                <div class="pokemon-card__unit-name">Bulbasaur</div>
                                 <div class="pokemon-card__unit-description">
-                                    The flame that burns at the tip of its tail is an indication of its emotions. The flame wavers when Charmander is enjoying itself.</div>
-
+                                    Bulbasaur can be seen napping in bright sunlight. There is a seed on its back. The seed grows progressively larger.
+                                </div>
                                 <div class="pokemon-card__unit-stats pokemon-card__unit-stats--charmander clearfix">
                                     <div class="one-third">
-                                        <div class="stat">2'00"</div>
+                                        <div class="stat">2'04"</div>
                                         <div class="stat-value">Height</div>
                                     </div>
 
                                     <div class="one-third">
-                                        <div class="stat">18.7</div>
+                                        <div class="stat">15.2</div>
                                         <div class="stat-value">Weight(lbs)</div>
                                     </div>
 
