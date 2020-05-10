@@ -533,7 +533,6 @@ background: linear-gradient(180deg, rgba(4,59,47,1) 0%, rgba(44,62,80,1) 100%);
     /* to { -webkit-transform: rotate(0deg) }  */
 }
 
-
 .detail-pokedex-circle {
     width: 140px;
     margin-bottom: 5vh;
@@ -683,11 +682,21 @@ background: linear-gradient(180deg, rgba(4,59,47,1) 0%, rgba(44,62,80,1) 100%);
 }
 
 @keyframes first-evo {
-    0%   { opacity: 0; }
-    20%   { opacity: 1; }
-    40% { opacity: 1; }
-    90% { opacity: 1; }
-    100% { opacity: 0; }
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 1;
+    }
+    40% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 .second-form {
@@ -695,11 +704,21 @@ background: linear-gradient(180deg, rgba(4,59,47,1) 0%, rgba(44,62,80,1) 100%);
 }
 
 @keyframes second-evo {
-    0%   { opacity: 0; }
-    20%   { opacity: 0; }
-    40% { opacity: 1; }
-    90% { opacity: 1; }
-    100% { opacity: 0; }
+    0% {
+        opacity: 0;
+    }
+    20% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
 
 .third-form {
@@ -707,12 +726,23 @@ background: linear-gradient(180deg, rgba(4,59,47,1) 0%, rgba(44,62,80,1) 100%);
 }
 
 @keyframes third-evo {
-    0%   { opacity: 0; }
-    40%   { opacity: 0; }
-    60% { opacity: 1; }
-    90% { opacity: 1; }
-    100% { opacity: 0; }
+    0% {
+        opacity: 0;
+    }
+    40% {
+        opacity: 0;
+    }
+    60% {
+        opacity: 1;
+    }
+    90% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
 }
+
 
 /* ====END-DEREK===== */
 
@@ -872,12 +902,12 @@ background: linear-gradient(180deg, rgba(4,59,47,1) 0%, rgba(44,62,80,1) 100%);
     z-index: 10;
 }
 
-.carousel-control-prev-icon{
+.carousel-control-prev-icon {
     height: 50px;
     width: 50px;
 }
 
-.carousel-control-next-icon{
+.carousel-control-next-icon {
     height: 50px;
     width: 50px;
 }
@@ -934,7 +964,7 @@ body {
       margin-left: 0px;
         margin-right: 0px;
     }
-  }
+}
 
 .aboutus-card h1 {
     text-align: center;
@@ -951,12 +981,12 @@ body {
 }
 
 @media only screen and (max-width: 450px) {
-    .aboutus-card .additional{
-      width: 34vw;
-      height: 200px;
-      position: absolute;
+    .aboutus-card .additional {
+        width: 34vw;
+        height: 200px;
+        position: absolute;
     }
-  }
+}
 
 .aboutus-card.green .additional {
     background: linear-gradient(#92bCa6, #A2CCB6);
@@ -976,12 +1006,12 @@ body {
 
 @media only screen and (max-width: 450px) {
     .aboutus-card .additional .user-card {
-      width: 34vw;
-      height: 200px;
-      position: relative;
-      float: left;
+        width: 34vw;
+        height: 200px;
+        position: relative;
+        float: left;
     }
-  }
+}
 
 .aboutus-card .additional .user-card::after {
     content: "";
@@ -995,11 +1025,11 @@ body {
 
 @media only screen and (max-width: 450px) {
     .aboutus-card .additional .user-card::after {
-      width: 34vw;
-      height: 200px;
-      position: absolute;
+        width: 34vw;
+        height: 200px;
+        position: absolute;
     }
-  }
+}
 
 .aboutus-card .additional .user-card .level,
 .aboutus-card .additional .user-card .points {
@@ -1029,9 +1059,9 @@ body {
 
 @media only screen and (max-width: 450px) {
     .member-name {
-      font-size: 25px;
+        font-size: 25px;
     }
-  }
+}
 
 .quote {
     font-size: 15px;
@@ -1048,14 +1078,14 @@ body {
 
 @media only screen and (max-width: 450px) {
     .aboutus-card .additional .more-info {
-      width: 66vw;
-      height: 200px;
-      position: absolute;
-      float: left;
-      left: 34vw;
-      padding-top: 1rem;
+        width: 66vw;
+        height: 200px;
+        position: absolute;
+        float: left;
+        left: 34vw;
+        padding-top: 1rem;
     }
-  }
+}
 
 .aboutus-card .additional .more-info h1 {
     color: #fff;
@@ -1142,8 +1172,7 @@ body {
       z-index: 1;
       box-sizing: border-box;
     }
-  }
-
+}
 
 .aboutus-card .general .more {
     position: absolute;
@@ -1214,6 +1243,7 @@ a {
     z-index: 9999;
     font: 14px/20px 'Titillium Web', serif;
     color: #9E9E9E;
+    cursor: pointer;
 }
 
 .pokemon-card__image {
@@ -1756,6 +1786,7 @@ a {
 #mapImg:hover {
     opacity: 0.7;
 }
+
 
 /* The Modal (background) */
 
