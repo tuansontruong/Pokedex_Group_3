@@ -5,12 +5,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pokedex</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Titillium+Web">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" href="img/pikachu.png">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
         function scrollDownCardSection() {
             event.preventDefault();
@@ -127,11 +129,17 @@
 
     <section class="bg-carousel">
         
-            <h1 class="text-center pkm-carousel-header"><span class="pretty-text-box">Explore a world of wonders!</span></h1>
+        <div data-aos="fade-down" data-aos-duration="1000"><h1 class="text-center pkm-carousel-header"><span class="pretty-text-box">Explore a world of wonders!</span></h1></div>
 
-        <div class="carousel-wrapper-rel">
+        <div class="carousel-wrapper-rel" id="trigger-right">
             <img src="img/frame.png" class="frame-stack"/>
-            <img src="img/side.png" class="right-stack" />
+        <div class="right-stack"
+            data-aos="fade-left"
+            data-aos-anchor="#trigger-right"
+            data-aos-duration="1500"
+            data-aos-anchor-placement="top-center">
+            <img src="img/side.png" class="right-stack"/>
+        </div> 
             <div class="top-stack">
                 <div class="pokemon-carousel-box d-flex align-items-center justify-content-center">
                     <img class="img-fluid d-block" src="img/Bulbasaur.gif" width="150px" />
@@ -170,7 +178,9 @@
     </section>
     <div id="cardDex-jq"></div>
     </section> 
+    
     <section class="pkm-card-section">
+        
         <div class="pkm-card-div">
             <h1 class="text-center pkm-card-header">Find out what's unique in each <img src="img/pkm-logo.png" height="80px" /></h1>
             <div class="flex-pkm-card">
@@ -278,6 +288,7 @@
                         <a href="#" class="btn btn-danger check-pkm-button">Check me out</a>
                     </div>
                 </div>
+      
     </section>
     <!--[ABOUT US]-->
     <!--CARD-->
@@ -750,6 +761,9 @@
     <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js " integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN " crossorigin="anonymous "></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js " integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q " crossorigin="anonymous "></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js " integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl " crossorigin="anonymous "></script>
+    <script>
+        AOS.init();
+  </script>
 </body>
 
 </html>
