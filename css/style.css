@@ -1046,6 +1046,18 @@ a {
     background: url('../detail-img/slide_show/charmander_bg.jpg');
 }
 
+.pokemon-card__image--dratini {
+    background: url('../detail-img/slide_show/pikachu_bg.jpg');
+}
+
+.pokemon-card__image--snorlax {
+    background: url('../detail-img/slide_show/caterpie-bg.jpg');
+}
+
+.pokemon-card__image--bulbasaur {
+    background: url('../detail-img/slide_show/charmander_bg.jpg');
+}
+
 .pokemon-card__image--pikachu img {
     width: 250px;
     position: absolute;
@@ -1074,6 +1086,27 @@ a {
     left: 23px;
 }
 
+.pokemon-card__image--dratini img {
+    width: 250px;
+    position: absolute;
+    top: 0px;
+    left: -41px;
+}
+
+.pokemon-card__image--snorlax img {
+    width: 250px;
+    position: absolute;
+    top: 0px;
+    left: -5px;
+}
+
+.pokemon-card__image--bulbasaur img {
+    width: 250px;
+    position: absolute;
+    top: 0px;
+    left: -5px;
+}
+
 .pokemon-card__level {
     text-transform: uppercase;
     font-size: 12px;
@@ -1095,6 +1128,10 @@ a {
 
 .pokemon-card__level--charmander {
     color: #e3723e;
+}
+
+.pokemon-card__level--dratini {
+    color: #659db0;
 }
 
 .pokemon-card__unit-name {
@@ -1123,6 +1160,10 @@ a {
 
 .pokemon-card__unit-stats--charmander {
     background: #e3723e;
+}
+
+.pokemon-card__unit-stats--dratini {
+    background: #659db0;
 }
 
 
