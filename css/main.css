@@ -1,6 +1,6 @@
-/* .container {
-    /* overflow: hidden; */
-} */
+.container {
+    overflow: hidden;
+}
 
 .body {
     overflow-x: hidden;
