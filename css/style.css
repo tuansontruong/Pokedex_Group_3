@@ -939,6 +939,18 @@
 
 /* =====CHRISTINA--ABOUT US==== */
 
+.aboutus-header {
+    color: rgb(189, 75, 0);
+    /* margin-bottom: 20px; */
+    text-transform: uppercase;
+    font-weight: bold;
+    font-family: 'Titillium Web', serif;
+    /* text-shadow: 2px 2px 0px red; */
+    /* text-shadow: -2px -2px 0 rgb(153, 14, 60), 2px -2px 0 rgb(238, 124, 17), -2px 2px 0 rgb(84, 86, 201), 2px 2px 0 rgb(207, 64, 107); */
+    /* filter: drop-shadow(0px 0px 12px rgb(236, 238, 142)); */
+    letter-spacing: 3px;
+}
+
 @import url('https://fonts.googleapis.com/css?family=Abel&display=swap');
 html,
 body {
@@ -1115,6 +1127,54 @@ body {
 
 .aboutus-card.green .additional .more-info h1 {
     color: #224C36;
+}
+
+.aboutus-card.blue .additional {
+    background: linear-gradient(rgb(146, 168, 188), rgb(162, 179, 204));
+}
+
+.aboutus-card.blue .additional .more-info h1 {
+    color: rgb(34, 42, 76);
+}
+
+.aboutus-card.blue .additional .coords {
+    color: rgb(50, 65, 92);
+}
+
+.aboutus-card.blue .additional .stats {
+    color: rgb(50, 65, 92);
+}
+
+.aboutus-card.yellow .additional {
+    background: linear-gradient(rgb(233, 231, 144), rgb(223, 213, 125));
+}
+
+.aboutus-card.yellow .additional .more-info h1 {
+    color: rgb(76, 68, 34);
+}
+
+.aboutus-card.yellow .additional .coords {
+    color: rgb(92, 89, 50);
+}
+
+.aboutus-card.yellow .additional .stats {
+    color: rgb(92, 89, 50);
+}
+
+.aboutus-card.orange .additional {
+    background: linear-gradient(rgb(224, 174, 109), rgb(226, 167, 104));
+}
+
+.aboutus-card.orange .additional .more-info h1 {
+    color: rgb(76, 47, 34);
+}
+
+.aboutus-card.orange .additional .coords {
+    color: rgb(92, 65, 50);
+}
+
+.aboutus-card.orange .additional .stats {
+    color: rgb(92, 65, 50);
 }
 
 .aboutus-card .additional .coords {
