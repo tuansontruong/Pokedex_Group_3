@@ -229,6 +229,19 @@
     padding-bottom: 0px;
 }
 
+@media only screen and (max-width: 450px) {
+    .frame-stack, .hidethis, .grass-stack {
+    display: none;
+    }
+}
+
+
+@media only screen and (max-width: 450px) {
+    .bg-carousel {
+    min-height: 800px;
+    }
+}
+
 .pkm-carousel-header {
     color: white;
     /* margin-bottom: 20px; */
@@ -987,6 +1000,8 @@ body {
     overflow: hidden;
     position: relative;
     margin: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
     font-family: 'Titillium Web', serif;
 }
 
